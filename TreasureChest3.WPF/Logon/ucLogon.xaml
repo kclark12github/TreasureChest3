@@ -1,0 +1,113 @@
+﻿<local:UserControlSubmitCancel x:Class="TreasureChest3.WPF.Logon.ucLogon"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TreasureChest3.WPF.Logon"
+             xmlns:vm="clr-namespace:TC3Core.ViewModel;assembly=TC3Core.ViewModel"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="500">
+    <UserControl.Resources>
+        <vm:LoginViewModel x:Key="viewModel" />
+    </UserControl.Resources>
+    <Border Style="{StaticResource screenBorder}"
+          BorderBrush="#FF5F5F5F"
+          BorderThickness="2">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0.5,0.5"
+                           EndPoint="0.5,1">
+                <GradientStop Color="DarkGray"
+                      Offset="0" />
+                <GradientStop Color="Gray"
+                      Offset="1" />
+            </LinearGradientBrush>
+        </Border.Background>
+        <Grid DataContext="{Binding Source={StaticResource viewModel}}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Image Grid.Column="0"
+             Grid.Row="0"
+             Effect="{StaticResource buttonShadow}"
+             Grid.RowSpan="3"
+             VerticalAlignment="Top"
+             HorizontalAlignment="Left"
+             Name="imgKey"
+             Width="50"
+             Margin="8"
+             Source="/Resources/Icons/Logon/KeyComputer.png" />
+            <Border Grid.Column="1"
+              Grid.Row="0"
+              Grid.ColumnSpan="2"
+              Effect="{StaticResource buttonShadow}"
+              Margin="4,10,4,20"
+              CornerRadius="10">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1"
+                               StartPoint="0.5,0">
+                        <GradientStop Color="#FFC7C2C2"
+                          Offset="0" />
+                        <GradientStop Color="#FF8D8787"
+                          Offset="1" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <TextBlock FontSize="18"
+                   Margin="10"
+                   Style="{StaticResource whiteLabels}"
+                   Text="Please Login..." />
+            </Border>
+            <TextBlock Grid.Column="1"
+                 Grid.Row="1"
+                 Style="{StaticResource whiteLabels}"
+                 Text="Login ID" />
+            <TextBox Grid.Column="2"
+               Grid.Row="1"
+               ToolTip="Enter Your User Name"
+               Text="{Binding Mode=TwoWay, Path=LoginObject.LoginID}"
+               Name="txtUserName" />
+            <TextBlock Grid.Column="1"
+                 Grid.Row="2"
+                 Style="{StaticResource whiteLabels}"
+                 Text="Password" />
+            <!-- NOTE: Password property can NOT be bound to -->
+            <PasswordBox Grid.Column="2"
+                   Grid.Row="2"
+                   ToolTip="Enter Your Password"
+                   Name="txtPassword" />
+            <TextBlock Grid.Column="1"
+                 Grid.Row="3"
+                 Style="{StaticResource whiteLabels}"
+                 Text="Domain" />
+            <TextBox Grid.Column="2"
+               Grid.Row="3"
+               ToolTip="Enter The Domain Name to Login To"
+               Text="{Binding Mode=TwoWay, Path=LoginObject.Domain}"
+               Name="txtDomain" />
+            <StackPanel Grid.Column="2"
+                  Grid.Row="4"
+                  Margin="4"
+                  HorizontalAlignment="Right"
+                  Orientation="Horizontal">
+                <StackPanel.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="Margin" Value="8" />
+                        <Setter Property="Height" Value="36" />
+                        <Setter Property="Width" Value="36" />
+                        <Setter Property="Effect" Value="{StaticResource buttonShadow}" />
+                    </Style>
+                </StackPanel.Resources>
+                <Button Name="btnCancel" Content="Cancel" Width="65" Click="Button_Click"/>
+                <Button Name="btnLogin" Content="Login" Width="65" Click="Button_Click"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</local:UserControlSubmitCancel>

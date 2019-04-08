@@ -1,0 +1,225 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:TC3Base.WPF">
+    <ControlTemplate x:Key="StandardButtonTemplate" TargetType="Button">
+        <ControlTemplate.Resources>
+            <Storyboard x:Key="MouseOverAnimation" Storyboard.TargetProperty="Color">
+                <ColorAnimation Storyboard.TargetName="ButtonBorderGradientStop1" To="#ffefefff" Duration="0:0:0.2" />
+                <ColorAnimation Storyboard.TargetName="ButtonBorderGradientStop2" To="#ffc7c7ff" Duration="0:0:0.2" />
+            </Storyboard>
+            <Storyboard x:Key="MouseOutAnimation" Storyboard.TargetProperty="Color"
+                FillBehavior="Stop">
+                <!-- <=================== -->
+                <ColorAnimation Storyboard.TargetName="ButtonBorderGradientStop1" To="#ffeeeeee" Duration="0:0:0.2" />
+                <ColorAnimation Storyboard.TargetName="ButtonBorderGradientStop2" To="#ffcccccc" Duration="0:0:0.2" />
+            </Storyboard>
+            <Storyboard x:Key="MouseDownAnimation" Storyboard.TargetProperty="Color">
+                <ColorAnimation Storyboard.TargetName="ButtonBorderGradientStop1" To="#ffc7c7ff" Duration="0:0:0.1" />
+                <ColorAnimation Storyboard.TargetName="ButtonBorderGradientStop2" To="#ff9a9aff" Duration="0:0:0.1" />
+            </Storyboard>
+            <Storyboard x:Key="MouseUpAnimation" Storyboard.TargetProperty="Color"
+                FillBehavior="Stop">
+                <!-- <=================== -->
+                <ColorAnimation Storyboard.TargetName="ButtonBorderGradientStop1" To="#ffefefff" Duration="0:0:0.1" />
+                <ColorAnimation Storyboard.TargetName="ButtonBorderGradientStop2" To="#ffc7c7ff" Duration="0:0:0.1" />
+            </Storyboard>
+        </ControlTemplate.Resources>
+        <Border x:Name="ButtonBorder" CornerRadius="5" BorderBrush="#55aaaaaa" BorderThickness="1" >
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientBrush.GradientStops>
+                        <GradientStop x:Name="ButtonBorderGradientStop1" Color="#ffeeeeee" Offset="0.0" />
+                        <GradientStop x:Name="ButtonBorderGradientStop2" Color="#ffcccccc" Offset="1.0" />
+                    </GradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Border.Background>
+            <!--<Image x:Name="ButtonIcon" Source="icons/searchicon_bw.png" Width="16" Height="16" />-->
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <ContentPresenter Margin="4"/>
+            </StackPanel>
+        </Border>
+
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Trigger.EnterActions>
+                    <BeginStoryboard Storyboard="{StaticResource MouseOverAnimation}" />
+                </Trigger.EnterActions>
+                <Trigger.ExitActions>
+                    <BeginStoryboard Storyboard="{StaticResource MouseOutAnimation}" />
+                </Trigger.ExitActions>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Trigger.EnterActions>
+                    <BeginStoryboard Storyboard="{StaticResource MouseDownAnimation}" />
+                </Trigger.EnterActions>
+                <Trigger.ExitActions>
+                    <BeginStoryboard Storyboard="{StaticResource MouseUpAnimation}" />
+                </Trigger.ExitActions>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <!--<ControlTemplate x:Key="StandardButtonTemplate" TargetType="Button">
+        <Grid>
+            <Border BorderThickness="2"
+                    Background="LightGray"
+                    CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="8" Color="DarkGray"/>
+                </Border.Effect>
+                <StackPanel HorizontalAlignment="Center">
+                    <ContentPresenter Margin="4"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </ControlTemplate>
+    <ControlTemplate x:Key="Button.ControlTemplate.Normal" TargetType="Button">
+        <Grid>
+            <Grid.Resources>
+                <DropShadowEffect x:Key="Drop.Effect" ShadowDepth="8" Color="Gray"/>
+                <Style TargetType="Border" x:Key="Border.NormalStyle">
+                    <Setter Property="BorderBrush" Value="Black"/>
+                    <Setter Property="BorderThickness" Value="1"/>
+                    <Setter Property="Background" Value="LightGray"/>
+                    <Setter Property="CornerRadius" Value="5"/>
+                    <Setter Property="Opacity" Value="0"/>
+                    <Setter Property="Effect" Value="{StaticResource Drop.Effect}"/>
+                </Style>
+            </Grid.Resources>
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="Normal"/>
+                    <VisualState x:Name="MouseOver">
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="BorderOver"
+                                             Storyboard.TargetProperty="Opacity"
+                                             To="1"/>
+                        </Storyboard>
+                    </VisualState>
+                    <VisualState x:Name="Pressed">
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="BorderPressed"
+                                             Storyboard.TargetProperty="Opacity"
+                                             To="1"/>
+                        </Storyboard>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            <Border Name="BorderNormal" Style="{StaticResource Border.NormalStyle}" Opacity="1" Padding="0"/>
+            <Border Name="BorderOver" Style="{StaticResource Border.NormalStyle}" Background="LightBlue" Opacity="0" Padding="1"/>
+            <Border Name="BorderPressed" Style="{StaticResource Border.NormalStyle}" BorderThickness="2" Opacity="0" Padding="0"/>
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <ContentPresenter Margin="4"/>
+            </StackPanel>
+        </Grid>
+    </ControlTemplate>-->
+    <ControlTemplate x:Key="BlueDotToolTipTemplate" TargetType="ToolTip">
+        <Border BorderBrush="Moccasin"
+                BorderThickness="2"
+                Background="LightYellow"
+                CornerRadius="10" 
+                Margin="4"
+                Padding="4">
+            <StackPanel Orientation="Horizontal" Background="LightYellow">
+                <Ellipse Fill="Blue" Width="20" Height="20"/>
+                <ContentPresenter Margin="4"/>
+            </StackPanel>
+        </Border>
+    </ControlTemplate>
+    <ControlTemplate x:Key="StandardToolTipTemplate" TargetType="ToolTip">
+        <Border BorderBrush="Moccasin"
+                BorderThickness="2"
+                Background="LightYellow"
+                CornerRadius="2" 
+                Margin="4"
+                Padding="4">
+            <ContentPresenter Margin="4"/>
+        </Border>
+    </ControlTemplate>
+    <Style x:Key="{x:Static ToolBar.SeparatorStyleKey}" TargetType="{x:Type Separator}">
+        <!--<Setter Property="Background" 
+            Value="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"/>-->
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Margin" Value="4,0,4,0"/>
+        <Setter Property="Focusable" Value="false"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Separator}">
+                    <Border 
+                        BorderBrush="{TemplateBinding BorderBrush}" 
+                        BorderThickness="{TemplateBinding BorderThickness}" 
+                        Background="{TemplateBinding Background}" 
+                        Height="1" 
+                        SnapsToDevicePixels="true"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="Button">
+        <Setter Property="Template" Value="{StaticResource StandardButtonTemplate}"/>
+    </Style>
+    <Style x:Key="StandardMenu" TargetType="Menu">
+        <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.MenuColor}}"/>
+        <Style.Resources>
+            <Style TargetType="MenuItem">
+                <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}"/>
+                <Setter Property="FontFamily" Value="Verdana"/>
+                <Setter Property="FontSize" Value="12"/>
+                <!--<Setter Property="Foreground" Value="Blue"/>-->
+                <Style.Resources>
+                    <Style TargetType="Image">
+                        <Setter Property="Height" Value="16" />
+                        <Setter Property="Width" Value="16" />
+                        <Setter Property="SnapsToDevicePixels" Value="True"/>
+                    </Style>
+                </Style.Resources>
+            </Style>
+        </Style.Resources>
+    </Style>
+    <!--<Style x:Key="StandardMenuItem" TargetType="MenuItem">
+        <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}"/>
+        <Setter Property="FontFamily" Value="Verdana"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="Foreground" Value="Blue"/>
+        <Style.Resources>
+            <Style TargetType="Image">
+                <Setter Property="Height" Value="16" />
+                <Setter Property="Width" Value="16" />
+                <Setter Property="SnapsToDevicePixels" Value="True"/>
+            </Style>
+        </Style.Resources>
+    </Style>-->
+    <!--<Style TargetType="MenuItem">
+        <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}"/>
+        <Setter Property="FontFamily" Value="Verdana"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="Foreground" Value="Red"/>
+        <Style.Resources>
+            <Style TargetType="Image">
+                <Setter Property="Height" Value="16" />
+                <Setter Property="Width" Value="16" />
+                <Setter Property="SnapsToDevicePixels" Value="True"/>
+            </Style>
+        </Style.Resources>
+    </Style>-->
+    <Style x:Key="StandardMargin">
+        <Setter Property="Control.Margin" Value="4,2,4,2"/>
+    </Style>
+    <Style x:Key="StandardRedForeground" BasedOn="{StaticResource StandardMargin}">
+        <Setter Property="Control.Foreground" Value="Red"/>
+    </Style>
+    <Style x:Key="StandardButtonImage" TargetType="Image">
+        <Setter Property="Height" Value="16"/>
+        <Setter Property="Width" Value="16"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+    </Style>
+    <Style TargetType="ToolTip">
+        <Setter Property="Template" Value="{StaticResource StandardToolTipTemplate}"/>
+        <Setter Property="FontFamily" Value="Verdana"/>
+        <Setter Property="FontSize" Value="12"/>
+    </Style>
+    <Style x:Key="BlueDotToolTip" TargetType="ToolTip">
+        <Setter Property="Template" Value="{StaticResource BlueDotToolTipTemplate}"/>
+        <Setter Property="FontFamily" Value="Verdana"/>
+        <Setter Property="FontSize" Value="12"/>
+    </Style>
+</ResourceDictionary>

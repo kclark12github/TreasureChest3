@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="09807c5c-5cb8-44b3-b20f-055f3b0386f2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51468/TCService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TCService.disco" MetadataType="Disco" ID="dbcccefa-757e-40d4-b910-2235a90fecaa" SourceId="1" SourceUrl="http://localhost:51468/TCService.svc?disco" />
+    <MetadataFile FileName="TCService.xsd" MetadataType="Schema" ID="97e97a83-8d40-4b47-9604-0f71b0219058" SourceId="1" SourceUrl="http://localhost:51468/TCService.svc?xsd=xsd0" />
+    <MetadataFile FileName="TCService.wsdl" MetadataType="Wsdl" ID="18052d12-8497-4fdf-871f-f2faf0b40723" SourceId="1" SourceUrl="http://localhost:51468/TCService.svc?wsdl" />
+    <MetadataFile FileName="TCService1.xsd" MetadataType="Schema" ID="8d23e000-ef28-4dfa-a6da-b8f0442308d6" SourceId="1" SourceUrl="http://localhost:51468/TCService.svc?xsd=xsd2" />
+    <MetadataFile FileName="TCService2.xsd" MetadataType="Schema" ID="24e8945f-98d4-4ab6-a370-caaec6fc6e11" SourceId="1" SourceUrl="http://localhost:51468/TCService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

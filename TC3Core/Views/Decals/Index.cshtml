@@ -1,0 +1,30 @@
+﻿@model DecalsViewModel
+@{
+    ViewBag.PageTitle = "Database - Decals";
+    ViewBag.Title = "Decals";
+}
+<table>
+    @foreach (var item in Model.Decals)
+    {
+    <tr>
+        <td><a asp-action="Details" asp-route-id="@item.ID">@item.Type</a></td>
+        <td><a asp-action="Details" asp-route-id="@item.ID">@item.Scale</a></td>
+        <td><a asp-action="Details" asp-route-id="@item.ID">@item.Manufacturer</a></td>
+        <td><a asp-action="Details" asp-route-id="@item.ID">@item.Designation</a></td>
+        <td><a asp-action="Details" asp-route-id="@item.ID">@item.Name</a></td>
+        <td><a asp-action="Details" asp-route-id="@item.ID">@item.Reference</a></td>
+        <td><a asp-page="/Decals/Edit" asp-route-id="@item.ID">Edit</a></td>
+    </tr>
+    }
+</table>
+
+@*@foreach (var decal in Model.Decals)
+    {
+        @Html.Partial("_Summary", decal)
+    }*@
+
+<div><p><a class="btn btn-primary" asp-action="Create">Add</a></p></div>
+
+@section footer {
+    <div>©@DateTime.Now.Year</div>
+}

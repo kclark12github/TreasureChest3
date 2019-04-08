@@ -1,0 +1,47 @@
+﻿<Window x:Class="TreasureChest3.WPF.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TreasureChest3.WPF"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Window.Resources>
+        <XmlDataProvider x:Key="products" Source="/Resources/XML/Product.xml" XPath="Products/Product"/>
+        <XmlDataProvider x:Key="decals" Source="/Resources/XML/Decals.xml" XPath="Decals/Record"/>
+    </Window.Resources>
+    <Grid>
+        <!--<DataGrid x:Name="dgDecals1" DataContext="{Binding Source={StaticResource decals}}" ItemsSource="{Binding XPath=/Decals/Record}" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding XPath=ID}" Width="Auto"/>
+                <DataGridTextColumn Header="Scale" Binding="{Binding XPath=Scale}" Width="Auto"/>
+                <DataGridTextColumn Header="Manufacturer" Binding="{Binding XPath=Manufacturer}" Width="Auto"/>
+                <DataGridTextColumn Header="Designation" Binding="{Binding XPath=Designation}" Width="Auto"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding XPath=Name}" Width="Auto"/>
+                <DataGridTextColumn Header="Price" Binding="{Binding XPath=Price}" Width="Auto"/>
+                <DataGridTextColumn Header="Value" Binding="{Binding XPath=Value}" Width="Auto"/>
+                <DataGridTextColumn Header="DatePurchased" Binding="{Binding XPath=DatePurchased}" Width="Auto"/>
+                <DataGridCheckBoxColumn Header="WishList" Binding="{Binding XPath=WishList}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>-->
+        <DataGrid x:Name="dgDecals2" 
+                  AlternationCount="2" 
+                  AutoGenerateColumns="False" 
+                  AlternatingRowBackground="Snow">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding ID}" Width="Auto"/>
+                <DataGridTextColumn Header="Scale" Binding="{Binding Scale}" Width="Auto"/>
+                <DataGridTextColumn Header="Manufacturer" Binding="{Binding Manufacturer}" Width="Auto"/>
+                <DataGridTextColumn Header="Designation" Binding="{Binding Designation}" Width="Auto"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="Auto"/>
+                <DataGridTextColumn Header="Price" Binding="{Binding Price, StringFormat=C}" Width="Auto"/>
+                <DataGridTextColumn Header="Value" Binding="{Binding Value, StringFormat=C}" Width="Auto"/>
+                <DataGridTextColumn Header="DatePurchased" Binding="{Binding DatePurchased, StringFormat=d}" Width="Auto"/>
+                <DataGridCheckBoxColumn Header="WishList" Binding="{Binding WishList, Mode=OneWay}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <!--<ListBox ItemsSource="{Binding Source={StaticResource products}}" DisplayMemberPath="ProductName"/>-->
+        <!--<ListBox ItemsSource="{Binding Source={StaticResource decals}}" DisplayMemberPath="Name"/>-->
+    </Grid>
+</Window>

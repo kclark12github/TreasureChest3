@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="TreasureChest3.WPF.UserNavigation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TreasureChest3.WPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="32" d:DesignWidth="396" MaxHeight="30" MinHeight="30">
+    <UserControl.Resources>
+        <!-- If a Style were to be entered here, it would override the application-level Style -->
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/TC3Base.WPF;component/Resources/TC3Values.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/TC3Base.WPF;component/Resources/TC3Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+        <Button Name="btnLast" HorizontalAlignment="Center" VerticalAlignment="Center" Width="24" Height="24" Grid.Column="4">
+            <Image Source="/Resources/Icons/Navigation/Last.ico" Style="{StaticResource StandardButtonImage}"/>
+        </Button>
+        <Button Name="btnNext" HorizontalAlignment="Center" VerticalAlignment="Center" Width="24" Height="24" Grid.Column="3">
+            <Image Source="/Resources/Icons/Navigation/Next.ico" Style="{StaticResource StandardButtonImage}"/>
+        </Button>
+        <TextBlock x:Name="Text" Text="Caption" FontFamily="Verdana" Grid.Column="2" Foreground="White" Grid.RowSpan="2" Margin="4,0,4,0" />
+        <Button Name="btnFirst" HorizontalAlignment="Center" VerticalAlignment="Center" Width="24" Height="24">
+            <Image Source="/Resources/Icons/Navigation/First.ico" Style="{StaticResource StandardButtonImage}"/>
+        </Button>
+        <Button Name="btnPrev" HorizontalAlignment="Center" VerticalAlignment="Center" Width="24" Height="24" Grid.Column="1">
+            <Image Source="/Resources/Icons/Navigation/Prev.ico" Style="{StaticResource StandardButtonImage}"/>
+        </Button>
+
+    </Grid>
+</UserControl>

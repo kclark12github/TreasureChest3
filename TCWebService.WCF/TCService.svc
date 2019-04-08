@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="TCWebService.WCF.TCService" CodeBehind="TCService.svc.cs" %>
