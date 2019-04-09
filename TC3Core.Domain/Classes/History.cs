@@ -20,8 +20,10 @@ namespace TC3Core.Domain.Classes
         #endregion
 
         [ColumnDescription("Column changed.")]
+#if EF6
         [Index("IX_HistoryByRecord", 4, IsUnique = false)]
         [Index("IX_HistoryByDate", 4, IsUnique = false)]
+#endif
         [StringLength(32)]
         public string Column
         {
@@ -30,8 +32,10 @@ namespace TC3Core.Domain.Classes
         }
 
         [ColumnDescription("Date of this change.")]
+#if EF6
         [Index("IX_HistoryByRecord", 3, IsUnique = false)]
         [Index("IX_HistoryByDate", 1, IsUnique = false)]
+#endif
         [Display(Name = "Date Changed")]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
@@ -49,8 +53,10 @@ namespace TC3Core.Domain.Classes
         }
 
         [ColumnDescription("Record changed.")]
+#if EF6
         [Index("IX_HistoryByRecord", 2, IsUnique = false)]
         [Index("IX_HistoryByDate", 3, IsUnique = false)]
+#endif
         public Guid RecordID
         {
             get => mRecordID;
@@ -58,8 +64,10 @@ namespace TC3Core.Domain.Classes
         }
 
         [ColumnDescription("Table changed.")]
+#if EF6
         [Index("IX_HistoryByRecord", 1, IsUnique = false)]
         [Index("IX_HistoryByDate", 2, IsUnique = false)]
+#endif
         [Required]
         [StringLength(32)]
         public string TableName

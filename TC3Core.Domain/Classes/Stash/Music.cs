@@ -30,7 +30,9 @@ namespace TC3Core.Domain.Classes.Stash
 
         [ColumnDescription("Sort string.")]
         [StringLength(80)]
-        //[Index("IX_MusicByAlphaSort", 1, IsUnique = true)]
+#if EF6
+        [Index("IX_MusicByAlphaSort", 1, IsUnique = true)]
+#endif
         public string AlphaSort
         {
             get => mAlphaSort;
@@ -39,7 +41,9 @@ namespace TC3Core.Domain.Classes.Stash
 
         [ColumnDescription("Media/Format of this album (i.e. LP, CD, MP3, etc.).")]
         [StringLength(80)]
-        //[Index("IX_MusicByAlphaSort", 2, IsUnique = true)]
+#if EF6
+        [Index("IX_MusicByAlphaSort", 2, IsUnique = true)]
+#endif
         [SqlDefaultValue(DefaultValue = "'Unspecified'")]
         [MinLength(1)]
         public string MediaFormat

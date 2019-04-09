@@ -6,6 +6,7 @@ using TC3Core.Data;
 using TC3Core.Data.Services;
 using TC3Core.Data.Services.SQL;
 using TC3Core.Domain.Classes.Stash;
+using static TC3Core.Data.TCContext;
 
 namespace TreasureChest3
 {
@@ -98,7 +99,7 @@ namespace TreasureChest3
         static void Main(string[] args)
         {
             SimpleDecalDemo();
-            InsertDecalDemo();
+            //InsertDecalDemo();
 
             if (Debugger.IsAttached)
             {

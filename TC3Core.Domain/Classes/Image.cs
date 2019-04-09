@@ -99,7 +99,9 @@ namespace TC3Core.Domain.Classes
 
         [DataMember]
         [ColumnDescription("Table of the record related to this image.")]
+#if EF6
         [Index("IX_ImageByRecord", 1)]
+#endif
         [StringLength(32)]
         public string TableName
         {
@@ -109,7 +111,9 @@ namespace TC3Core.Domain.Classes
 
         [DataMember]
         [ColumnDescription("Record ID of the record related to this image.")]
+#if EF6
         [Index("IX_ImageByRecord", 2)]
+#endif
         public Guid? RecordID
         {
             get => mRecordID;

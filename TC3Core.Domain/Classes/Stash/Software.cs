@@ -28,7 +28,9 @@ namespace TC3Core.Domain.Classes.Stash
         [ColumnDescription("Sort string.")]
         [Required]
         [StringLength(132)]
-        //[Index("IX_SoftwareByAlphaSort", 1, IsUnique = true)]
+#if EF6
+        [Index("IX_SoftwareByAlphaSort", 1, IsUnique = true)]
+#endif
         public string AlphaSort
         {
             get => mAlphaSort;
