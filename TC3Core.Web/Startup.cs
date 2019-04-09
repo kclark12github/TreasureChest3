@@ -7,10 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Rewrite;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Migrations;
+using Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using TC3Core.Data;
+using TC3Core.Data.CustomMigrationOperations;
 using TC3Core.Services;
 
 namespace TC3Core
@@ -44,7 +47,12 @@ namespace TC3Core
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
             //services.AddSingleton<IRestaurantData, MemoryRestaurantData>();
-            services.AddDbContext<TCContext>();
+            services.AddDbContext<TCContext>(
+                options => options
+                    .UseSqlServer(Configuration.GetConnectionString("TC3CoreContext"))
+                        .ReplaceService<SqlServerMigrationsAnnotationProvider, ExtendedSqlServerMigrationsAnnotationProvider>()
+                        .ReplaceService<SqlServerMigrationsSqlGenerator, ExtendedSqlServerMigrationsSqlGenerator>()
+                );
             services.AddScoped<IBookData, SqlBookData>();
             services.AddScoped<IDecalData, SqlDecalData>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

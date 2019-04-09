@@ -137,6 +137,11 @@
     <Compile Include="CustomMigrationOperations\ExtendedSqlServerMigrationsAnnotationProvider.cs" />
     <Compile Include="CustomMigrationOperations\ExtendedSqlServerMigrationsSqlGenerator.cs" />
     <Compile Include="CustomMigrationOperations\Utilities.cs" />
+    <Compile Include="Migrations\20190409210410_Initial.cs" />
+    <Compile Include="Migrations\20190409210410_Initial.designer.cs">
+      <DependentUpon>20190409210410_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\TCContextModelSnapshot.cs" />
     <Compile Include="Services\Login\Login.cs" />
     <Compile Include="Services\Login\LoginEventArgs.cs" />
     <Compile Include="Services\SQL\IImageRepository.cs" />

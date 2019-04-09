@@ -966,9 +966,9 @@ namespace TC3Core.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseLoggerFactory(tcLoggerFactory);
-            optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["TC3CoreContext"].ConnectionString)
-                .ReplaceService<SqlServerMigrationsAnnotationProvider, ExtendedSqlServerMigrationsAnnotationProvider>()
-                .ReplaceService<SqlServerMigrationsSqlGenerator, ExtendedSqlServerMigrationsSqlGenerator>();
+            //optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["TC3CoreContext"].ConnectionString)
+            //    .ReplaceService<SqlServerMigrationsAnnotationProvider, ExtendedSqlServerMigrationsAnnotationProvider>()
+            //    .ReplaceService<SqlServerMigrationsSqlGenerator, ExtendedSqlServerMigrationsSqlGenerator>();
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
