@@ -7,6 +7,7 @@ namespace TC3Core.Data.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            #region Create Tables
             migrationBuilder.CreateTable(
                 name: "AircraftDesignations",
                 columns: table => new
@@ -790,3507 +791,3509 @@ namespace TC3Core.Data.Migrations
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Restrict);
                 });
-
+            #endregion
+            #region Seeding
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("e1973f98-9ca5-4098-aafb-9dce903d7007"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-7E", "Vought", "Corsair II - U.S.N. Version", null, null, 7.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "E" });
+                values: new object[] { new Guid("5d989666-6d5f-4f2d-a952-961dd94952b0"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-7E", "Vought", "Corsair II - U.S.N. Version", null, null, 7.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "E" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("32250876-0bd0-4b20-813e-00b4d3df2833"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-3", "McDonnell", "Demon", null, null, 3.0, null, new DateTime(1956, 3, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("f387a227-8afb-45d4-8245-0f0a69d75029"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-3", "McDonnell", "Demon", null, null, 3.0, null, new DateTime(1956, 3, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("2f0aeb92-cc1d-42fb-9b27-2e8de7529035"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-2", "McDonnell", "Banshee", null, null, 2.0, null, new DateTime(1949, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("ad37acc1-3838-42ea-a26f-da1cd7d62c76"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-2", "McDonnell", "Banshee", null, null, 2.0, null, new DateTime(1949, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("1b10ecc0-e168-46ea-8455-576f5a55f616"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F2A", "Brewster (A)", "Buffalo", null, null, 2.0, null, new DateTime(1939, 4, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
+                values: new object[] { new Guid("e4b68a03-cda5-475c-b94c-ab274d9eb5aa"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F2A", "Brewster (A)", "Buffalo", null, null, 2.0, null, new DateTime(1939, 4, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("99b1f325-7ee1-4111-bd9a-42cedbe112f4"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-1E", "North American", "Fury (See AF-1E, FJ-3, FJ-4 Fury)", null, null, 1.0, null, new DateTime(1953, 7, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "E" });
+                values: new object[] { new Guid("55f8d8cb-3d75-49c5-bddd-1127ba49ae80"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-1E", "North American", "Fury (See AF-1E, FJ-3, FJ-4 Fury)", null, null, 1.0, null, new DateTime(1953, 7, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "E" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("8ed6f923-ff62-4e7b-83f4-da781e4a002d"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "E-3", "Boeing", "AWACS", null, null, 3.0, null, new DateTime(1976, 2, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("f8c382db-4b88-457d-ac4b-061b333942e7"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "E-3", "Boeing", "AWACS", null, null, 3.0, null, new DateTime(1976, 2, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("54ffc35c-4681-4b15-94c3-4f85e73ce48a"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "E-2", "Grumman", "Hawkeye", null, null, 2.0, null, new DateTime(1961, 4, 19, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("8918da02-3271-46c9-93e7-b1f7ddcd81d9"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "E-2", "Grumman", "Hawkeye", null, null, 2.0, null, new DateTime(1961, 4, 19, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("e9de492f-3392-41ab-ae77-06d69ab54666"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "E-1", "Grumman", "Tracer (See S-2 Tracker, C-1A Trader)", null, null, 1.0, null, new DateTime(1954, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("a894f0fe-aac3-48e7-95ea-de6454785acf"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "E-1", "Grumman", "Tracer (See S-2 Tracker, C-1A Trader)", null, null, 1.0, null, new DateTime(1954, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("90ed0562-6892-4efe-a46e-462f1fc6fd65"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-141", "Lockheed", "Starlifter", null, null, 141.0, null, new DateTime(1964, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("ee98d503-995c-4585-82cd-ec229676d2ab"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-141", "Lockheed", "Starlifter", null, null, 141.0, null, new DateTime(1964, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("1c6ce944-1b08-4714-a136-6fa831de01bd"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-135", "Boeing", "Stratolifter", null, null, 135.0, null, new DateTime(1950, 6, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("fed9a805-1624-4d7c-a80f-19c9ccf0ad53"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-135", "Boeing", "Stratolifter", null, null, 135.0, null, new DateTime(1950, 6, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("a1629701-1456-4eb1-9e05-11921551555c"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-133", "Douglas", "Cargomaster", null, null, 133.0, null, new DateTime(1957, 8, 29, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("8e264a63-7edc-4da2-9d1e-41a2d55dcc43"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-133", "Douglas", "Cargomaster", null, null, 133.0, null, new DateTime(1957, 8, 29, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("7454012d-c7d2-4f5f-8263-617746d59b19"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "WC-130", "Lockheed", "Hercules - Weather Version", null, null, 130.0, null, new DateTime(1955, 4, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("0b175215-92ba-461a-b738-d1c7c8588d6f"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "WC-130", "Lockheed", "Hercules - Weather Version", null, null, 130.0, null, new DateTime(1955, 4, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("0fa66b78-f0b7-492a-9828-433d18750d8b"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "KC-130", "Lockheed", "Hercules - Tanker Version", null, null, 130.0, null, new DateTime(1955, 4, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("a3a6c2fb-d6ee-447a-ab7b-e8bc91520d01"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "KC-130", "Lockheed", "Hercules - Tanker Version", null, null, 130.0, null, new DateTime(1955, 4, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("926fa6a3-e8d5-4e45-b5f7-74abd186f372"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-130", "Lockheed", "Hercules", null, null, 130.0, null, new DateTime(1955, 4, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("297b020e-4ab5-4434-9887-0c485d0a2212"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-130", "Lockheed", "Hercules", null, null, 130.0, null, new DateTime(1955, 4, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("ba780086-6ec9-43ce-904c-e01cfc386043"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-119", "Fairchild", "Boxcar (See AC-119 Gunship)", null, null, 119.0, null, new DateTime(1949, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("3bbac584-0fa1-4f2a-a7a5-2eba9ff02434"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-119", "Fairchild", "Boxcar (See AC-119 Gunship)", null, null, 119.0, null, new DateTime(1949, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("3467031d-abdc-4c6d-afe7-ae5c4fb45321"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-74", "Douglas", "Globemaster", null, null, 74.0, null, new DateTime(1950, 5, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("7f923d80-066d-4dbc-84bb-b5ae8733178f"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-74", "Douglas", "Globemaster", null, null, 74.0, null, new DateTime(1950, 5, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("2a616c02-07fe-4600-ac71-6ca0145c2141"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-47", "Douglas", "Dakota", null, null, 47.0, null, new DateTime(1938, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("310f4e9c-40d1-4721-a58f-3cfc5cf0f75b"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-47", "Douglas", "Dakota", null, null, 47.0, null, new DateTime(1938, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("e4321243-6daf-4341-972e-87b3d15c3425"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-5A", "Lockheed", "Galaxy", null, null, 5.0, null, new DateTime(1969, 12, 17, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
+                values: new object[] { new Guid("8fbff267-b150-4664-bf53-e053752da7ed"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-5A", "Lockheed", "Galaxy", null, null, 5.0, null, new DateTime(1969, 12, 17, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("38093629-8b8f-45a4-913b-18682f6845cd"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F4B", "Boeing (B)", "", null, null, 4.0, null, new DateTime(1928, 6, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".B" });
+                values: new object[] { new Guid("af169758-bf28-4979-8dda-6eea3b8d9f3b"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F4B", "Boeing (B)", "", null, null, 4.0, null, new DateTime(1928, 6, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".B" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("4c02078d-6992-4f3c-9fb1-7063f00f4eff"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-2A", "Grumman", "Greyhound (See E-2 Hawkeye)", null, null, 2.0, null, new DateTime(1961, 4, 19, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
+                values: new object[] { new Guid("95fa0757-19e2-4324-a849-b4fb70d96747"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-2A", "Grumman", "Greyhound (See E-2 Hawkeye)", null, null, 2.0, null, new DateTime(1961, 4, 19, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("96743192-b1bf-4d63-922a-3f71f5321bfe"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F4D", "Douglas (D)", "Skyray", null, null, 4.0, null, new DateTime(1956, 4, 16, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".D" });
+                values: new object[] { new Guid("680e08a4-236c-4d5d-b0e4-5ff7c0f03b77"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F4D", "Douglas (D)", "Skyray", null, null, 4.0, null, new DateTime(1956, 4, 16, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".D" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("fc092460-b0ac-4253-a661-4a3a8e635517"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F4U", "Vought (U)", "Corsair", null, null, 4.0, null, new DateTime(1942, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".U" });
+                values: new object[] { new Guid("bccc5146-a863-4a4f-8c1f-730c4d8ddf88"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F4U", "Vought (U)", "Corsair", null, null, 4.0, null, new DateTime(1942, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".U" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("4c74df5f-95d7-4091-b5bb-7e0aacf9119e"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F8F", "Grumman (F)", "Bearcat", null, null, 8.0, null, new DateTime(1944, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".F" });
+                values: new object[] { new Guid("21c6ff54-3803-42a6-b158-f01b12b950bb"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F8F", "Grumman (F)", "Bearcat", null, null, 8.0, null, new DateTime(1944, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".F" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("793a0b4d-de7d-4772-a3f6-e5d09d99fafb"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F7U", "Vought (U)", "Cutlass", null, null, 7.0, null, new DateTime(1954, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".U" });
+                values: new object[] { new Guid("645ce43f-9b05-4b01-b035-15c3269807d9"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F7U", "Vought (U)", "Cutlass", null, null, 7.0, null, new DateTime(1954, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".U" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("2e25a7e7-46af-45e2-9d49-4893452eba35"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F7F", "Grumman (F)", "Tigercat", null, null, 7.0, null, new DateTime(1944, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".F" });
+                values: new object[] { new Guid("94eef546-e28e-4acc-acc2-de4bd24c9817"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F7F", "Grumman (F)", "Tigercat", null, null, 7.0, null, new DateTime(1944, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".F" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("e2f1c9fc-59f7-4d7f-a474-553fdfb5e351"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F4D", "Douglas (D)", "Skyray", null, null, 4.0, null, new DateTime(1956, 4, 16, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".F" });
+                values: new object[] { new Guid("e0122cf9-fab7-4176-b7e8-bf3237dd065d"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F4D", "Douglas (D)", "Skyray", null, null, 4.0, null, new DateTime(1956, 4, 16, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".F" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("eb0e58f8-b28a-4ffc-9697-a7819e2a1685"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F6F", "Grumman (F)", "Hellcat", null, null, 6.0, null, new DateTime(1942, 10, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".F" });
+                values: new object[] { new Guid("e0b41fe5-b672-48d0-b6d1-4866d432706a"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F6F", "Grumman (F)", "Hellcat", null, null, 6.0, null, new DateTime(1942, 10, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".F" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("d8a6d08f-f3f1-41be-99e0-7ac3f434a320"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-5", "Martin", "Marlin", null, null, 5.0, null, new DateTime(1951, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("949f827a-bc94-4cbd-994f-a2c5682f416c"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-5", "Martin", "Marlin", null, null, 5.0, null, new DateTime(1951, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("f7e6131f-34a1-4393-bac2-cd8de973c4db"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-5", "Northrop", "Tiger II", null, null, 5.0, null, new DateTime(1959, 4, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("34cae762-f033-49a5-a972-61f827ae314d"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-5", "Northrop", "Tiger II", null, null, 5.0, null, new DateTime(1959, 4, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("c3e842c7-2df0-40a1-9ad5-0440510b45d2"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4S", "McDonnell Douglas", "Phantom II - Improved USN \"N\" Version", null, null, 4.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "S" });
+                values: new object[] { new Guid("efa888f7-9c31-44e0-9b2a-f86647ecb431"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4S", "McDonnell Douglas", "Phantom II - Improved USN \"N\" Version", null, null, 4.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "S" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("47208d33-0a26-4e78-90a7-51e805ed47af"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4N", "McDonnell Douglas", "Phantom II - Improved USN \"J\" Version", null, null, 4.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "N" });
+                values: new object[] { new Guid("42108603-15ec-4639-b920-10a02c0dd222"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4N", "McDonnell Douglas", "Phantom II - Improved USN \"J\" Version", null, null, 4.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "N" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("5d4f2875-3c63-4f68-923c-27270eab1c66"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4K", "McDonnell Douglas", "Phantom II - British Version FG.1", null, null, 4.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "K" });
+                values: new object[] { new Guid("7fbbf85a-414f-479d-9299-6c9f54328e13"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4K", "McDonnell Douglas", "Phantom II - British Version FG.1", null, null, 4.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "K" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("68eed05c-9e95-409d-a9f1-bb5393a45e46"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4J", "McDonnell Douglas", "Phantom II - Improved USN \"B\" Version", null, null, 4.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "J" });
+                values: new object[] { new Guid("aa85f602-462c-4ad2-8c10-12fc5cdccd64"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4J", "McDonnell Douglas", "Phantom II - Improved USN \"B\" Version", null, null, 4.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "J" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("e5e29252-771f-446b-a468-785fe0ecb7c7"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4G", "McDonnell Douglas", "Phantom II - Radar Suppression Version", null, null, 4.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "G" });
+                values: new object[] { new Guid("fcfba7f1-a83c-4a7d-86fd-df414d11e4df"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4G", "McDonnell Douglas", "Phantom II - Radar Suppression Version", null, null, 4.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "G" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("262e93d3-f468-423d-8dd6-26ea674727ca"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4E", "McDonnell Douglas", "Phantom II - Improved USAF \"D\" Version", null, null, 4.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "E" });
+                values: new object[] { new Guid("3d83b684-c838-4236-b66a-b396fd734a3d"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4E", "McDonnell Douglas", "Phantom II - Improved USAF \"D\" Version", null, null, 4.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "E" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("a829bbf1-f090-4c15-9254-a8b9a3b9b589"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4D", "McDonnell Douglas", "Phantom II - Improved USAF \"C\" Version", null, null, 4.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "D" });
+                values: new object[] { new Guid("bf31bd9b-0a73-42bf-8142-7137232cda36"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4D", "McDonnell Douglas", "Phantom II - Improved USAF \"C\" Version", null, null, 4.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "D" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("2ae5dc96-8c26-4b63-945a-020cd15064e1"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4C", "McDonnell Douglas", "Phantom II - First USAF Production Model", null, null, 4.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "C" });
+                values: new object[] { new Guid("a5cb6e05-c916-41b0-8ef8-53c7616d925a"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4C", "McDonnell Douglas", "Phantom II - First USAF Production Model", null, null, 4.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "C" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("8b65e125-5c36-4cf0-bfb0-6e416bb99f10"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4B", "McDonnell Douglas", "Phantom II - First USN Production Model", null, null, 4.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "B" });
+                values: new object[] { new Guid("7a60f764-9c05-4937-84a0-2226442b68b4"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4B", "McDonnell Douglas", "Phantom II - First USN Production Model", null, null, 4.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "B" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("d749b08d-af4d-4842-b352-0ff994367cc5"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4", "McDonnell Douglas", "Phantom II", null, null, 4.0, null, new DateTime(1960, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
+                values: new object[] { new Guid("b99e412b-593b-4f96-9eff-7c12cfe70410"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-4", "McDonnell Douglas", "Phantom II", null, null, 4.0, null, new DateTime(1960, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("5849e166-642b-448f-b4eb-05a6d6f61b5f"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F4F", "Grumman (F)", "Wildcat (British Martlet)", null, null, 4.0, null, new DateTime(1940, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".F" });
+                values: new object[] { new Guid("742b5773-3884-45f1-9266-b83ec871e057"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F4F", "Grumman (F)", "Wildcat (British Martlet)", null, null, 4.0, null, new DateTime(1940, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".F" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("78bd8197-ec0c-4f32-a6bf-2355f671d4d7"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-8", "Vought", "Crusader", null, null, 8.0, null, new DateTime(1957, 3, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("dab26cff-11fa-4ad8-bd1a-623510daf25a"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-8", "Vought", "Crusader", null, null, 8.0, null, new DateTime(1957, 3, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("a971151e-40de-4b06-87c5-8f25551f2705"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-1A", "Grumman", "Trader (See S-2 Tracker, E-1 Tracer)", null, null, 1.0, null, new DateTime(1954, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
+                values: new object[] { new Guid("bd64ba7a-1f5e-4415-bd05-cd39acf89a37"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-1A", "Grumman", "Trader (See S-2 Tracker, E-1 Tracer)", null, null, 1.0, null, new DateTime(1954, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("d7fa7740-8d0c-42a4-bab0-0d3cf96c15c6"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-58", "Convair", "Hustler", null, null, 58.0, null, new DateTime(1959, 9, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("f4d70c54-8364-44ab-b95d-191eaa7f2cde"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-58", "Convair", "Hustler", null, null, 58.0, null, new DateTime(1959, 9, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("fe7b7dbc-c656-477f-872a-df77b10b7a56"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "SBD", "Douglas (D)", "Dauntless (See A-24)", null, null, null, null, new DateTime(1940, 6, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "SBD" });
+                values: new object[] { new Guid("7aaddcf3-acd5-4919-90f6-62a9aa5fd7b5"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "SBD", "Douglas (D)", "Dauntless (See A-24)", null, null, null, null, new DateTime(1940, 6, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "SBD" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("7c213471-6321-482f-bb36-658cc9fa6c25"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "SB2C", "Curtiss (C)", "Helldiver", null, null, null, null, new DateTime(1942, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "SB2C" });
+                values: new object[] { new Guid("4bcb1c04-8bda-4a01-bc3d-9a5e12d0ce34"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "SB2C", "Curtiss (C)", "Helldiver", null, null, null, null, new DateTime(1942, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "SB2C" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("10cacbd0-05f1-4eb0-9043-9ccadd720555"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-30", "Martin", "Baltimore", null, null, 30.0, null, new DateTime(1941, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("0f41da4a-5981-4221-ae05-28165d6d783f"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-30", "Martin", "Baltimore", null, null, 30.0, null, new DateTime(1941, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("df8deea3-6910-4218-8f4c-055059354715"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-26", "Douglas", "Invader", null, null, 26.0, null, new DateTime(1943, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("6cac2ec4-36f3-491b-8ca2-d6917dbc1962"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-26", "Douglas", "Invader", null, null, 26.0, null, new DateTime(1943, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("edfd18b5-ed38-49ab-8f22-72da49625fcd"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-25", "Curtiss", "Helldiver (Marines)", null, null, 25.0, null, new DateTime(1942, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("d1322d48-7ca9-48d8-a047-4f6d1241b284"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-25", "Curtiss", "Helldiver (Marines)", null, null, 25.0, null, new DateTime(1942, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("ae4236f9-21da-498a-ba1c-ae37a1208b55"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-24", "Douglas", "Dauntless (Land Based - Army)", null, null, 24.0, null, new DateTime(1940, 6, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("7613863f-4a30-4b67-9db2-8e0ec9778b6b"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-24", "Douglas", "Dauntless (Land Based - Army)", null, null, 24.0, null, new DateTime(1940, 6, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("01a8b4f2-8e57-4950-b80a-277aaf744471"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-20", "Douglas", "Boston (See P-70)", null, null, 20.0, null, new DateTime(1940, 1, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("d5b95506-78ce-4d2d-b1b5-1ede5cfdffbe"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-20", "Douglas", "Boston (See P-70)", null, null, 20.0, null, new DateTime(1940, 1, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("bb7771f1-d736-4b4a-b128-9a843b93fb0a"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-11", "Lockheed", "Blackbird (CIA)", null, null, 11.0, null, new DateTime(1964, 12, 22, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("119e8024-05ad-4d5c-b29d-86d6c7db96c7"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-11", "Lockheed", "Blackbird (CIA)", null, null, 11.0, null, new DateTime(1964, 12, 22, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("dcc301e1-c860-4791-b361-0e759ba94874"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-10", "Fairchild/Republic", "Thunderbolt II (Tank Killer)", null, null, 10.0, null, new DateTime(1974, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("83cf9d80-93c3-4810-b9c2-df70a48984e9"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-10", "Fairchild/Republic", "Thunderbolt II (Tank Killer)", null, null, 10.0, null, new DateTime(1974, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("d78ca31e-b478-4f55-a7d2-006f80d66613"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-7D", "Vought", "Corsair II - U.S.A.F. Version", null, null, 7.0, null, new DateTime(1966, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "D" });
+                values: new object[] { new Guid("57e38e43-3e27-46f2-9541-9ce2a86e6d68"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-7D", "Vought", "Corsair II - U.S.A.F. Version", null, null, 7.0, null, new DateTime(1966, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "D" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("40146b21-6c52-4872-aa5a-e82db58b6d07"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-6 (A2F)", "Grumman", "Intruder (See KA-6, EA-6B Prowler)", null, null, 6.0, null, new DateTime(1963, 4, 19, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("f23ff226-b790-47d1-9bf5-a44758cf505c"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-6 (A2F)", "Grumman", "Intruder (See KA-6, EA-6B Prowler)", null, null, 6.0, null, new DateTime(1963, 4, 19, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("a80d0186-e0cf-4b77-b3b2-4994d72ad8df"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "KA-6D", "Grumman", "Intruder - Tanker Version", null, null, 6.0, null, new DateTime(1963, 4, 19, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "D" });
+                values: new object[] { new Guid("a30292f2-c50a-4e3c-ad21-c231dbc61a71"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "KA-6D", "Grumman", "Intruder - Tanker Version", null, null, 6.0, null, new DateTime(1963, 4, 19, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "D" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("909db767-e9d2-4fae-b0ee-0d5ba8dca170"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "EA-6B", "Grumman", "Prowler - Electronic Warfare (Intruder)", null, null, 6.0, null, new DateTime(1968, 5, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "B" });
+                values: new object[] { new Guid("ba887819-e238-4958-b0ef-b5d81348ffd4"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "EA-6B", "Grumman", "Prowler - Electronic Warfare (Intruder)", null, null, 6.0, null, new DateTime(1968, 5, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "B" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("144f198f-9973-4980-87e7-37a4cd0291da"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-5 (A3J)", "Rockwell", "Vigilante", null, null, 5.0, null, new DateTime(1960, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("3af0a804-22fa-46ce-8993-6f5576d346b5"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-5 (A3J)", "Rockwell", "Vigilante", null, null, 5.0, null, new DateTime(1960, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("51fb7aa3-81f2-4bef-aeb9-a203297f4eed"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-4 (A4D)", "McDonnell Douglas", "Skyhawk", "The Scooter, Heinemann's Hot Rod, Bantam Bomber, Tinker Toy, Mighty Mite", null, 4.0, null, new DateTime(1956, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("7a39385f-5217-40d9-8485-83425095960b"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-4 (A4D)", "McDonnell Douglas", "Skyhawk", "The Scooter, Heinemann's Hot Rod, Bantam Bomber, Tinker Toy, Mighty Mite", null, 4.0, null, new DateTime(1956, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("859ea92f-11ff-4e11-ad67-ce6fc11bf3b2"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-3 (A3D, B-66)", "Douglas", "Skywarrior (See B-66 Destroyer)", "All Three Dead, Whale, Whistling Shitcan", null, 3.0, null, new DateTime(1954, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("64d0b886-3113-4ff2-b699-7d64d60e56f8"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-3 (A3D, B-66)", "Douglas", "Skywarrior (See B-66 Destroyer)", "All Three Dead, Whale, Whistling Shitcan", null, 3.0, null, new DateTime(1954, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("a73b544f-0ab7-431d-8934-50506c18c7e7"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-1 (AD)", "Douglas", "Skyraider", "Sandy, SPAD, Able Dog", null, 1.0, null, new DateTime(1946, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "" });
+                values: new object[] { new Guid("b1b64fc0-16df-4d4c-8307-77653db156e9"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A-1 (AD)", "Douglas", "Skyraider", "Sandy, SPAD, Able Dog", null, 1.0, null, new DateTime(1946, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("cb1e56bf-238e-4243-91bf-d0271f0be056"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "AC-047", "Douglas", "\"Puff the Magic Dragon\" Gunship (See C-47)", null, null, 47.0, null, new DateTime(1938, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("8a81a612-a8c8-4812-a70f-83879b045207"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "AC-047", "Douglas", "\"Puff the Magic Dragon\" Gunship (See C-47)", null, null, 47.0, null, new DateTime(1938, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("358d05a9-efe1-4be5-b8e8-7d752028f128"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-66", "Douglas", "Destroyer (See A-3 Skywarrior)", null, null, 66.0, null, new DateTime(1954, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("a87a73b6-ac00-4dbe-8ab6-82bcb8004f7b"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-66", "Douglas", "Destroyer (See A-3 Skywarrior)", null, null, 66.0, null, new DateTime(1954, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("e8db91bf-d014-43cb-9813-9ddad998e654"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "AC-119", "Fairchild", "Gunship (See C-119 Boxcar)", null, null, 119.0, null, new DateTime(1949, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("01059865-187f-4dd3-8fc3-c0388dc995bd"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "AC-119", "Fairchild", "Gunship (See C-119 Boxcar)", null, null, 119.0, null, new DateTime(1949, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("b00cff33-1099-47b8-bfe4-48627db99eea"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "AF-1E", "North American", "Fury (See F-1E, FJ-3, FJ-4 Fury)", null, null, 1.0, null, new DateTime(1953, 7, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "E" });
+                values: new object[] { new Guid("1b7f119c-313d-4129-9060-693915df1c2d"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "AF-1E", "North American", "Fury (See F-1E, FJ-3, FJ-4 Fury)", null, null, 1.0, null, new DateTime(1953, 7, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "E" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("a6d6e11b-2d22-453e-9297-f74a61fe46fb"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "RB-57", "Martin/General Dynamics", "Canberra - Reconnaissance Version", null, null, 57.0, null, new DateTime(1953, 7, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("2727c03f-aa19-4b36-b86f-180cb52b7bd0"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "RB-57", "Martin/General Dynamics", "Canberra - Reconnaissance Version", null, null, 57.0, null, new DateTime(1953, 7, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("7165d696-3797-4744-acb7-6de561c58d04"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-57", "Martin/General Dynamics", "Canberra (See RB-57 Canberra)", null, null, 57.0, null, new DateTime(1953, 7, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("e6be7ba6-1709-427c-bd58-e79a451be67f"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-57", "Martin/General Dynamics", "Canberra (See RB-57 Canberra)", null, null, 57.0, null, new DateTime(1953, 7, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("49941d25-9b98-4ca0-9508-8bd3f160ad38"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-52", "Boeing", "Stratofortress", null, null, 52.0, null, new DateTime(1955, 6, 29, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("462a4ce8-7648-41d6-9ad9-088fac4f98e7"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-52", "Boeing", "Stratofortress", null, null, 52.0, null, new DateTime(1955, 6, 29, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("755f0667-ae6a-40ac-8a7e-1ca6ad3f6524"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-50", "Boeing", "Superfortress", null, null, 50.0, null, new DateTime(1947, 6, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("5219ef4b-ef9a-45c6-a105-1b8c19a53840"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-50", "Boeing", "Superfortress", null, null, 50.0, null, new DateTime(1947, 6, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("2f856643-9f31-4119-bcd3-3bd42b65a36b"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-47", "Boeing", "Stratojet", null, null, 47.0, null, new DateTime(1950, 6, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("e206d45d-905d-4325-b21e-d6d6ff3e830f"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-47", "Boeing", "Stratojet", null, null, 47.0, null, new DateTime(1950, 6, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("f9e5ecc5-a3db-4e28-9d7e-93a68192eaaa"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-36", "Convair", "Peacemaker", null, null, 36.0, null, new DateTime(1947, 8, 28, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("e9a62f85-5132-4f46-a0a7-33bdf58e0ee5"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-36", "Convair", "Peacemaker", null, null, 36.0, null, new DateTime(1947, 8, 28, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("3ee3a6c6-4408-46d0-8f78-32bee423f4f1"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-29", "Boeing", "Super Fortress", null, null, 29.0, null, new DateTime(1943, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("fee0fabe-7f9c-409b-881e-97fb33b3b514"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-29", "Boeing", "Super Fortress", null, null, 29.0, null, new DateTime(1943, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("cfea3510-cf63-4b84-b9ee-053d95dead28"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-26", "Martin", "Marauder", null, null, 26.0, null, new DateTime(1941, 2, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("3219eaf7-8c72-49f3-95b9-118fd12e4290"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-26", "Martin", "Marauder", null, null, 26.0, null, new DateTime(1941, 2, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("e84e45b6-6c0a-4f0a-8f8e-b2d35782c595"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-26", "Douglas", "Invader (after B-26 Marauder was retired)", null, null, 26.0, null, new DateTime(1943, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("483bccce-5740-46a7-ac6e-dbc098f712df"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-26", "Douglas", "Invader (after B-26 Marauder was retired)", null, null, 26.0, null, new DateTime(1943, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("fdf570b2-259c-4467-a80e-97055e3ba718"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-25", "North American", "Mitchell (See F-10)", null, null, 25.0, null, new DateTime(1940, 8, 19, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("bf55d9bd-9cae-46c0-9ed2-d3dfbf685560"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-25", "North American", "Mitchell (See F-10)", null, null, 25.0, null, new DateTime(1940, 8, 19, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("17a92d62-bc48-43b4-b5b7-dbd9922dee28"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-24", "Consolidated", "Liberator", null, null, 24.0, null, new DateTime(1941, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("3e61caff-2c1e-4cd5-b863-f583d133e799"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-24", "Consolidated", "Liberator", null, null, 24.0, null, new DateTime(1941, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("84320923-498e-4fe6-85ba-80b58694124c"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-18", "Douglas", "Bolo/Digby-1", null, null, 18.0, null, new DateTime(1937, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("648295f9-9a26-4aef-ba10-459b2911d961"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-18", "Douglas", "Bolo/Digby-1", null, null, 18.0, null, new DateTime(1937, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("3c9fa083-24b2-4110-a92e-1f6c0892a249"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-17", "Boeing", "Fortress", null, null, 17.0, null, new DateTime(1939, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("0b00dcc8-2812-4056-bb36-203527c3eab4"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-17", "Boeing", "Fortress", null, null, 17.0, null, new DateTime(1939, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("a0910a9d-b51c-4e4e-a19d-aeed7a204c84"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-14", "Martin", null, null, null, 14.0, null, new DateTime(1932, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("5b7bd808-d0b1-4743-bb5d-d6526146e9dd"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-14", "Martin", null, null, null, 14.0, null, new DateTime(1932, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("4851f598-8b2c-4602-8ec7-56314a7d82ac"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-12", "Martin", null, null, null, 12.0, null, new DateTime(1932, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("e3923da7-429f-4a92-bd61-2cbaa1adfc2e"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-12", "Martin", null, null, null, 12.0, null, new DateTime(1932, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("99bdd6e1-5970-4837-9d0b-3f6931edae43"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-10", "Martin", null, null, null, 10.0, null, new DateTime(1932, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("304ecbba-056a-4db3-8a8f-e1d91882e81d"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-10", "Martin", null, null, null, 10.0, null, new DateTime(1932, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("6abea0d7-8395-4e19-8b96-ea1fdc1b8871"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-1", "Rockwell", null, null, null, 1.0, null, new DateTime(1979, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("8b9b9093-77dd-4be0-b8ab-aa1ea1d73067"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B-1", "Rockwell", null, null, null, 1.0, null, new DateTime(1979, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("5840535c-2960-4d1f-817a-3ae0b3f8bc27"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "AC-130H", "Lockheed", "Hercules (Night Gunship)", null, null, 130.0, null, new DateTime(1955, 4, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "H" });
+                values: new object[] { new Guid("c1bb050d-9382-4f96-9e5d-e81f9ab28a08"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "AC-130H", "Lockheed", "Hercules (Night Gunship)", null, null, 130.0, null, new DateTime(1955, 4, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "H" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("2d71c95c-a7fb-4776-90bb-0039197bbae8"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F9F-1", "Grumman (F)", "Panther", null, null, 9.0, null, new DateTime(1948, 11, 24, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".F-1" });
+                values: new object[] { new Guid("7cafa6d5-a247-4454-962e-782595627809"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F9F-1", "Grumman (F)", "Panther", null, null, 9.0, null, new DateTime(1948, 11, 24, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".F-1" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("2269f1f3-d9d3-4df0-af45-417c69cef074"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-97", "Boeing", "Stratofreighter/Stratotanker", null, null, 97.0, null, new DateTime(1949, 1, 28, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("e13b3d84-a9eb-4a4a-8f12-fd2954e87328"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C-97", "Boeing", "Stratofreighter/Stratotanker", null, null, 97.0, null, new DateTime(1949, 1, 28, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("72efdc6c-85d2-48fa-82d6-492fe0c39f6f"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-10", "North American", "Mitchell (Reconnaissance) (See B-25)", null, null, 10.0, null, new DateTime(1940, 8, 19, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("117769de-cc5b-4b23-a8ae-f0dfeb64a0e7"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-10", "North American", "Mitchell (Reconnaissance) (See B-25)", null, null, 10.0, null, new DateTime(1940, 8, 19, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("c554599c-2384-4ce9-a5d3-afaa9c127d3e"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "FB-111A", "General Dynamics", "Aardvark - Fighter Bomber Version", null, null, 111.0, null, new DateTime(1967, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "FB-A" });
+                values: new object[] { new Guid("1c602783-0f36-4616-9472-72a6ef8a4fc6"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "FB-111A", "General Dynamics", "Aardvark - Fighter Bomber Version", null, null, 111.0, null, new DateTime(1967, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "FB-A" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("e5847325-96d5-436c-96b7-c76bc2f2743b"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-111F", "General Dynamics", "Aardvark - Improved Intakes", null, null, 111.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "F" });
+                values: new object[] { new Guid("be8fc313-881a-466a-8c58-cd50959414f8"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-111F", "General Dynamics", "Aardvark - Improved Intakes", null, null, 111.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "F" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("bed6582a-8912-4eb3-85b5-c05cd0324692"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-111E", "General Dynamics", "Aardvark - \"Triple Plow II\" Intakes", null, null, 111.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "E" });
+                values: new object[] { new Guid("07322162-976c-4137-bcd7-f143cead6776"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-111E", "General Dynamics", "Aardvark - \"Triple Plow II\" Intakes", null, null, 111.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "E" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("e4c3a07f-1f84-4247-8b5d-e4549dbc522b"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-111D", "General Dynamics", "Aardvark - Improved Intakes", null, null, 111.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "D" });
+                values: new object[] { new Guid("2fd45cb3-1b0a-49f6-b3a6-32d2d5ff5b6d"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-111D", "General Dynamics", "Aardvark - Improved Intakes", null, null, 111.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "D" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("21519d71-8834-495b-9ee2-9580f05e5cd4"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-111C", "General Dynamics", "Aardvark - \"A\" Version w/longer wing", null, null, 111.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "C" });
+                values: new object[] { new Guid("f8d53497-9e7d-48a3-b606-ab84d786934c"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-111C", "General Dynamics", "Aardvark - \"A\" Version w/longer wing", null, null, 111.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "C" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("6fa7ce43-cdd9-4544-8dda-9b39552a4c51"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-111B", "General Dynamics", "U.S. Navy TFX Prototype (Cancelled)", null, null, 111.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "B" });
+                values: new object[] { new Guid("b5a8119c-ca92-4f30-96ff-daf7df0d6f75"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-111B", "General Dynamics", "U.S. Navy TFX Prototype (Cancelled)", null, null, 111.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "B" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("cf6c3cc4-b135-4887-8521-3f3b2b12ad3c"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "FJ-3", "North American", "Fury (See F-1E, AF-1E, FJ-4 Fury)", null, null, null, null, new DateTime(1953, 7, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "J-3" });
+                values: new object[] { new Guid("3c07b993-bb31-4785-abbd-fd3fc92cb4ed"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "FJ-3", "North American", "Fury (See F-1E, AF-1E, FJ-4 Fury)", null, null, null, null, new DateTime(1953, 7, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "J-3" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("5dae260c-2013-4be0-82bd-7e2d9168ad13"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-111A", "General Dynamics", "Aardvark", null, null, 111.0, null, new DateTime(1967, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
+                values: new object[] { new Guid("29ad8869-4216-4dde-90a7-b5c1221edc94"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-111A", "General Dynamics", "Aardvark", null, null, 111.0, null, new DateTime(1967, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("65b9722b-3acd-49da-8db1-93c35cf49e48"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-105", "Republic", "Thunderchief", null, null, 105.0, null, new DateTime(1955, 10, 22, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("79a42442-4ad8-42b7-aa40-5ca59f8c5b89"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-105", "Republic", "Thunderchief", null, null, 105.0, null, new DateTime(1955, 10, 22, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("f657de1b-72ea-4f02-9ae1-4158dc081bf3"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-104", "Lockheed", "Starfighter", null, null, 104.0, null, new DateTime(1956, 2, 17, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("26b907a0-93fe-44f6-95df-8dbac4534fe2"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-104", "Lockheed", "Starfighter", null, null, 104.0, null, new DateTime(1956, 2, 17, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("bcea8025-0d99-418f-90bb-71a3c4e86d61"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-102", "Convair", "Delta Dagger", null, null, 102.0, null, new DateTime(1955, 11, 8, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("7848c049-902f-4f6b-9a52-c05411ca895a"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-102", "Convair", "Delta Dagger", null, null, 102.0, null, new DateTime(1955, 11, 8, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("d4e1dda3-22a3-4cd8-a8a8-01a338e946d9"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "RF-101", "McDonnell", "Voodoo  - Reconnaissance Version", null, null, 101.0, null, new DateTime(1957, 5, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("338cdf3c-4f91-4613-8f1a-055cc22d4a3d"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "RF-101", "McDonnell", "Voodoo  - Reconnaissance Version", null, null, 101.0, null, new DateTime(1957, 5, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("9135111c-5d96-47b2-b7aa-004d51537b51"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-101", "McDonnell", "Voodoo", null, null, 101.0, null, new DateTime(1957, 5, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("8a30896d-9c48-40a0-9095-b6ee42d285bb"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-101", "McDonnell", "Voodoo", null, null, 101.0, null, new DateTime(1957, 5, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("525a2d2c-963d-4a42-9225-102423381736"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-100", "North American", "Super Sabre", null, null, 100.0, null, new DateTime(1953, 10, 29, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("a3589ae0-3aa6-4b9d-b786-d2aac7977d99"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-100", "North American", "Super Sabre", null, null, 100.0, null, new DateTime(1953, 10, 29, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("e25e5b97-bf6e-4292-af8c-938b381e5696"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-106", "Convair", "Delta Dart", null, null, 106.0, null, new DateTime(1959, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("b0c9235c-eaac-41fd-90c0-9852f4941e9f"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-106", "Convair", "Delta Dart", null, null, 106.0, null, new DateTime(1959, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("1202d89b-fc81-4067-aaea-f6ab3cdbd685"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "FJ-4", "North American", "Fury (See AF-1E, F-1E, FJ-3 Fury)", null, null, null, null, new DateTime(1954, 10, 28, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "J-4" });
+                values: new object[] { new Guid("7602453f-6b57-4562-89d3-cedaf0b6e02e"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "FJ-4", "North American", "Fury (See AF-1E, F-1E, FJ-3 Fury)", null, null, null, null, new DateTime(1954, 10, 28, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "J-4" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("d691cc6d-7b68-4587-b95a-8598f90f9d5a"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "OV-1", "Grumman", "Mohawk", null, null, 1.0, null, new DateTime(1961, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("c15ba406-aa27-4f25-90d2-ddf0c944de48"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "OV-1", "Grumman", "Mohawk", null, null, 1.0, null, new DateTime(1961, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("f4421587-2a12-4f8f-9c8b-2091e2944e54"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "OV-10", "Rockwell", "Bronco", null, null, 10.0, null, new DateTime(1967, 8, 6, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("faade243-4fd3-4503-909e-5881414e3248"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "OV-10", "Rockwell", "Bronco", null, null, 10.0, null, new DateTime(1967, 8, 6, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("b3085e70-b33a-4425-855e-79176e925603"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "AD2", "Douglas", "Skyshark", null, null, null, null, new DateTime(1950, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("3b520a48-7b5c-42b8-aa27-cbbf6222a615"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "AD2", "Douglas", "Skyshark", null, null, null, null, new DateTime(1950, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("a4ac1258-42ed-461c-827e-35bcecbe7c9a"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "TBM", "Eastern Motors/GM (M)", "Avenger", null, null, null, null, new DateTime(1942, 1, 30, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "M" });
+                values: new object[] { new Guid("d9d47988-4547-489a-9f5f-6b0ae5a26dd5"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "TBM", "Eastern Motors/GM (M)", "Avenger", null, null, null, null, new DateTime(1942, 1, 30, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "M" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("c35130ff-46e6-47bd-b891-3567c875be95"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "TBF", "Grumman (F)", "Avenger", null, null, null, null, new DateTime(1942, 1, 30, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "F" });
+                values: new object[] { new Guid("65974e6e-b1e1-4924-ba41-4647a7645803"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "TBF", "Grumman (F)", "Avenger", null, null, null, null, new DateTime(1942, 1, 30, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "F" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("cacc4fbc-857f-4ad5-b16b-11c7504fba26"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "TBD-1", "Douglas (D)", "Devastator", null, null, null, null, new DateTime(1937, 6, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "D-1" });
+                values: new object[] { new Guid("373f0828-2af8-4081-a8da-25a39158401e"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "TBD-1", "Douglas (D)", "Devastator", null, null, null, null, new DateTime(1937, 6, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "D-1" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("d3c46ce0-7042-45d1-83c8-ea3355091301"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "KC-135", "Boeing", "Stratotanker", null, null, 135.0, null, new DateTime(1950, 6, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("faf5f162-179d-43cc-99af-1d7de4411278"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "KC-135", "Boeing", "Stratotanker", null, null, 135.0, null, new DateTime(1950, 6, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("d1dd283a-b7c8-4a9f-9806-82b97011446d"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "S-3", "Lockheed", "Viking", null, null, 3.0, null, new DateTime(1973, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("675ada84-806c-4b94-bb03-204842ac3ae9"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "S-3", "Lockheed", "Viking", null, null, 3.0, null, new DateTime(1973, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("b35605ab-d8f9-4f5b-b8ff-8274e4c3fae8"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-3", "Lockheed", "Orion", null, null, 3.0, null, new DateTime(1961, 4, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("14c2dd16-e741-4082-ac0c-a3c7fb01b631"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-3", "Lockheed", "Orion", null, null, 3.0, null, new DateTime(1961, 4, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("721680bf-85a1-43f2-b7a3-56f64efdadc9"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "S-2", "Grumman", "Tracker (See E-1 Tracer, C-1A Trader)", null, null, 2.0, null, new DateTime(1954, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("d7ceb934-36fd-4213-9486-2dc5eecb6116"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "S-2", "Grumman", "Tracker (See E-1 Tracer, C-1A Trader)", null, null, 2.0, null, new DateTime(1954, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("52553413-38e7-4248-8a0d-ad62cb24acfb"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-2", "Lockheed", "Neptune", null, null, 2.0, null, new DateTime(1947, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("ac0e48b4-e797-47c4-bfb2-7f021c210e35"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-2", "Lockheed", "Neptune", null, null, 2.0, null, new DateTime(1947, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("02ce12fa-cd7d-48c5-a41b-c5d29ff5fcff"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "SR-71", "Lockheed", "Blackbird (USAF)", null, null, 71.0, null, new DateTime(1964, 12, 22, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("e4d52b4b-c50c-44f4-a2aa-6f1dafa5e85f"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "SR-71", "Lockheed", "Blackbird (USAF)", null, null, 71.0, null, new DateTime(1964, 12, 22, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("59899260-1505-4c2d-82d9-b0054e180dbb"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "U-2", "Lockheed", null, null, null, 2.0, null, new DateTime(1956, 4, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("d3c3dd6c-1f88-4fa2-852e-a8572a797365"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "U-2", "Lockheed", null, null, null, 2.0, null, new DateTime(1956, 4, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("ae94a83d-e047-4f1a-ba7b-121222134bf1"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "PBY-5", "Consolidated", "Catalina", null, null, null, null, new DateTime(1936, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Y-5" });
+                values: new object[] { new Guid("96bd3667-709c-46bf-a67c-c22ac0625432"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "PBY-5", "Consolidated", "Catalina", null, null, null, null, new DateTime(1936, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Y-5" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("11b11a81-78e1-4b66-afb2-ef2d7fc31031"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "PBY-1", "Consolidated", "Catalina", null, null, null, null, new DateTime(1936, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Y-1" });
+                values: new object[] { new Guid("04828ef3-5fb6-41ac-8a57-23251637e139"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "PBY-1", "Consolidated", "Catalina", null, null, null, null, new DateTime(1936, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Y-1" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("52e6d526-ed77-4b60-b641-9fcfcd39aee3"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "PBM", "Martin", "Mariner", null, null, null, null, new DateTime(1940, 9, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "M" });
+                values: new object[] { new Guid("28d45c7a-e18b-4cfc-a2f2-c41bfeca78fa"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "PBM", "Martin", "Mariner", null, null, null, null, new DateTime(1940, 9, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "M" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("abbaacdb-d57b-42b1-9401-0adcf32a4dca"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "PB4Y-2", "Consolidated", "Privateer", null, null, 4.0, null, new DateTime(1944, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Y-2" });
+                values: new object[] { new Guid("34e8cdce-fb74-48a5-a6e1-fda50524a4f7"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "PB4Y-2", "Consolidated", "Privateer", null, null, 4.0, null, new DateTime(1944, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Y-2" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("c58c992d-5c4b-4a54-a8fa-cea2d5903bb5"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F9F-6", "Grumman (F)", "Cougar", null, null, 9.0, null, new DateTime(1951, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".F-6" });
+                values: new object[] { new Guid("21ec2935-a829-4142-86e7-d879f4a4ec1f"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F9F-6", "Grumman (F)", "Cougar", null, null, 9.0, null, new DateTime(1951, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", ".F-6" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("6a9aaac4-0cfb-4950-9b51-ce9c4dbc5b72"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-89", "Northrop", "Scorpion", null, null, 89.0, null, new DateTime(1948, 8, 16, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("5520743f-d439-4b8d-92b5-e53fe0c67f67"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-89", "Northrop", "Scorpion", null, null, 89.0, null, new DateTime(1948, 8, 16, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("1e1847dd-aff6-4b69-bbf5-090fe21244d5"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-94", "Lockheed", "Starfire (See P-80, F-80 Shooting Star)", null, null, 94.0, null, new DateTime(1944, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("5207294f-494e-4271-9c06-eb6730af47d5"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-94", "Lockheed", "Starfire (See P-80, F-80 Shooting Star)", null, null, 94.0, null, new DateTime(1944, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("15570335-d63a-48bb-b680-1192a6c30fb7"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-86", "North American", "Sabre", null, null, 86.0, null, new DateTime(1948, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("5f39b61f-e69b-428b-bc82-830918bc679e"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-86", "North American", "Sabre", null, null, 86.0, null, new DateTime(1948, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("08445f14-d205-4c8f-b571-7944ffefc445"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-16XL", "General Dynamics", "Cranked Arrow Falcon", null, null, 16.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "XL" });
+                values: new object[] { new Guid("cc4b35b8-347d-40c8-9502-92c199271128"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-16XL", "General Dynamics", "Cranked Arrow Falcon", null, null, 16.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "XL" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("8390ec2a-4ee3-4ddb-82b1-e06656657b13"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-16N", "General Dynamics", "Falcon - Top Gun Aggressor Version", null, null, 16.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "N" });
+                values: new object[] { new Guid("2c27aaa1-3ede-48d2-b583-8b5606dde5da"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-16N", "General Dynamics", "Falcon - Top Gun Aggressor Version", null, null, 16.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "N" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("31918235-5ce4-4b44-ab7b-f0b8d50b2159"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-16D", "General Dynamics", "Falcon - Improved \"B\" Trainer", null, null, 16.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "D" });
+                values: new object[] { new Guid("dd680362-b91c-4029-97d1-a18c47f41604"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-16D", "General Dynamics", "Falcon - Improved \"B\" Trainer", null, null, 16.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "D" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("80d6b116-39e8-4ce5-b7be-488540cce2cc"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-16C", "General Dynamics", "Falcon - w/LANTIRN Night Nav/Targeting", null, null, 16.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "C" });
+                values: new object[] { new Guid("99a8eb82-88af-4e13-88af-5adc89c1e483"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-16C", "General Dynamics", "Falcon - w/LANTIRN Night Nav/Targeting", null, null, 16.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "C" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("858739a8-f8cf-456b-8527-893d95df8020"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-16B", "General Dynamics", "Falcon - Two Seat Trainer", null, null, 16.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "B" });
+                values: new object[] { new Guid("7ebffc5d-f362-4bfc-8929-1c9820b32e0b"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-16B", "General Dynamics", "Falcon - Two Seat Trainer", null, null, 16.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "B" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("581db248-1de9-4f0d-a83a-67db27af7354"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-16A", "General Dynamics", "Fighting Falcon", null, null, 16.0, null, new DateTime(1978, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
+                values: new object[] { new Guid("7dc639cf-a2ee-4e75-9408-1345858aa470"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-16A", "General Dynamics", "Fighting Falcon", null, null, 16.0, null, new DateTime(1978, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("975f8dd3-31dc-4286-94b5-12429c303530"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F/A-18A", "Northrop/McDonnell Douglas", "Hornet", null, null, 18.0, null, new DateTime(1980, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
+                values: new object[] { new Guid("fe7586ec-36aa-4e19-b18f-d180b4a7e0f1"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F/A-18A", "Northrop/McDonnell Douglas", "Hornet", null, null, 18.0, null, new DateTime(1980, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("7e4cd9dd-0993-4ae0-baa2-a14c249dd6c3"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-15J", "McDonnell Douglas", "Eagle - Japanese Self Defense Force", null, null, 15.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "J" });
+                values: new object[] { new Guid("79f4fee6-ef8e-4e8d-89ad-49ca14aea8dc"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-15J", "McDonnell Douglas", "Eagle - Japanese Self Defense Force", null, null, 15.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "J" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("0e2e203d-0988-42b8-9642-691bb66c5739"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-15D", "McDonnell Douglas", "Eagle - Two Seat Trainer", null, null, 15.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "D" });
+                values: new object[] { new Guid("b0828f7d-9878-412f-942b-b07e54456eae"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-15D", "McDonnell Douglas", "Eagle - Two Seat Trainer", null, null, 15.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "D" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("79ade3c9-102c-4237-a3e5-343acae1064e"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-15C", "McDonnell Douglas", "Eagle - Advanced Air Superiority Fighter", null, null, 15.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "C" });
+                values: new object[] { new Guid("1e6b92d3-409f-4e98-a9a7-f9f5550d8ebf"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-15C", "McDonnell Douglas", "Eagle - Advanced Air Superiority Fighter", null, null, 15.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "C" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("05ba89b1-bbaa-4971-b248-7c4845114725"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-15A", "McDonnell Douglas", "Eagle", null, null, 15.0, null, new DateTime(1974, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
+                values: new object[] { new Guid("6d067ea5-fb76-42e5-b083-a09c752c723a"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-15A", "McDonnell Douglas", "Eagle", null, null, 15.0, null, new DateTime(1974, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("a5ca0e7c-724d-4d19-a252-935a01b9bd88"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-14", "Grumman", "Tomcat", null, null, 14.0, null, new DateTime(1972, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("e1a60548-f1d1-4f4d-a491-1ac15585546f"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-14", "Grumman", "Tomcat", null, null, 14.0, null, new DateTime(1972, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("91271156-efb3-42b0-ad14-7f4a25b5c3d0"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-12", "Boeing", "", null, null, 12.0, null, new DateTime(1928, 6, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("cfc704bb-4835-45c4-ab08-e0ca5fe4a56d"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-12", "Boeing", "", null, null, 12.0, null, new DateTime(1928, 6, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("f29f5cc8-eb0c-44f9-a672-a4046cc9b33c"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-11", "Grumman", "Tiger", null, null, 11.0, null, new DateTime(1957, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("2ed61799-7752-44fe-a9d2-d3a365dd2e2e"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-11", "Grumman", "Tiger", null, null, 11.0, null, new DateTime(1957, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("117f65ad-13a8-47f9-85d9-5cd5645d7be8"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-15E", "McDonnell Douglas", "Strike Eagle", null, null, 15.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "E" });
+                values: new object[] { new Guid("91ccc724-7819-49e6-8e4f-de0f9e74970b"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-15E", "McDonnell Douglas", "Strike Eagle", null, null, 15.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "E" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("aaed9652-d07d-4f48-b282-737309b8eea2"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F/A-18C", "Northrop/McDonnell Douglas", "Hornet - Improved \"A\" Version", null, null, 18.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "C" });
+                values: new object[] { new Guid("2e41c4c4-2932-4470-b4b2-95067fc10865"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F/A-18C", "Northrop/McDonnell Douglas", "Hornet - Improved \"A\" Version", null, null, 18.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "C" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("b0ad056a-f036-47ef-b45c-cd2bbe336efe"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "TF-18A", "McDonnell Douglas", "Hornet - U.S. Navy Two Seat Trainer", null, null, 18.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
+                values: new object[] { new Guid("dce700c5-4ea0-4923-a50b-8e33660cbaef"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "TF-18A", "McDonnell Douglas", "Hornet - U.S. Navy Two Seat Trainer", null, null, 18.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "A" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("41d0d516-7c9b-495e-92de-b369268b7d63"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "RF-18D", "Northrop/McDonnell Douglas", "Hornet - Two Seat Reconnaissance Version", null, null, 18.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "D" });
+                values: new object[] { new Guid("13879796-b6cd-4e9d-bf85-baa7a2255ae4"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "RF-18D", "Northrop/McDonnell Douglas", "Hornet - Two Seat Reconnaissance Version", null, null, 18.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "D" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("93956171-c567-4d0a-927b-2ada333fbb8a"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-84", "Republic", "Thunderjet", null, null, 84.0, null, new DateTime(1947, 5, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("ce5ae201-30ac-4360-a913-8e7c45f37b9a"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-84", "Republic", "Thunderjet", null, null, 84.0, null, new DateTime(1947, 5, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("7a9bba50-bd3b-4868-9723-9ede3c9f0252"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "RF-84F", "Republic", "Thunderflash - Reconnaissance Version", null, null, 84.0, null, new DateTime(1947, 5, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "F" });
+                values: new object[] { new Guid("379d3194-b178-4ef9-a545-c76a36b24bb5"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "RF-84F", "Republic", "Thunderflash - Reconnaissance Version", null, null, 84.0, null, new DateTime(1947, 5, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "F" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("b6c6c263-67e8-43e7-9ff3-f4ac87575001"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-84F", "Republic", "Thunderstreak", null, null, 84.0, null, new DateTime(1947, 5, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "F" });
+                values: new object[] { new Guid("0e019f48-b688-4b14-a9af-18d334e1542e"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-84F", "Republic", "Thunderstreak", null, null, 84.0, null, new DateTime(1947, 5, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "F" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("11c75af5-c9e8-4fe5-a4bd-76e6bd0ca236"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-82", "North American", "Twin Mustang (See F-82)", null, null, 82.0, null, new DateTime(1945, 4, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("a7c676e6-1a4c-46a0-b71b-c14efe905aa1"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-82", "North American", "Twin Mustang (See F-82)", null, null, 82.0, null, new DateTime(1945, 4, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("4a101323-36f0-4976-8e85-a431387fecbe"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-82", "North American", "Twin Mustang (See P-82)", null, null, 82.0, null, new DateTime(1945, 4, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("79a7ddd0-1f88-4158-a44d-77d7774830d8"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F-82", "North American", "Twin Mustang (See P-82)", null, null, 82.0, null, new DateTime(1945, 4, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("bf294335-57f5-430d-b86d-5282671407bd"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-80", "Lockheed", "Shooting Star (See F-80, F-94 Starfire)", null, null, 80.0, null, new DateTime(1944, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("0cd94e1e-f8a8-4da2-8e2a-0dce664524b6"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-80", "Lockheed", "Shooting Star (See F-80, F-94 Starfire)", null, null, 80.0, null, new DateTime(1944, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("92a6c420-335b-46ce-a939-525951987cec"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F/A-18D", "Northrop/McDonnell Douglas", "Hornet - Two Seat Night Attack Version", null, null, 18.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "D" });
+                values: new object[] { new Guid("b5ca6f63-7148-4b4a-a635-eb0c3b220a00"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "F/A-18D", "Northrop/McDonnell Douglas", "Hornet - Two Seat Night Attack Version", null, null, 18.0, null, new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "D" });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("aea4c18b-4aa3-4286-9a95-0dd766ece33b"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-61", "Northrop", "Black Widow", null, null, 61.0, null, new DateTime(1944, 5, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("ca6411fe-7999-4e01-ac18-0e25ff0d1bc9"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-61", "Northrop", "Black Widow", null, null, 61.0, null, new DateTime(1944, 5, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("84caebf0-687c-484a-bea8-e2d27dad7243"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-70", "Douglas", "Havoc (Army Night Fighter) (See A-20)", null, null, 70.0, null, new DateTime(1940, 1, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("2133d405-0dee-4a9f-8943-e1226745f422"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-70", "Douglas", "Havoc (Army Night Fighter) (See A-20)", null, null, 70.0, null, new DateTime(1940, 1, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("a63e9b26-e393-49e1-a4c0-c7b4704fe24a"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-51", "North American", "Mustang", null, null, 51.0, null, new DateTime(1942, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("97446793-d59b-49da-a0a3-ffdeac127be1"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-51", "North American", "Mustang", null, null, 51.0, null, new DateTime(1942, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("8310bacf-695f-4084-8ccd-594bcd2cece1"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-47", "Republic", "Thunderbolt", null, null, 47.0, null, new DateTime(1942, 3, 18, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("165a31a9-c01e-4e4f-bc6e-de2dfbdee3c8"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-47", "Republic", "Thunderbolt", null, null, 47.0, null, new DateTime(1942, 3, 18, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("f90ddf5d-9294-4238-9f3d-1e242d8a738c"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-40", "Curtiss", "Hawk (Warhawk, Tomahawk, etc)", null, null, 40.0, null, new DateTime(1940, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("a8722c80-b649-4304-a9ba-f795e2ca4d6e"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-40", "Curtiss", "Hawk (Warhawk, Tomahawk, etc)", null, null, 40.0, null, new DateTime(1940, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("c0e16841-f2fa-457c-9a36-5fbe53bd4728"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-39", "Bell", "Airacobra", null, null, 39.0, null, new DateTime(1939, 8, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("f949dfc2-78de-44ea-b335-799e7840f3ac"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-39", "Bell", "Airacobra", null, null, 39.0, null, new DateTime(1939, 8, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("c7e635a6-65ff-4c4b-ad25-98c5fb20f94f"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-38", "Lockheed", "Lightning", null, null, 38.0, null, new DateTime(1941, 6, 8, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("f472bae3-3cf7-4c46-a06a-26117d11b785"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-38", "Lockheed", "Lightning", null, null, 38.0, null, new DateTime(1941, 6, 8, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("5d8f376e-6a1c-4140-ad31-ec56953623ee"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-26", "Boeing", null, null, null, 26.0, null, new DateTime(1934, 1, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("0dd4f77d-89e8-4495-a2ec-5c5d2d19b52a"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-26", "Boeing", null, null, null, 26.0, null, new DateTime(1934, 1, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "AircraftDesignations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Designation", "Manufacturer", "Name", "Nicknames", "Notes", "Number", "OID", "ServiceDate", "Type", "Version" },
-                values: new object[] { new Guid("49504425-b990-47ed-9b57-2f0882d43d28"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-59", "Bell", "Airacomet", null, null, 59.0, null, new DateTime(1944, 8, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
+                values: new object[] { new Guid("051b94f0-b5ec-48ef-8a3b-4685e2c5d153"), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "P-59", "Bell", "Airacomet", null, null, 59.0, null, new DateTime(1944, 8, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null });
 
             migrationBuilder.InsertData(
                 table: "BlueAngelsHistory",
                 columns: new[] { "ID", "AircraftType", "DateCreated", "DateModified", "DecalSets", "Decals", "Kits", "Notes", "OID", "ServiceDates" },
-                values: new object[] { new Guid("79fb3202-fb73-4089-9b86-eea7d3ca75d5"), "F/A-18A Northrop Hornet", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "72-560", null, "Hasegawa HA-812", null, null, "1987-" });
+                values: new object[] { new Guid("2a10a532-2fe4-4647-99e0-d18e706486a2"), "F/A-18A Northrop Hornet", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "72-560", null, "Hasegawa HA-812", null, null, "1987-" });
 
             migrationBuilder.InsertData(
                 table: "BlueAngelsHistory",
                 columns: new[] { "ID", "AircraftType", "DateCreated", "DateModified", "DecalSets", "Decals", "Kits", "Notes", "OID", "ServiceDates" },
-                values: new object[] { new Guid("c8b89c30-2033-495a-aaa8-436d45b2e75e"), "A-4F McDonnell Douglas Skyhawk", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "72-138", null, "Fujimi FU-G19", null, null, "1974-86" });
+                values: new object[] { new Guid("85bbf156-ca22-4cae-8734-34ddd2223ccd"), "A-4F McDonnell Douglas Skyhawk", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "72-138", null, "Fujimi FU-G19", null, null, "1974-86" });
 
             migrationBuilder.InsertData(
                 table: "BlueAngelsHistory",
                 columns: new[] { "ID", "AircraftType", "DateCreated", "DateModified", "DecalSets", "Decals", "Kits", "Notes", "OID", "ServiceDates" },
-                values: new object[] { new Guid("7fb5bed3-c5c2-4cf2-855b-e0da24ba9415"), "F-4J McDonnell Douglas Phantom II", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "N/A", null, "Hasegawa HA-SP51", null, null, "1969-73" });
+                values: new object[] { new Guid("9e6feba6-c233-4a5f-a050-0ca5caad22d9"), "F-4J McDonnell Douglas Phantom II", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "N/A", null, "Hasegawa HA-SP51", null, null, "1969-73" });
 
             migrationBuilder.InsertData(
                 table: "BlueAngelsHistory",
                 columns: new[] { "ID", "AircraftType", "DateCreated", "DateModified", "DecalSets", "Decals", "Kits", "Notes", "OID", "ServiceDates" },
-                values: new object[] { new Guid("7861ee9b-604b-4240-808b-0f8b470f3592"), "F11F-1 Grumman Tiger", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "N/A", null, "Hasegawa HA-D16", null, null, "1957-61" });
+                values: new object[] { new Guid("8c8d771c-ae38-49fc-80c6-9da8c2785879"), "F11F-1 Grumman Tiger", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "N/A", null, "Hasegawa HA-D16", null, null, "1957-61" });
 
             migrationBuilder.InsertData(
                 table: "BlueAngelsHistory",
                 columns: new[] { "ID", "AircraftType", "DateCreated", "DateModified", "DecalSets", "Decals", "Kits", "Notes", "OID", "ServiceDates" },
-                values: new object[] { new Guid("6b8a862e-38d8-4e76-a48e-f1a2e2d01077"), "F9F-5 Grumman Panther", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "N/A", null, "matchbox PK-124", null, null, "1952-54" });
+                values: new object[] { new Guid("a8e1f8c1-138c-4bed-89c1-563298d96978"), "F9F-5 Grumman Panther", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "N/A", null, "matchbox PK-124", null, null, "1952-54" });
 
             migrationBuilder.InsertData(
                 table: "BlueAngelsHistory",
                 columns: new[] { "ID", "AircraftType", "DateCreated", "DateModified", "DecalSets", "Decals", "Kits", "Notes", "OID", "ServiceDates" },
-                values: new object[] { new Guid("e51d8b50-dcfe-482e-98e4-e9cf08b89134"), "F9F-8 Grumman Cougar", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "N/A", null, "Hasegawa HA-D12", null, null, "1955-57" });
+                values: new object[] { new Guid("0742dd70-5506-4817-bcd5-7eb59cbeddfe"), "F9F-8 Grumman Cougar", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "N/A", null, "Hasegawa HA-D12", null, null, "1955-57" });
 
             migrationBuilder.InsertData(
                 table: "BlueAngelsHistory",
                 columns: new[] { "ID", "AircraftType", "DateCreated", "DateModified", "DecalSets", "Decals", "Kits", "Notes", "OID", "ServiceDates" },
-                values: new object[] { new Guid("b9d3f7e6-8283-4220-a47d-2b727253b568"), "F9F-2 Grumman Panther", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "N/A", null, "Hasegawa HA-D11", null, null, "1949-50" });
+                values: new object[] { new Guid("704e90ac-d944-4bdf-a15c-0e0562e849a7"), "F9F-2 Grumman Panther", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "N/A", null, "Hasegawa HA-D11", null, null, "1949-50" });
 
             migrationBuilder.InsertData(
                 table: "BlueAngelsHistory",
                 columns: new[] { "ID", "AircraftType", "DateCreated", "DateModified", "DecalSets", "Decals", "Kits", "Notes", "OID", "ServiceDates" },
-                values: new object[] { new Guid("7cbb14ca-6fe5-4f21-be4b-dc19702ccfef"), "F6F-5 Grumman Hellcat", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "72-217", null, null, null, null, "1946" });
+                values: new object[] { new Guid("8ffa6bd3-2074-41cd-9584-bb03723f5d36"), "F6F-5 Grumman Hellcat", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "72-217", null, null, null, null, "1946" });
 
             migrationBuilder.InsertData(
                 table: "BlueAngelsHistory",
                 columns: new[] { "ID", "AircraftType", "DateCreated", "DateModified", "DecalSets", "Decals", "Kits", "Notes", "OID", "ServiceDates" },
-                values: new object[] { new Guid("162de733-6fcc-443c-a42e-2d304636d4cc"), "F7U-1 Vought Cutlass (Solo Only)", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "N/A", null, "Testers", null, null, "1952" });
+                values: new object[] { new Guid("f0f74d48-e5df-422a-bd84-0cd0bec61dd0"), "F7U-1 Vought Cutlass (Solo Only)", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "N/A", null, "Testers", null, null, "1952" });
 
             migrationBuilder.InsertData(
                 table: "BlueAngelsHistory",
                 columns: new[] { "ID", "AircraftType", "DateCreated", "DateModified", "DecalSets", "Decals", "Kits", "Notes", "OID", "ServiceDates" },
-                values: new object[] { new Guid("530562db-8a36-48bb-b62b-5f3f98f246eb"), "F8F-1 Grumman Bearcat", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "72-642", null, "Monogram (Germany) MG6789", null, null, "1946-49" });
+                values: new object[] { new Guid("1352372d-bfb5-4553-b8f6-14cf4509a35b"), "F8F-1 Grumman Bearcat", new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "72-642", null, "Monogram (Germany) MG6789", null, null, "1946-49" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("416a34b3-7abf-4278-9665-7161459608c2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "PC Games Box #3", null, "PC Games Box #3 [Closet]", "Closet" });
+                values: new object[] { new Guid("9666f3f1-53ff-4bea-9558-b0f92879b881"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "PC Games Box #3", null, "PC Games Box #3 [Closet]", "Closet" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a6b87c1a-7b38-4d90-9f9d-64d365a43b7e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "PC Games Box #2", null, "PC Games Box #2 [Closet]", "Closet" });
+                values: new object[] { new Guid("8dbaa486-510f-46a2-ba35-09364a8dbdd6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "PC Games Box #2", null, "PC Games Box #2 [Closet]", "Closet" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c971f3e0-354b-4ad8-8d30-4b88d0d7a34a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "PC Games Box #1", null, "PC Games Box #1 [Closet]", "Closet" });
+                values: new object[] { new Guid("0d0410c9-a2ff-4fa3-9e89-6ac7fc4189e1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "PC Games Box #1", null, "PC Games Box #1 [Closet]", "Closet" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("373d0c06-db6a-41bd-808f-55ecd2d15cec"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "PB201111.4", null, "PB201111.4 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("449123f4-ec23-4e1e-8483-30922ac01cd0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "PB201111.4", null, "PB201111.4 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c5b618fb-0364-460c-b79f-3949dd5ac7ef"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "PB201110.3", null, "PB201110.3 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("d8d61289-81b2-47fb-afa8-b91c1019218a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "PB201110.3", null, "PB201110.3 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a01f7cfc-6edc-4abf-b9f5-e3b4273f1484"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "PB201110.2", null, "PB201110.2 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("296a913c-c030-4b7c-8348-a12fa15b74fb"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "PB201110.2", null, "PB201110.2 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5c59946b-20bb-4638-aa9a-773fe0c46247"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHB", "PB201110.1", null, "PB201110.1 (UHB) [Basement]", "Basement" });
+                values: new object[] { new Guid("f6166a92-0629-4b34-9d37-b276205b135a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHB", "PB201110.1", null, "PB201110.1 (UHB) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5bcc0551-0604-430f-aaa8-cec3cdb43918"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Part of Compilaton", null, "Part of Compilaton", "" });
+                values: new object[] { new Guid("70256862-74cb-4042-aa44-c581822e59a8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Part of Compilaton", null, "Part of Compilaton", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("17aee6a8-30fe-4f8b-a26e-9d4f18561f31"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "On Order", null, "On Order", "" });
+                values: new object[] { new Guid("b8bddabf-787b-477c-9e53-13b49fa1678a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "On Order", null, "On Order", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a2c212ff-e854-418c-848a-67011f87c596"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Office", null, "Office", "" });
+                values: new object[] { new Guid("bf74ff88-e7ff-49f8-a533-346795a6156b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Office", null, "Office", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c9b6f48c-de8a-4a21-a127-62004a180c79"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Nappa Valley Crate #3", null, "Nappa Valley Crate #3 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("995bfdf3-983b-4be4-a5b1-c938f109a709"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Nappa Valley Crate #3", null, "Nappa Valley Crate #3 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f2191b72-2a31-4691-9053-e294f9eb4202"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Nappa Valley Crate #2", null, "Nappa Valley Crate #2 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("af0a3bb8-8b1e-4abf-8aa0-ff15576bb34a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Nappa Valley Crate #2", null, "Nappa Valley Crate #2 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("326e754b-d056-41c2-9927-04e6ae4bbc65"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Nappa Valley Crate #1", null, "Nappa Valley Crate #1 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("a55fde2a-de99-4815-8f33-73d6930791f3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Nappa Valley Crate #1", null, "Nappa Valley Crate #1 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("61ec0589-89d7-4627-81d4-59731b8d7eeb"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "Music DVDs Box #1", null, "Music DVDs Box #1 (33250) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("89927a2e-e7a6-4989-b651-962b301249b9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "Music DVDs Box #1", null, "Music DVDs Box #1 (33250) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("4409b6c7-95a9-43d8-b589-50519892dfe9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Models #2", null, "Models #2 (UHM) [Attic]", "Attic" });
+                values: new object[] { new Guid("25f2131e-2140-49ee-a995-53ab07708bcc"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Models #2", null, "Models #2 (UHM) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("3d9144fe-58d8-480b-a58c-feae0bca03b1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "PC Games Box #4", null, "PC Games Box #4 [Closet]", "Closet" });
+                values: new object[] { new Guid("d9d5828e-d18e-4934-8a84-96e3b7d6b107"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "PC Games Box #4", null, "PC Games Box #4 [Closet]", "Closet" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("b50af89c-d9a7-454b-ac29-c250d74819e0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHB", "Sci-Fi Books Box #3", null, "Sci-Fi Books Box #3 (UHB) [Basement]", "Basement" });
+                values: new object[] { new Guid("cb0aef2d-d24e-4bb7-9465-a94db34c8a4d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHB", "Sci-Fi Books Box #3", null, "Sci-Fi Books Box #3 (UHB) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("6925c718-1d59-483b-90b2-168ba7a95590"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "PC Games Box #4", null, "PC Games Box #4", "" });
+                values: new object[] { new Guid("36d20024-0dbf-4889-9d67-e7d693ddc781"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "PC Games Box #4", null, "PC Games Box #4", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("e3c1c7d2-5bfc-461e-a7a3-e5ae31bc8c01"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Models #1", null, "Models #1 (UHM) [Attic]", "Attic" });
+                values: new object[] { new Guid("da6609ee-d696-4fe2-8922-61099f89c81b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Models #1", null, "Models #1 (UHM) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("8c689a48-912a-456c-b410-0662844eea3d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Sci-Fi Books Box #2", null, "Sci-Fi Books Box #2 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("a4cc8382-9aad-41fb-84c4-9b568dd1dbb9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Sci-Fi Books Box #2", null, "Sci-Fi Books Box #2 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("e306c63b-52d2-4784-96bc-073f9fac2683"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Sci-Fi Books Box #1", null, "Sci-Fi Books Box #1 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("03ea424e-60f8-46c4-a6ac-31ef2d728a23"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Sci-Fi Books Box #1", null, "Sci-Fi Books Box #1 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("555a3b32-6e3a-431f-9dc3-0e91818ed88a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Science Books Box #14", null, "Science Books Box #14 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("e167e4de-8c32-48d0-a760-2915e2c41b55"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Science Books Box #14", null, "Science Books Box #14 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("92f1f981-c9cb-48dd-818a-5ed4e1a74ae7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Scheduled for Donation", null, "Scheduled for Donation", "" });
+                values: new object[] { new Guid("ff278ff4-4037-4787-816a-a83733fa612f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Scheduled for Donation", null, "Scheduled for Donation", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a86c7e60-35c4-4aa3-81e4-42c92d537f76"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ready to install", null, "Ready to install", "" });
+                values: new object[] { new Guid("9acd97e2-bc82-485c-b8a9-9a21c7be4666"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ready to install", null, "Ready to install", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a8a24693-2a1b-4379-b072-f7e62cee028e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\Soundtrack", null, "Public Music\\Soundtrack", "" });
+                values: new object[] { new Guid("b6d53cec-2454-4300-9dbb-c741fe5ea94b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\Soundtrack", null, "Public Music\\Soundtrack", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("2860b499-e8f8-42c5-8fea-53e1d6cb89a0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\Rock", null, "Public Music\\Rock", "" });
+                values: new object[] { new Guid("74360f37-7040-4273-8f0c-b581ce79c5b9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\Rock", null, "Public Music\\Rock", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("13f9c844-1dbf-452f-ac07-466da010c337"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\Radio Shows", null, "Public Music\\Radio Shows", "" });
+                values: new object[] { new Guid("414e70e2-c789-44a4-972b-f57e38fc61c4"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\Radio Shows", null, "Public Music\\Radio Shows", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("8c4de9fe-84d2-4fc7-ada8-b17b9d486afa"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\Pop", null, "Public Music\\Pop", "" });
+                values: new object[] { new Guid("51af1bdc-a302-4680-a208-6e237e46a632"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\Pop", null, "Public Music\\Pop", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("e38c705e-05f7-43c7-b228-1fb4e8f62299"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\New Age", null, "Public Music\\New Age", "" });
+                values: new object[] { new Guid("d20ebcda-7765-447e-a9e3-e159084034d9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\New Age", null, "Public Music\\New Age", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("95d2a2f1-a3ee-41db-a2cd-3a28e3755634"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\Country", null, "Public Music\\Country", "" });
+                values: new object[] { new Guid("8a617c53-1198-4bf6-92b9-2f97e62acf2b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\Country", null, "Public Music\\Country", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5a05ac02-7e6e-497d-b355-2c4de33fea69"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\Comedy", null, "Public Music\\Comedy", "" });
+                values: new object[] { new Guid("b0988b48-bb7a-460c-8a12-6e437657d2ef"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\Comedy", null, "Public Music\\Comedy", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f4752b76-68a1-4f1b-b475-3c37361a2013"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\Classical", null, "Public Music\\Classical", "" });
+                values: new object[] { new Guid("0f8ab35f-86a6-4f37-95eb-e8ef61039aab"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\Classical", null, "Public Music\\Classical", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("05ce516e-d134-4373-90b4-ea76b973431b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\Christmas", null, "Public Music\\Christmas", "" });
+                values: new object[] { new Guid("172c9f05-4eb9-4e37-9d05-c1fcf70bc2d4"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\Christmas", null, "Public Music\\Christmas", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("53066f5a-767f-4d09-85ec-16f34f510fe8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\Books", null, "Public Music\\Books", "" });
+                values: new object[] { new Guid("f2441db3-2b25-4e82-a50c-b698022f55a9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Public Music\\Books", null, "Public Music\\Books", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("95ea801f-8261-49c8-9cea-a1e5eaff387e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Pre-Ordered", null, "Pre-Ordered", "" });
+                values: new object[] { new Guid("2939a13f-f7af-4a9c-8f6e-0fd8e4c15cff"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Pre-Ordered", null, "Pre-Ordered", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("46e52b14-81f6-42d6-8314-2b746dabc261"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Prize Box", null, "Prize Box", "" });
+                values: new object[] { new Guid("20dc14cd-b1f3-4336-ae8f-b92deef1f725"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Prize Box", null, "Prize Box", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f8f0dd6c-11cf-4d24-953d-2a51df6bdf26"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Misc Books Box #01", null, "Misc Books Box #01", "" });
+                values: new object[] { new Guid("a48b7a1b-6c38-4067-b421-f96804b1ad83"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Misc Books Box #01", null, "Misc Books Box #01", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f7d611ca-dc73-43e8-b989-d92e48dde477"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Micro Machines - Titanium  Series Box #10 (BSG) (SMO)", null, "Micro Machines - Titanium  Series Box #10 (BSG) (SMO) [Attic]", "Attic" });
+                values: new object[] { new Guid("7f0411c3-a82d-484f-9420-1f46c33c9a7f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Micro Machines - Titanium  Series Box #10 (BSG) (SMO)", null, "Micro Machines - Titanium  Series Box #10 (BSG) (SMO) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("76a6d481-e573-40fe-8720-526428de6f2b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Left in box", null, "Left in box", "" });
+                values: new object[] { new Guid("9348f470-06f7-431a-aeaf-b00af29d7c46"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Left in box", null, "Left in box", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("12598533-9250-4ad2-a81c-52833eaf9467"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Left in bag", null, "Left in bag", "" });
+                values: new object[] { new Guid("625a9e0c-cb16-49c7-b024-9c28dc371580"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Left in bag", null, "Left in bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c9998ce7-f406-489c-bf12-f781fd13a074"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Kindle", null, "Kindle", "" });
+                values: new object[] { new Guid("59450d28-73d2-44a2-8568-b81004285232"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Kindle", null, "Kindle", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("27b2bfa8-d622-43d5-ac3f-83d5d35f4d0b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Key Publishing Specials Box", null, "Key Publishing Specials Box [Top of Steps]", "Top of Steps" });
+                values: new object[] { new Guid("015f7c0c-1910-4e78-8187-22cdf80c312d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Key Publishing Specials Box", null, "Key Publishing Specials Box [Top of Steps]", "Top of Steps" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5c573c42-7faa-4d36-b3d3-f4700e63cdc0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Room", null, "Ken's Room", "" });
+                values: new object[] { new Guid("4a7e53ee-ee32-4148-a3f6-e68e2270ae1c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Room", null, "Ken's Room", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("1c25f5eb-b322-43c4-a4bc-5c4085b9e8b0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Ken's Hallmark Ornaments Box", null, "Ken's Hallmark Ornaments Box (UHS) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("e60127b5-89be-4370-92ad-bc7b82e6922f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Ken's Hallmark Ornaments Box", null, "Ken's Hallmark Ornaments Box (UHS) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d1717c57-97aa-49c9-97d2-e3e349480832"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's DVDs Box #4", null, "Ken's DVDs Box #4 [Attic]", "Attic" });
+                values: new object[] { new Guid("4ccf6a37-3fd5-407b-ae30-410b0cad8f3a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's DVDs Box #4", null, "Ken's DVDs Box #4 [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("e61906b9-074c-4d30-8626-815cfdd0a5c5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's DVDs Box #3", null, "Ken's DVDs Box #3 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("b93e0106-dcd6-42a9-9cf1-f7404ea40cf1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's DVDs Box #3", null, "Ken's DVDs Box #3 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("14e34156-9622-4751-9e8b-d529d91a5f8b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's DVDs Box #2", null, "Ken's DVDs Box #2 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("0d88b890-9943-44f1-8bef-a3ec36a1def3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's DVDs Box #2", null, "Ken's DVDs Box #2 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("39018701-c70f-4711-8bec-38ef56019b5a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's DVDs Box #1", null, "Ken's DVDs Box #1 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("320669c4-bb19-41d0-9ed1-03843be6bd71"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's DVDs Box #1", null, "Ken's DVDs Box #1 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f526028e-27fc-4e1b-b610-0c14e93d32fc"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Desk", null, "Ken's Desk", "" });
+                values: new object[] { new Guid("ead6af66-4cd9-4cdf-8219-cdd52ce50bc8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Desk", null, "Ken's Desk", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c537da7b-e4f0-4d69-a6fc-3b22269dd209"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #14 - Modeling Resources", null, "Ken's Books Box #14 - Modeling Resources [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("0ec2ccce-5243-44ff-956f-07ccec8f0ac2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #14 - Modeling Resources", null, "Ken's Books Box #14 - Modeling Resources [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("1eb162cf-e891-4006-89f4-3089983cae84"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #13", null, "Ken's Books Box #13 [Basement]", "Basement" });
+                values: new object[] { new Guid("06cbd449-1de4-4b01-a3f1-4acc0f757e5c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #13", null, "Ken's Books Box #13 [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5e089373-43bf-43cb-b791-fb3f7ec15da4"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Sci-Fi Books Box #4", null, "Sci-Fi Books Box #4 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("68a9d23a-c65b-4ff9-b1ff-360dd92796b2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Sci-Fi Books Box #4", null, "Sci-Fi Books Box #4 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("6c505411-429a-4663-9dfb-37143187a5b0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #12", null, "Ken's Books Box #12 [Basement]", "Basement" });
+                values: new object[] { new Guid("84398de1-3c02-41ae-b6e9-b9819aa754f1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #12", null, "Ken's Books Box #12 [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("9c689a84-273f-4da5-b149-ab6560bdaa4f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Living Room", null, "Living Room", "" });
+                values: new object[] { new Guid("0bc448f1-6ed8-4cd3-85d1-bf050628f2bf"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Living Room", null, "Living Room", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("8d590131-0a6e-4efa-b8c1-3667d5345779"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Lost", null, "Lost", "" });
+                values: new object[] { new Guid("271a1cb9-b58d-4d02-aa86-4e1884323187"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Lost", null, "Lost", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("34acec6a-1dc1-45b8-b5ee-1d01514051d7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "USPS #13 9x7x4", "M&M's Chocolate M-PIRE Box", null, "M&M's Chocolate M-PIRE Box (USPS #13 9x7x4) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("59ccf301-f21a-4f37-a3bc-03706d6a61b7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "USPS #13 9x7x4", "M&M's Chocolate M-PIRE Box", null, "M&M's Chocolate M-PIRE Box (USPS #13 9x7x4) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("22eac832-fc71-499e-ad04-a1c9c5c75206"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "USPS #13 9x7x4", "M&M's Chocolate M-PIRE Box", null, "M&M's Chocolate M-PIRE Box [USPS #13 9x7x4]", "" });
+                values: new object[] { new Guid("decefec2-e3e8-4eec-90d3-8f30e3798ec0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "USPS #13 9x7x4", "M&M's Chocolate M-PIRE Box", null, "M&M's Chocolate M-PIRE Box [USPS #13 9x7x4]", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("4b2706f1-f0d0-48a9-87ea-a9d85758faf2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Micro Machines - Titanium  Series Box #09", null, "Micro Machines - Titanium  Series Box #09 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("41350343-cb8c-48f9-aabb-199f6f0b8b57"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Micro Machines - Titanium  Series Box #09", null, "Micro Machines - Titanium  Series Box #09 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("0c861882-b68b-4aea-a45a-80bb030f734e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Micro Machines - Titanium  Series Box #08", null, "Micro Machines - Titanium  Series Box #08 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("889f641d-47a4-4454-893b-9068eefb0622"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Micro Machines - Titanium  Series Box #08", null, "Micro Machines - Titanium  Series Box #08 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a8c67274-63bc-4242-96eb-367c5b0c89e2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Micro Machines - Titanium  Series Box #07", null, "Micro Machines - Titanium  Series Box #07 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("98b3ce5d-21b8-443b-af9b-5f2f02394c08"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Micro Machines - Titanium  Series Box #07", null, "Micro Machines - Titanium  Series Box #07 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("1f154ecf-d370-435e-8794-5183de6d2b58"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Micro Machines - Titanium  Series Box #06", null, "Micro Machines - Titanium  Series Box #06 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("6c2af78c-042c-4cdf-89e0-966fa1610714"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Micro Machines - Titanium  Series Box #06", null, "Micro Machines - Titanium  Series Box #06 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("b7027c14-0cdd-4e4f-8198-d78be46d3a7d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESS", "Micro Machines - Titanium  Series Box #06", null, "Micro Machines - Titanium  Series Box #06 (ESSS) [Attic]", "Attic" });
+                values: new object[] { new Guid("be781c05-ffe2-4ce0-89ae-8514fc034589"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESS", "Micro Machines - Titanium  Series Box #06", null, "Micro Machines - Titanium  Series Box #06 (ESSS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("ce992169-a288-4746-b850-3744dcbba725"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESS", "Micro Machines - Titanium  Series Box #05", null, "Micro Machines - Titanium  Series Box #05 (ESSS) [Attic]", "Attic" });
+                values: new object[] { new Guid("8561e12d-ca6e-45a6-bfbd-593a13709788"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESS", "Micro Machines - Titanium  Series Box #05", null, "Micro Machines - Titanium  Series Box #05 (ESSS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d7ed5849-5d83-46a7-93e4-6ae42fad824f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Micro Machines - Titanium  Series Box #03", null, "Micro Machines - Titanium  Series Box #03 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("b7e6f5dd-f117-453e-81b6-dfb3611b2d13"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Micro Machines - Titanium  Series Box #03", null, "Micro Machines - Titanium  Series Box #03 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("e940632f-119c-48df-9081-cd9618d73f50"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Misc Collectables Box #1", null, "Misc Collectables Box #1 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("72c21daf-e0ae-4a26-91ef-858ac2bc5756"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Misc Collectables Box #1", null, "Misc Collectables Box #1 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("281c66c1-ac99-40e1-8f57-a2605af7dfd5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESS", "Micro Machines - Titanium  Series Box #02", null, "Micro Machines - Titanium  Series Box #02 (ESSS) [Attic]", "Attic" });
+                values: new object[] { new Guid("f57487f6-c024-4797-b829-2403f77b3ea7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESS", "Micro Machines - Titanium  Series Box #02", null, "Micro Machines - Titanium  Series Box #02 (ESSS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("88a50005-0300-4cd7-9e97-a96087f9079c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "MH201110.6", null, "MH201110.6 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("c44d348c-d3d1-4b4a-bf80-ce493a0f7fca"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "MH201110.6", null, "MH201110.6 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5a690943-fc19-4dc3-9959-5db7a09fb46e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "MH201110.5", null, "MH201110.5 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("9b797aab-95bf-443b-9d1b-5ac7b68d8d4b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "MH201110.5", null, "MH201110.5 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("62993ebd-1c22-460c-b8c9-514214a5ce9e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "MH201110.4", null, "MH201110.4 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("d1bee47e-cb03-4d18-9266-b685dcefde15"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "MH201110.4", null, "MH201110.4 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("b880fcb2-57b6-4e46-a5e4-e7da792fbbd4"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "MH201110.3", null, "MH201110.3 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("ef500a02-cf90-49d8-bcbb-b236a257dcdd"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "MH201110.3", null, "MH201110.3 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("792e9819-6f28-448b-9d5c-98b07a02b2c2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "MH201110.2", null, "MH201110.2 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("e45876df-2a79-44e7-ad9b-7f4c5350f7c5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "MH201110.2", null, "MH201110.2 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("ba77bcd3-dcf9-4ef1-bf75-5295e4c1bf52"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "MH201110.1", null, "MH201110.1 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("7d2cb131-a3a5-4b5a-ba13-1d13240d734b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "MH201110.1", null, "MH201110.1 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("e7672b78-3012-4770-a68a-6a4a294b3548"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Master Bedroom", null, "Master Bedroom", "" });
+                values: new object[] { new Guid("6dee89c9-6b99-4448-88f5-7c09b79ee232"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Master Bedroom", null, "Master Bedroom", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("ccb5c7ac-5ab8-4031-9ff1-ed844caaf04d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESS", "Micro Machines - Titanium  Series Box #01", null, "Micro Machines - Titanium  Series Box #01 (ESSS) [Attic]", "Attic" });
+                values: new object[] { new Guid("d1e019b2-1f8b-4fe3-bb0d-475c1b9df0cd"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESS", "Micro Machines - Titanium  Series Box #01", null, "Micro Machines - Titanium  Series Box #01 (ESSS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c18757bf-a830-424b-ae91-c1ee84dcc024"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "SciFi Box #1", null, "SciFi Box #1 (UHM) [Attic]", "Attic" });
+                values: new object[] { new Guid("c3bbf67c-162e-4a81-9601-f316c9ae8d1c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "SciFi Box #1", null, "SciFi Box #1 (UHM) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("0c05c966-7b1c-49da-8792-586c6dbf9426"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "", null, "", "" });
+                values: new object[] { new Guid("b255fca1-e5cf-49d0-8e9b-d82514bafcdd"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "", null, "", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("25ff1927-64fe-42c1-a33a-b891ade80d89"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHL", "SciFi Box #2", null, "SciFi Box #2 (UHL) [Attic]", "Attic" });
+                values: new object[] { new Guid("fd60f0f6-24d4-456b-90da-cf5392cf6dc1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHL", "SciFi Box #2", null, "SciFi Box #2 (UHL) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("ff884fe3-780c-4315-812e-0328c9056798"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Unboxed", null, "Unboxed [Carol's Room]", "Carol's Room" });
+                values: new object[] { new Guid("92d76f0f-a8ae-4ee0-be7e-374ec314cbc7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Unboxed", null, "Unboxed [Carol's Room]", "Carol's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d647b18e-86d3-405c-9afe-cff7f8f81c48"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Unboxed", null, "Unboxed [Basement]", "Basement" });
+                values: new object[] { new Guid("5cc55e1d-fb68-47ca-8f49-2352cc0c4df0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Unboxed", null, "Unboxed [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("671bdea9-466b-4fb4-ace3-19a778389bed"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Transition", null, "Transition", "" });
+                values: new object[] { new Guid("8e88952f-4800-4ff8-a8cd-606e029d2b2a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Transition", null, "Transition", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("e0ee0158-35b8-42db-8fb9-02624950de2d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Train Stuff", null, "Train Stuff", "" });
+                values: new object[] { new Guid("a6e1239f-a522-40f0-8aa9-18761981a3a5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Train Stuff", null, "Train Stuff", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a1a8c742-21e4-4505-8bc3-a66c964159f9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Football Cards Box #1 (ESSS)", "Topps Cowboys Box #01", null, "Topps Cowboys Box #01 [Football Cards Box #1 (ESSS) [Closet]]", "Closet" });
+                values: new object[] { new Guid("600d693c-2e17-4b40-a6b8-dd59a0d5db11"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Football Cards Box #1 (ESSS)", "Topps Cowboys Box #01", null, "Topps Cowboys Box #01 [Football Cards Box #1 (ESSS) [Closet]]", "Closet" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d5f1f9e8-cc57-4813-89c4-624ef7566598"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Football Cards Box #1 (ESSS)", "Topps 2008 Football Complete Set Box", null, "Topps 2008 Football Complete Set Box [Football Cards Box #1 (ESSS) [Closet]]", "Closet" });
+                values: new object[] { new Guid("627531f0-77f1-49b4-b3bd-b0394535a6c8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Football Cards Box #1 (ESSS)", "Topps 2008 Football Complete Set Box", null, "Topps 2008 Football Complete Set Box [Football Cards Box #1 (ESSS) [Closet]]", "Closet" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("753d7e97-30ac-4778-acef-e33f3c42b526"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Football Cards Box #1 (ESSS)", "Topps 2008 Football #1", null, "Topps 2008 Football #1 [Football Cards Box #1 (ESSS) [Closet]]", "Closet" });
+                values: new object[] { new Guid("47518ce3-37a1-467d-9a52-91be01a54dd8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Football Cards Box #1 (ESSS)", "Topps 2008 Football #1", null, "Topps 2008 Football #1 [Football Cards Box #1 (ESSS) [Closet]]", "Closet" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("64160dd6-37cd-4f7e-a445-061c32546730"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Football Cards Box #1 (ESSS)", "Topps 2007 Football Complete Set Box", null, "Topps 2007 Football Complete Set Box [Football Cards Box #1 (ESSS) [Closet]]", "Closet" });
+                values: new object[] { new Guid("3ea078d8-f601-404f-80a5-f1e107cff34c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Football Cards Box #1 (ESSS)", "Topps 2007 Football Complete Set Box", null, "Topps 2007 Football Complete Set Box [Football Cards Box #1 (ESSS) [Closet]]", "Closet" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("bab73f45-ca03-4694-a090-88678429849a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Football Cards Box #1 (ESSS)", "Topps 2006 Football #3", null, "Topps 2006 Football #3 [Football Cards Box #1 (ESSS) [Closet]]", "Closet" });
+                values: new object[] { new Guid("07ec9065-5c14-4a5c-bc4a-fc49328dfbed"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Football Cards Box #1 (ESSS)", "Topps 2006 Football #3", null, "Topps 2006 Football #3 [Football Cards Box #1 (ESSS) [Closet]]", "Closet" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a19bedcf-1037-4241-a7d2-cb460206a1f2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Football Cards Box #1 (ESSS)", "Topps 2006 Football #2", null, "Topps 2006 Football #2 [Football Cards Box #1 (ESSS) [Closet]]", "Closet" });
+                values: new object[] { new Guid("bbeaf335-887d-4306-94d2-f29b2aedec00"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Football Cards Box #1 (ESSS)", "Topps 2006 Football #2", null, "Topps 2006 Football #2 [Football Cards Box #1 (ESSS) [Closet]]", "Closet" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f0ceb0a8-e0fa-4b6f-89bc-1c2dee018299"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Football Cards Box #1 (ESSS)", "Topps 2006 Football #1", null, "Topps 2006 Football #1 [Football Cards Box #1 (ESSS) [Closet]]", "Closet" });
+                values: new object[] { new Guid("d005bb6b-3574-436d-963e-66a10427da4a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Football Cards Box #1 (ESSS)", "Topps 2006 Football #1", null, "Topps 2006 Football #1 [Football Cards Box #1 (ESSS) [Closet]]", "Closet" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a8c26604-6c32-46c4-a10b-b616fedc9229"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Tom Clancy Book Box #9", null, "Tom Clancy Book Box #9 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("393e6db1-7d5c-4469-a4e0-7725c3f0603d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Tom Clancy Book Box #9", null, "Tom Clancy Book Box #9 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("7aa08337-e323-4d00-a664-da7bb29405a7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "TimeLife Books Box #3", null, "TimeLife Books Box #3 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("7f235fdc-86e9-4878-856c-a011f64df55f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "TimeLife Books Box #3", null, "TimeLife Books Box #3 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("34b93aa0-9aa3-47f1-b7d2-7884bc8a24a2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "TimeLife Books Box #2", null, "TimeLife Books Box #2 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("46d4b7d6-d50a-4d77-a1ee-a25c916bd7c4"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "TimeLife Books Box #2", null, "TimeLife Books Box #2 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("48780e6f-e830-4721-92b3-7ad5c832eb83"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "TimeLife Books Box #1", null, "TimeLife Books Box #1 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("239e4399-a752-4fa9-9d91-476d820ee75d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "TimeLife Books Box #1", null, "TimeLife Books Box #1 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("cb927b65-cdf2-4a5c-901e-703642e4fbd5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Unboxed", null, "Unboxed [Ken's Room - Near Front Wall]", "Ken's Room - Near Front Wall" });
+                values: new object[] { new Guid("179708ea-5130-44c9-bcc4-b8b399f3bd85"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Unboxed", null, "Unboxed [Ken's Room - Near Front Wall]", "Ken's Room - Near Front Wall" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("9dfe050c-de3c-4393-b758-bc8c1dda947f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Text Books Box #16", null, "Text Books Box #16 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("b6e57f41-4dad-44fe-88cd-60c5b429ade0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Text Books Box #16", null, "Text Books Box #16 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c2a5d3d8-d45a-4cf4-96cd-ae2437fe8cdc"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Unboxed", null, "Unboxed [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("d69b2846-bf87-4a3d-a3ec-925eae64c13a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Unboxed", null, "Unboxed [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("472b0601-c1ff-4b51-a60b-b9b601c351f6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Unboxed Atop Bookcase B", null, "Unboxed Atop Bookcase B [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("101dbe97-8b05-4d42-86ae-043ebd26f08e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Unboxed Atop Bookcase B", null, "Unboxed Atop Bookcase B [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("598bf402-ff26-4ad8-a875-48795de2ded0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #11", null, "Ken's Books Box #11 [Basement]", "Basement" });
+                values: new object[] { new Guid("79516df0-891e-4e03-8f95-ad55ae29f41a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #11", null, "Ken's Books Box #11 [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("b531bd75-259e-4e2b-89ce-a8ea25ac5974"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "WishList", null, "WishList", "" });
+                values: new object[] { new Guid("ec59221e-2eca-42db-a8f7-131973ef4af3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "WishList", null, "WishList", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("77e32ccb-65c0-471b-8fbb-8ce0c5769a6b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Undetermined", null, "Undetermined", "" });
+                values: new object[] { new Guid("62078afb-8cf4-4e6d-a548-5689f0d09318"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Undetermined", null, "Undetermined", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("dd28b4d8-a807-4567-b59a-bfb80a010560"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Topps 2006 Football #1", null, "Topps 2006 Football #1", "" });
+                values: new object[] { new Guid("1a4370a7-8703-48a8-92e8-f5123ab2b41a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Topps 2006 Football #1", null, "Topps 2006 Football #1", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("ff0928a2-ee8e-4470-ad15-723d9de9bc02"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Self-Compiled", null, "Self-Compiled", "" });
+                values: new object[] { new Guid("5cb0d48a-f58c-42b3-9453-41794bf66e63"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Self-Compiled", null, "Self-Compiled", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("7ddd9aca-d628-49d5-8a5e-893d86ce1cdd"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "EB Games.com", null, "EB Games.com", "" });
+                values: new object[] { new Guid("e14ea361-6d46-4716-a091-d23c131aabb7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "EB Games.com", null, "EB Games.com", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("fbd02bf0-8d68-4553-824a-5808b760fc4f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Canceled", null, "Canceled", "" });
+                values: new object[] { new Guid("043b3eb8-6b3f-4b32-a599-d0b45a8ea007"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Canceled", null, "Canceled", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("b9938b3f-3a67-42ec-ab84-8fdc651bca17"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Workbench", null, "Workbench", "" });
+                values: new object[] { new Guid("198fbf1d-d3e0-483e-a7b9-bdec797def8e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Workbench", null, "Workbench", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("acb7e9c9-291c-4fe0-99a2-daa6736f958b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Work Books 20080910.1", null, "Work Books 20080910.1 (UHS) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("2af9bf0c-9146-401f-866c-b1934a5591c0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Work Books 20080910.1", null, "Work Books 20080910.1 (UHS) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("54b58801-cbee-4b65-8ba0-2fe87a266109"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Wire Rack", null, "Wire Rack (Top Shelf) [Ken's Room East Wall]", "Ken's Room East Wall (Top Shelf)" });
+                values: new object[] { new Guid("f5f4c9b4-bbe5-41ad-9cae-3036d1974c9a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Wire Rack", null, "Wire Rack (Top Shelf) [Ken's Room East Wall]", "Ken's Room East Wall (Top Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("53f09bd9-aa8f-4af2-885d-7eae112c9570"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Web Access", null, "Web Access", "" });
+                values: new object[] { new Guid("51a86945-2210-4401-a0aa-7034b36ac37e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Web Access", null, "Web Access", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("ce0f9f82-0286-48e5-8830-ddbcd4d35bbf"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Unspecified", null, "Unspecified", "" });
+                values: new object[] { new Guid("1961f321-3613-4c6e-bf33-1ff815a1f194"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Unspecified", null, "Unspecified", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5c59c9ba-0261-4f85-9505-de8edc08f9ba"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Unknown", null, "Unknown", "" });
+                values: new object[] { new Guid("4ca90123-193c-46c1-aa8a-808a1377dbea"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Unknown", null, "Unknown", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("b47807ee-dd40-4c8d-b3a2-d80fcd5129ed"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Unknown - Possible Duplicate", null, "Unknown - Possible Duplicate", "" });
+                values: new object[] { new Guid("03d7c8e0-dfc1-4138-972d-cb989302d217"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Unknown - Possible Duplicate", null, "Unknown - Possible Duplicate", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("819db6cf-08e7-4bad-a0d7-efb416f73cfb"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Undecided (Carol)", null, "Undecided (Carol)", "" });
+                values: new object[] { new Guid("f5be55cc-7034-43bb-bb63-7af210408040"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Undecided (Carol)", null, "Undecided (Carol)", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("24d75495-3721-44d0-b9ec-26a4fb154786"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Unboxed Atop Bookcase A", null, "Unboxed Atop Bookcase A [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("20188308-f95a-4437-ac99-8766ee3bfc41"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Unboxed Atop Bookcase A", null, "Unboxed Atop Bookcase A [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("cae249eb-ef49-4fac-a380-841b75809ad0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Sterilite Flip-Top Box #5", null, "Sterilite Flip-Top Box #5 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("de5e89dd-c63e-46e4-b966-1c58950c66ad"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Sterilite Flip-Top Box #5", null, "Sterilite Flip-Top Box #5 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("b80cab38-c012-4222-a3c9-1c56bc002ef4"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Sterilite Flip-Top Box #4", null, "Sterilite Flip-Top Box #4 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("9c72a381-71bf-4c09-92ae-170fe12b0f11"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Sterilite Flip-Top Box #4", null, "Sterilite Flip-Top Box #4 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("110489e0-513e-4fd4-8dd6-087ba79d0171"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Sterilite Flip-Top Box #3", null, "Sterilite Flip-Top Box #3 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("c6bb37fa-5754-403d-aabd-089d456614b2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Sterilite Flip-Top Box #3", null, "Sterilite Flip-Top Box #3 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d6a7d0e6-bed6-443c-bbb1-21c5839f4109"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Sports Books Box #15", null, "Sports Books Box #15 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("b11a9241-2c12-47bd-8f79-909a10c50a94"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Sports Books Box #15", null, "Sports Books Box #15 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("32792d9b-9ee9-46b1-b5d4-6b47c46ec078"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Spares", null, "Spares", "" });
+                values: new object[] { new Guid("1e1b834a-6554-41e4-8e97-c2e878a6c3f6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Spares", null, "Spares", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("4ac91959-4151-4e42-b27f-20381d5f63ab"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Sealed with detail set included in kit", null, "Sealed with detail set included in kit", "" });
+                values: new object[] { new Guid("86ed1037-72ef-42cb-9659-c9f3194c3863"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Sealed with detail set included in kit", null, "Sealed with detail set included in kit", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("dd76ad89-9c43-4eb8-b6ba-e64b5a93bb91"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Sealed in package", null, "Sealed in package", "" });
+                values: new object[] { new Guid("ca7aee62-b78d-4990-845a-3662234857f7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Sealed in package", null, "Sealed in package", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("053d80af-cb15-4313-bf08-bbac2a70c6a8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "SciFi Box #7 Ziploc bag", null, "SciFi Box #7 Ziploc bag", "" });
+                values: new object[] { new Guid("b17d5059-ae9c-4da6-81be-ddd1f020d7fa"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "SciFi Box #7 Ziploc bag", null, "SciFi Box #7 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("2dd7e6e0-025a-458d-a2ec-082ee6477445"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "SciFi Box #7", null, "SciFi Box #7 (UHXL) [Attic]", "Attic" });
+                values: new object[] { new Guid("54c96e78-6b37-4d47-a52c-6968bdef214a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "SciFi Box #7", null, "SciFi Box #7 (UHXL) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("9bb73f3d-bb53-4c6d-b4e7-a3cc4964875a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "SciFi Box #6 Ziploc bag", null, "SciFi Box #6 Ziploc bag", "" });
+                values: new object[] { new Guid("65f57578-06d7-41b7-8801-3cfed2461f24"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "SciFi Box #6 Ziploc bag", null, "SciFi Box #6 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("bb84109a-c41c-41e0-8f0b-c409480ee25a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "SciFi Box #6", null, "SciFi Box #6 (UHXL) [Attic]", "Attic" });
+                values: new object[] { new Guid("c16b581d-c271-4e16-a8bb-3f99ab8de971"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "SciFi Box #6", null, "SciFi Box #6 (UHXL) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5d7a6b23-9f08-4f0e-99cf-e51b5e11ea1a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "SciFi Box #5 Ziploc bag", null, "SciFi Box #5 Ziploc bag", "" });
+                values: new object[] { new Guid("6c05612c-577c-4385-9da1-0016cd193c41"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "SciFi Box #5 Ziploc bag", null, "SciFi Box #5 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d5bec67d-7820-4679-b938-0d7bbf899b0f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "SciFi Box #5", null, "SciFi Box #5 (UHXL) [Attic]", "Attic" });
+                values: new object[] { new Guid("2aa8a51e-b292-496d-92ca-1b45f0732de2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "SciFi Box #5", null, "SciFi Box #5 (UHXL) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f4a72ae1-6054-4032-9f43-47a0ee5bcec0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "SciFi Box #4 Ziploc bag", null, "SciFi Box #4 Ziploc bag", "" });
+                values: new object[] { new Guid("994daa4c-409f-4675-8c59-b7f72baeb8fe"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "SciFi Box #4 Ziploc bag", null, "SciFi Box #4 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f3dba414-4367-4cfb-a6eb-3b1aaca8187d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "SciFi Box #4", null, "SciFi Box #4 (UHXL) [Attic]", "Attic" });
+                values: new object[] { new Guid("5cc4bb7a-d994-4b84-b80f-b53e4580eb1a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "SciFi Box #4", null, "SciFi Box #4 (UHXL) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a6d9c0c7-1aab-4b16-97fa-40e6de94132e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "SciFi Box #3 Ziploc bag", null, "SciFi Box #3 Ziploc bag", "" });
+                values: new object[] { new Guid("ae0c0c03-b05d-4f12-a4de-4b386950cd1d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "SciFi Box #3 Ziploc bag", null, "SciFi Box #3 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("53be9a21-6653-4bf2-b803-b8785f24ed07"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHL", "SciFi Box #3", null, "SciFi Box #3 (UHL) [Attic]", "Attic" });
+                values: new object[] { new Guid("c44e64f4-0616-45c7-aaaa-bfdc34d81517"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHL", "SciFi Box #3", null, "SciFi Box #3 (UHL) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("4119cfdc-f37e-41dd-be05-f2819aba1064"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "SciFi Box #2 Ziploc bag", null, "SciFi Box #2 Ziploc bag", "" });
+                values: new object[] { new Guid("83aafac2-fa3e-4d4f-bf44-aad99c92b90c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "SciFi Box #2 Ziploc bag", null, "SciFi Box #2 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("0a257780-93d8-4911-90a7-93b9ca0dc289"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Plano 993179", "Star Trek Attack Wing Case #01", null, "Star Trek Attack Wing Case #01 [Plano 993179]", "Ken's Room" });
+                values: new object[] { new Guid("a7e155c8-2a34-466d-a7f7-82a820d3d78d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Plano 993179", "Star Trek Attack Wing Case #01", null, "Star Trek Attack Wing Case #01 [Plano 993179]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("371e5687-56c8-48df-aab6-3f45db4e480f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Plano 993179", "Star Trek Attack Wing Case #02", null, "Star Trek Attack Wing Case #02 [Plano 993179]", "Ken's Room" });
+                values: new object[] { new Guid("95c640e6-62e9-4c67-b7c5-d46edf24410b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Plano 993179", "Star Trek Attack Wing Case #02", null, "Star Trek Attack Wing Case #02 [Plano 993179]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f2cd81b4-2f9e-481e-9665-96c95bfe9074"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 18x14x10", "Star Wars Armada Box", null, "Star Wars Armada Box (Unmarked 18x14x10) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("ab0dad90-2a34-4349-96e9-9e7f68f762b9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 18x14x10", "Star Wars Armada Box", null, "Star Wars Armada Box (Unmarked 18x14x10) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("872b0239-0fed-42f4-97f2-a6071c3aa6dd"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Star Wars Collectables Box #2", null, "Star Wars Collectables Box #2 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("aed74545-9bbf-406c-aaaa-770a61dd732c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Star Wars Collectables Box #2", null, "Star Wars Collectables Box #2 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("08043864-6946-49dc-bc36-cca3e781489f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Sterilite Flip-Top Box #2", null, "Sterilite Flip-Top Box #2 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("ae01eaaf-7d61-4d32-aae8-6510f910fbb4"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Sterilite Flip-Top Box #2", null, "Sterilite Flip-Top Box #2 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a2b0274c-82dd-47ad-92ec-24b886c68214"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Sterilite Flip-Top Box #1", null, "Sterilite Flip-Top Box #1 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("c3c046e3-8286-4d46-bc68-fdae4d98e104"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Sterilite Flip-Top Box #1", null, "Sterilite Flip-Top Box #1 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("74f5f41c-1d04-4274-944d-0988ff60f3d7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Starfighter Shipyards Box #1", null, "Starfighter Shipyards Box #1", "" });
+                values: new object[] { new Guid("7bd5e127-3cf5-486f-962d-44d0f50349d5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Starfighter Shipyards Box #1", null, "Starfighter Shipyards Box #1", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("3f4a8ad5-543a-4c4f-b7d4-d59c1acdd03f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Star Wars X-Wing Box", null, "Star Wars X-Wing Box [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("7ab78dbf-ae70-4e25-be3c-5ef5eee032d7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Star Wars X-Wing Box", null, "Star Wars X-Wing Box [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("7582212d-72af-4844-8f1b-4df190e53516"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "Star Wars Vehicles Box #3", null, "Star Wars Vehicles Box #3 (UHXL) [Attic]", "Attic" });
+                values: new object[] { new Guid("17f56ad8-8411-4f27-9a97-d0f0baa775b6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "Star Wars Vehicles Box #3", null, "Star Wars Vehicles Box #3 (UHXL) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("79957b27-f064-461d-beef-5063a2db32c4"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "Star Wars Vehicles Box #2", null, "Star Wars Vehicles Box #2 (UHXL) [Attic]", "Attic" });
+                values: new object[] { new Guid("f211a16d-e4bb-4354-aef3-fda68e4273ff"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "Star Wars Vehicles Box #2", null, "Star Wars Vehicles Box #2 (UHXL) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a91bd9fb-07c4-4474-beee-fd46ffb5aabe"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "Star Wars Vehicles Box #1", null, "Star Wars Vehicles Box #1 (UHXL) [Attic]", "Attic" });
+                values: new object[] { new Guid("0d22bea4-4b9e-4c66-b333-0c194f57ef2a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "Star Wars Vehicles Box #1", null, "Star Wars Vehicles Box #1 (UHXL) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("68a39b15-20cc-47fb-9aba-f07fd157efcc"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "SciFi Box #1 Ziploc bag", null, "SciFi Box #1 Ziploc bag", "" });
+                values: new object[] { new Guid("175eb56c-638e-4517-9877-b085b79600c2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "SciFi Box #1 Ziploc bag", null, "SciFi Box #1 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("9fc1285a-8dfb-478c-9671-1cd1cf618caa"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Star Wars Sterilite Flip-Top Box", null, "Star Wars Sterilite Flip-Top Box [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("56de90c3-edc1-4731-8a6d-7328b45e2b72"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Star Wars Sterilite Flip-Top Box", null, "Star Wars Sterilite Flip-Top Box [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a2b5e6e4-8603-4343-bd71-91d34b0909f0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Star Wars Collectables Box #9", null, "Star Wars Collectables Box #9 (UHS) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("c27527f9-59eb-4ce1-9de7-2c317a04c858"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Star Wars Collectables Box #9", null, "Star Wars Collectables Box #9 (UHS) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("8a52c5b6-7400-4055-bc05-e5c9b5e24b68"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Star Wars Collectables Box #8", null, "Star Wars Collectables Box #8 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("ad06e5af-5a9e-4e5a-ad24-859715b11eae"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Star Wars Collectables Box #8", null, "Star Wars Collectables Box #8 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("619ab4bf-f0dc-4d20-8153-2fc6a652ff0c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Star Wars Collectables Box #7", null, "Star Wars Collectables Box #7 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("3cde9035-8de1-4b78-90cf-0cb8f88a4429"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Star Wars Collectables Box #7", null, "Star Wars Collectables Box #7 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("e3f6bded-c6e0-4976-9135-e12ab1801d89"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "EE 18x12x12", "Star Wars Collectables Box #6", null, "Star Wars Collectables Box #6 (EE 18x12x12) [Attic]", "Attic" });
+                values: new object[] { new Guid("b0c302ef-9553-491b-a5d3-682c92e58b43"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "EE 18x12x12", "Star Wars Collectables Box #6", null, "Star Wars Collectables Box #6 (EE 18x12x12) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("17826c66-34e3-4afd-ae70-f4a71e15ded5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Star Wars Collectables Box #5", null, "Star Wars Collectables Box #5 (UHM) [Attic]", "Attic" });
+                values: new object[] { new Guid("d2e5a3c5-a88b-4d23-9210-eb41a848d666"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Star Wars Collectables Box #5", null, "Star Wars Collectables Box #5 (UHM) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("67d2b4ce-0c97-4d89-bad4-bff5a3ae681e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Star Wars Collectables Box #4", null, "Star Wars Collectables Box #4 (UHM) [Attic]", "Attic" });
+                values: new object[] { new Guid("e48a6a1f-860a-4c73-b352-730ee00fdc35"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Star Wars Collectables Box #4", null, "Star Wars Collectables Box #4 (UHM) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("6c4c3df9-281e-4665-94b8-5bec00d9fede"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Star Wars Collectables Box #3", null, "Star Wars Collectables Box #3 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("851355b4-2704-4c0e-9fd4-f49d9e8f5b3f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Star Wars Collectables Box #3", null, "Star Wars Collectables Box #3 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("6008cfd4-dfec-43ef-9c6c-3109aa1170ce"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "Star Wars Collectables Box", null, "Star Wars Collectables Box (UHXL) [Attic]", "Attic" });
+                values: new object[] { new Guid("be16358d-ac99-4519-bb04-ea3b3c77c9df"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "Star Wars Collectables Box", null, "Star Wars Collectables Box (UHXL) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("427d0cd8-10b5-43d9-a2e6-3bcb78345cc8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #10", null, "Ken's Books Box #10 [Basement]", "Basement" });
+                values: new object[] { new Guid("ef09be40-13a9-4361-b9c9-c02edeca36fc"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #10", null, "Ken's Books Box #10 [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f6e4f11b-faeb-47ed-90d6-c9d3fbbad613"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESS", "Micro Machines - Titanium  Series Box #04", null, "Micro Machines - Titanium  Series Box #04 (ESSS) [Attic]", "Attic" });
+                values: new object[] { new Guid("1dceacfb-78bd-4afc-8688-942fccd37563"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESS", "Micro Machines - Titanium  Series Box #04", null, "Micro Machines - Titanium  Series Box #04 (ESSS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("345ec341-3cb4-4ecd-9215-9d94d716dd70"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #08", null, "Ken's Books Box #08 [Basement]", "Basement" });
+                values: new object[] { new Guid("35f12815-2b7f-4448-bf46-f1755c38f5c8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #08", null, "Ken's Books Box #08 [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5d1f850e-9d03-46fd-abcb-1dcc6e708c68"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Box #72-05", null, "Box #72-05 (UHM) [Attic]", "Attic" });
+                values: new object[] { new Guid("f381f200-9fb7-45d2-a397-6f37b16cdc61"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Box #72-05", null, "Box #72-05 (UHM) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("ed89e6ff-2ee0-4de8-9c16-6e88f2af3bac"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Box #72-06", null, "Box #72-06 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("32d6936d-0041-44fb-8473-a536d003fd8d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Box #72-06", null, "Box #72-06 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("564bc18a-d4fe-440a-94ac-bf5bf43435d9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Box #72-07", null, "Box #72-07 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("e1c083e5-ccf0-40ac-bee3-5cb9eeef419c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Box #72-07", null, "Box #72-07 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("4e57bedc-c4cf-4003-9764-5ed7a45c6c21"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Box #72-08", null, "Box #72-08 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("d58ead69-77a0-448d-bfaa-6bbd2fbe39fe"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Box #72-08", null, "Box #72-08 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("14f3a585-5fbb-454e-ba0c-d8b954747a69"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Box #72-09", null, "Box #72-09 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("36bd9861-7d12-46c8-9554-7e7f7b8538a5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Box #72-09", null, "Box #72-09 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c02eb8f6-9883-4a38-a74f-d13bed6d2e6c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-1 Ziploc bag", null, "Box #72-1 Ziploc bag", "" });
+                values: new object[] { new Guid("1b8e026d-ec1f-4bcb-9771-68ee94a012ba"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-1 Ziploc bag", null, "Box #72-1 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("684616f7-750f-4f9b-baf7-9de37915e553"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Box #72-10", null, "Box #72-10 (UHM) [Attic]", "Attic" });
+                values: new object[] { new Guid("e05ff9c1-f5ff-42f6-ab72-99f76126cefc"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Box #72-10", null, "Box #72-10 (UHM) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c30daa54-6710-48c5-b68d-58d26592e7f0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Box #72-04", null, "Box #72-04 (UHM) [Attic]", "Attic" });
+                values: new object[] { new Guid("1f35087b-49fb-4d6a-844b-222ebf2fa9e2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Box #72-04", null, "Box #72-04 (UHM) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("8e7eb95a-cdd3-44bf-ae71-6d8729240aa0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-10 Ziploc bag", null, "Box #72-10 Ziploc bag", "" });
+                values: new object[] { new Guid("ca16eb0c-fe6a-4e58-86ef-1dfeceb8d225"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-10 Ziploc bag", null, "Box #72-10 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("ab49c876-634c-4c34-92ca-747e0c492651"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL-Old", "Box #72-11", null, "Box #72-11 (UHXL-Old) [Attic]", "Attic" });
+                values: new object[] { new Guid("f1f24d7e-c0b5-4438-a4ee-db9ec8d5fdca"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL-Old", "Box #72-11", null, "Box #72-11 (UHXL-Old) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("7a6c2c69-e88c-4c1f-bc51-71052616550f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-11 Ziploc bag", null, "Box #72-11 Ziploc bag", "" });
+                values: new object[] { new Guid("698adf75-2ea8-4896-9827-0d2b67b45116"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-11 Ziploc bag", null, "Box #72-11 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d13dbe69-b9b7-4896-a967-51de1d4f0e60"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "Box #72-12", null, "Box #72-12 (UHXL) [Attic]", "Attic" });
+                values: new object[] { new Guid("786bd0b7-9d6e-413f-b125-5a3d41921553"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "Box #72-12", null, "Box #72-12 (UHXL) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5490350c-aa44-441d-b816-75ccc84dddb1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-12 Ziploc bag", null, "Box #72-12 Ziploc bag", "" });
+                values: new object[] { new Guid("41fd5312-4758-4095-8001-17b8d84b8065"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-12 Ziploc bag", null, "Box #72-12 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c56736dc-2648-41a3-a541-de2da5b2edd5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM-Old", "Box #72-13", null, "Box #72-13 (UHM-Old) [Attic]", "Attic" });
+                values: new object[] { new Guid("55a11871-0bf4-4462-b997-3cd65296e920"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM-Old", "Box #72-13", null, "Box #72-13 (UHM-Old) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("522090fc-1f8b-41c6-90ef-9a7c22a2696f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-13 Ziploc bag", null, "Box #72-13 Ziploc bag", "" });
+                values: new object[] { new Guid("15672e3d-c4ec-408d-b1f9-aa6d7fd0f3e1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-13 Ziploc bag", null, "Box #72-13 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("b74ca289-6a44-470c-b165-991b722edf78"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Box #72-14", null, "Box #72-14 (UHM) [Attic]", "Attic" });
+                values: new object[] { new Guid("a48013bb-2e79-428e-aee9-d306eecc5682"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Box #72-14", null, "Box #72-14 (UHM) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("7c4f9116-0aff-4e78-9ee3-75e9abf6169b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHL-Old", "Box #72-11", null, "Box #72-11 (UHL-Old) [Attic]", "Attic" });
+                values: new object[] { new Guid("939faaab-f62c-4388-8d60-b4c4caee48b3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHL-Old", "Box #72-11", null, "Box #72-11 (UHL-Old) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("9d5d877d-3287-448d-8a6a-d2f222e28a80"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-14 Ziploc bag", null, "Box #72-14 Ziploc bag", "" });
+                values: new object[] { new Guid("07ef447e-4f84-4571-887c-581f783560ce"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-14 Ziploc bag", null, "Box #72-14 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("833b6d05-b282-4ebe-ad02-209ec380abdd"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Box #72-03", null, "Box #72-03 (UHM) [Attic]", "Attic" });
+                values: new object[] { new Guid("df03e6e9-fec1-4764-8e64-b426543a2d64"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Box #72-03", null, "Box #72-03 (UHM) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f13522f3-8dbc-4120-a135-1751c038811b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Box #72-01", null, "Box #72-01 (UHM) [Attic]", "Attic" });
+                values: new object[] { new Guid("766d5d76-f616-4678-bf79-1121dcabae14"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Box #72-01", null, "Box #72-01 (UHM) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("46a38700-74d8-4c4b-986b-6b826554c1d1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Box #144-2", null, "Box #144-2 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("3d227d0b-f35a-4d61-8651-5de35cc37ee0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Box #144-2", null, "Box #144-2 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("b9d59769-3fda-4a35-9230-072aee70760e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #144-2 Ziploc bag", null, "Box #144-2 Ziploc bag", "" });
+                values: new object[] { new Guid("a30276bf-5653-47f9-ae67-fb5030d2ee38"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #144-2 Ziploc bag", null, "Box #144-2 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5d5c2bcc-8859-49fc-ad5c-19ee4a8ea96e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #3 Ziploc bag", null, "Box #3 Ziploc bag", "" });
+                values: new object[] { new Guid("81eb36f1-e074-44fa-bd12-31c9cd8d8ec1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #3 Ziploc bag", null, "Box #3 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("87e45132-fe51-4f21-842a-0c4bb9c58dfb"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHL", "Box #350-1", null, "Box #350-1 (UHL) [Attic]", "Attic" });
+                values: new object[] { new Guid("211a4a81-40a3-432b-beb4-a71f598c1000"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHL", "Box #350-1", null, "Box #350-1 (UHL) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d78ff67e-fafe-4153-b864-bea51e7f6ae9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #350-1 Ziploc bag", null, "Box #350-1 Ziploc bag", "" });
+                values: new object[] { new Guid("ed2d26b5-69a4-41b5-a820-2cceeaa968f6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #350-1 Ziploc bag", null, "Box #350-1 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("ecd492ac-8ed0-40e6-91eb-0415958f9126"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Box #350-2", null, "Box #350-2 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("f498d0eb-8651-4a7c-b07e-697a8df3bdbc"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Box #350-2", null, "Box #350-2 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("35d604f5-c640-44e1-8312-2f82e47f62a5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #350-2 Ziploc bag", null, "Box #350-2 Ziploc bag", "" });
+                values: new object[] { new Guid("8b11fc90-6c1b-4f48-8c64-f88027deb93e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #350-2 Ziploc bag", null, "Box #350-2 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("6c36ff63-d95a-42e9-aa69-64689a178615"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM-Old", "Box #72-02", null, "Box #72-02 (UHM-Old) [Attic]", "Attic" });
+                values: new object[] { new Guid("b6d1a446-3ee1-4686-ab4d-e1555863eeeb"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM-Old", "Box #72-02", null, "Box #72-02 (UHM-Old) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a13f3d9e-aec6-4939-9c85-38b0c403eb19"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM-Old", "Box #700-1", null, "Box #700-1 (UHM-Old) [Attic]", "Attic" });
+                values: new object[] { new Guid("b48691f0-8940-4240-af43-7a6a6ccc899c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM-Old", "Box #700-1", null, "Box #700-1 (UHM-Old) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("2f2bef03-8015-44d9-b62a-f6b2d0a3272a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHL", "Box #700-2", null, "Box #700-2 (UHL) [Attic]", "Attic" });
+                values: new object[] { new Guid("1e7ab396-ee8d-42bd-b833-77a63ead36d7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHL", "Box #700-2", null, "Box #700-2 (UHL) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d43c02c6-a3e5-4474-97b9-3bf2a4275f6d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #700-2 Ziploc bag", null, "Box #700-2 Ziploc bag", "" });
+                values: new object[] { new Guid("8787dcef-2543-4f1f-b63c-c66e81391c22"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #700-2 Ziploc bag", null, "Box #700-2 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("fd9ed0e3-b82f-4b22-967b-0493fe12b561"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #700-2 Ziploc bag\\par", null, "Box #700-2 Ziploc bag\\par", "" });
+                values: new object[] { new Guid("74bc9abf-c5e2-4a45-a71e-4cc3f46b965c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #700-2 Ziploc bag\\par", null, "Box #700-2 Ziploc bag\\par", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("25cbd02d-560d-4985-a5bd-00f13c44885f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "Box #700-3", null, "Box #700-3 (UHXL) [Attic]", "Attic" });
+                values: new object[] { new Guid("4155c02c-6197-4896-aa59-1cf4b992e2e2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "Box #700-3", null, "Box #700-3 (UHXL) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("0c3cffe2-e55c-42b6-a610-f8301ff28416"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #700-3 Ziploc bag", null, "Box #700-3 Ziploc bag", "" });
+                values: new object[] { new Guid("c9a2782b-74ef-4472-a29f-b32e0278f3fe"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #700-3 Ziploc bag", null, "Box #700-3 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("6c1356fa-e079-44bb-adab-628f408f5f47"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 15x12x8", "Box #700-4", null, "Box #700-4 (Unmarked 15x12x8) [Attic]", "Attic" });
+                values: new object[] { new Guid("c14d1597-6582-4b64-8376-295ae8074509"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 15x12x8", "Box #700-4", null, "Box #700-4 (Unmarked 15x12x8) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("70cd7974-8df7-4bf7-a0f5-d377e51f5ba4"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #700-4 Ziploc bag", null, "Box #700-4 Ziploc bag", "" });
+                values: new object[] { new Guid("a6bc772f-32d9-45c3-90b3-7efc2d787f3c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #700-4 Ziploc bag", null, "Box #700-4 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("55d22bfa-cb06-4da4-a15c-abb9872cd2f2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #700-1 Ziploc bag", null, "Box #700-1 Ziploc bag", "" });
+                values: new object[] { new Guid("d9ef6eda-f23c-402e-9adf-45850b83179d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #700-1 Ziploc bag", null, "Box #700-1 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("399f6fad-4bbe-4a86-b92e-9e9f7ecc3b1c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #144-1 Ziploc bag", null, "Box #144-1 Ziploc bag", "" });
+                values: new object[] { new Guid("99f646b8-768c-4be6-903d-e2375a89bdc7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #144-1 Ziploc bag", null, "Box #144-1 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("6d28a8a1-f4ea-420c-98a8-9d1c12376c1a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-2 Ziploc bag", null, "Box #72-2 Ziploc bag", "" });
+                values: new object[] { new Guid("329cd9fc-f40e-422f-954d-e22783f9bfe7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-2 Ziploc bag", null, "Box #72-2 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("b6f5e88e-7ff1-4649-9d53-a9313b40abd8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-5 Ziploc bag (2nd set, with wheels, left in box)", null, "Box #72-5 Ziploc bag (2nd set, with wheels, left in box)", "" });
+                values: new object[] { new Guid("0bec035b-9814-41d4-92c7-fa36880e9c10"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-5 Ziploc bag (2nd set, with wheels, left in box)", null, "Box #72-5 Ziploc bag (2nd set, with wheels, left in box)", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c0efa4b3-9747-4167-aef6-9297fd6412c2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "CD Box #2", null, "CD Box #2 (UHS) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("1120e839-bce5-4a82-b6dd-8f66c3af2d40"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "CD Box #2", null, "CD Box #2 (UHS) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c7dd02f8-3777-4c1c-b35e-e0b51ae861cf"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESS", "CD Box #3", null, "CD Box #3 (ESSS) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("cd7188b4-0eae-4fea-938a-4e22249ee640"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESS", "CD Box #3", null, "CD Box #3 (ESSS) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("240d1238-59f7-4355-ab15-aa40b82b04cf"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESS", "CD Box #4", null, "CD Box #4 (ESSS) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("cbf8a9c6-2a18-425d-baf6-6bd1fd05eb9a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESS", "CD Box #4", null, "CD Box #4 (ESSS) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("e82605f2-949a-4bb6-ae26-99b5e6d860b0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "CD Box #5", null, "CD Box #5 (UHS) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("cc5bdcdf-833d-4500-8a8e-f4932493e122"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "CD Box #5", null, "CD Box #5 (UHS) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("22c981f1-1fa6-4b8e-b8f9-844440d6ad28"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "CD Box #6", null, "CD Box #6 (33250) [Basement]", "Basement" });
+                values: new object[] { new Guid("76612146-b646-40f4-9af0-4023d1412202"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "CD Box #6", null, "CD Box #6 (33250) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("453d12e2-8e86-465e-a595-2314ad16f395"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "CD Box #7", null, "CD Box #7 (33250) [Basement]", "Basement" });
+                values: new object[] { new Guid("5a232a99-1978-4c2e-a9ec-9a1999859712"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "CD Box #7", null, "CD Box #7 (33250) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a9008fa8-f34d-4ea5-a774-26fdb78bea92"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "CD Box #8", null, "CD Box #8 (33250) [Basement]", "Basement" });
+                values: new object[] { new Guid("d3edbc58-d53e-49e5-a5a3-cccc44351205"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "CD Box #8", null, "CD Box #8 (33250) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("07c83daa-c888-46ec-8708-8c4f50b18203"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "CD Box #1", null, "CD Box #1 (UHS) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("686c3487-f581-49f8-afcb-2593a0105f70"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "CD Box #1", null, "CD Box #1 (UHS) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("dd23674e-13f3-4e38-98f6-65dffb86ddaf"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack - Arcade", null, "CD Rack - Arcade [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("6706364a-457c-4329-b7f8-0814e4db1bfc"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack - Arcade", null, "CD Rack - Arcade [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c828e7ab-5b3a-4249-90ad-3f5b191e7598"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack - FPS", null, "CD Rack - FPS [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("2185b0b5-9888-4d68-bd35-561a0b955dfb"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack - FPS", null, "CD Rack - FPS [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("13356aa4-32b2-4a58-8c81-7fc99f1470b5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack - RPG/Strategy", null, "CD Rack - RPG/Strategy [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("8eac2d87-1867-42a7-b275-e4f40e00d57e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack - RPG/Strategy", null, "CD Rack - RPG/Strategy [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("37750408-a267-4b05-9acf-24ddcddfe520"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack - Star Trek/Space Sim", null, "CD Rack - Star Trek/Space Sim [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("068a8404-ba8e-4420-9e2f-fcd5cfdc3bad"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack - Star Trek/Space Sim", null, "CD Rack - Star Trek/Space Sim [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f446a1b7-6ffa-481c-acba-c1ce91a9dda0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack - Star Wars", null, "CD Rack - Star Wars [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("f4c1ece1-2734-4b95-bdf6-8d657c91c3a7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack - Star Wars", null, "CD Rack - Star Wars [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("22dd975e-5073-4351-9a1a-2a43966c2550"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack - Strategy (C&C)", null, "CD Rack - Strategy (C&C) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("5fb6f0af-ae4d-4faa-9e5b-acfc96e7bbef"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack - Strategy (C&C)", null, "CD Rack - Strategy (C&C) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5dcbf18c-af52-4cb3-885a-7e86867b2014"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack - Strategy (Civilization)", null, "CD Rack - Strategy (Civilization) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("a9b80b35-6df8-42cc-902f-cc3dc3badf4c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack - Strategy (Civilization)", null, "CD Rack - Strategy (Civilization) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("579d5306-f832-46aa-9f11-962aca548d8c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack", null, "CD Rack [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("1be4ba93-4e6c-4fda-8041-a60deceb799c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack", null, "CD Rack [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("3c365435-d135-43f0-bba1-18701c1a772a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack - Flight Sims", null, "CD Rack - Flight Sims [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("24bcd63d-621f-49d4-8ebf-2e09319c9a8f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack - Flight Sims", null, "CD Rack - Flight Sims [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("be81fd00-55c3-448a-bc1d-88fae7fd7173"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-4 Ziploc bag", null, "Box #72-4 Ziploc bag", "" });
+                values: new object[] { new Guid("205ef2db-8738-4efa-ae60-bbc5bb0cddff"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-4 Ziploc bag", null, "Box #72-4 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("2730ea2d-3926-42d2-a55b-c81c0cb12ef8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Carol's Room", null, "Carol's Room", "" });
+                values: new object[] { new Guid("35356d1a-7666-4daf-841b-37e93194fc9a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Carol's Room", null, "Carol's Room", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("9f41a071-3807-4f8b-a97c-dbdd48012c25"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Carol's Books HB Fiction", null, "Carol's Books HB Fiction", "" });
+                values: new object[] { new Guid("d20210d1-389d-4203-be21-74a5c4c55f37"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Carol's Books HB Fiction", null, "Carol's Books HB Fiction", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c2bea135-6e27-44e0-a453-1b2f47726c38"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-5 Ziploc bag", null, "Box #72-5 Ziploc bag", "" });
+                values: new object[] { new Guid("bbd26398-76fd-4de1-a275-70c26ace67db"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-5 Ziploc bag", null, "Box #72-5 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("8a5b34da-36ba-41b2-a9e0-60589834e106"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-6 Ziploc bag", null, "Box #72-6 Ziploc bag", "" });
+                values: new object[] { new Guid("fe7500ce-82ba-41d3-9ded-256fe021f5f2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-6 Ziploc bag", null, "Box #72-6 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("96b118f1-b1bb-4203-b9d2-5afea9daeb73"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-7 Ziploc bag", null, "Box #72-7 Ziploc bag", "" });
+                values: new object[] { new Guid("571ba536-4b5d-46ab-98fc-12c027820117"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-7 Ziploc bag", null, "Box #72-7 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("765f5a54-84ad-4985-9f01-e40564e8cd8e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-8 Ziploc bag", null, "Box #72-8 Ziploc bag", "" });
+                values: new object[] { new Guid("327b5606-e8a4-4442-b647-2f30e62d6594"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-8 Ziploc bag", null, "Box #72-8 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d09189d6-35d6-4b42-bf3b-b0f8a3d3c5a8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-9 Ziploc bag", null, "Box #72-9 Ziploc bag", "" });
+                values: new object[] { new Guid("dafc1f93-9c80-4d21-a021-49a6614924be"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #72-9 Ziploc bag", null, "Box #72-9 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f856fed4-f1b0-4fbf-9af3-9baaf4662df8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #TB-1", null, "Box #TB-1", "" });
+                values: new object[] { new Guid("2133c268-9931-44f5-958d-863809a5bfbb"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #TB-1", null, "Box #TB-1", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("2a5f00cb-6f10-49f7-bc81-ff4b24b477e2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #TB-2", null, "Box #TB-2", "" });
+                values: new object[] { new Guid("4e451282-095e-49a6-81ff-aa8753eec838"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #TB-2", null, "Box #TB-2", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("6ae75f7d-91fb-4ec0-98aa-973759ed4a9f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Carol's Office", null, "Carol's Office", "" });
+                values: new object[] { new Guid("cc903db6-0308-45bf-8f88-fd9268b8090f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Carol's Office", null, "Carol's Office", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d9bf3558-3125-494d-a5ed-91b0e8c520fa"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #09", null, "Ken's Books Box #09 [Basement]", "Basement" });
+                values: new object[] { new Guid("0c48b33d-aebe-43e9-8999-8c36815f8dea"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #09", null, "Ken's Books Box #09 [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("7086750a-7a80-4d56-9e57-5923cd9acf26"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "C200809.2", null, "C200809.2 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("158bd858-0775-4afb-89f8-42608f9263e8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "C200809.2", null, "C200809.2 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("3bceefe5-fddc-4e4f-bf39-192fe3d73f05"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "C200809.3", null, "C200809.3 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("b6a730cd-810a-4cf2-ba7e-ff0bbf2d84ff"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "C200809.3", null, "C200809.3 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("53a85d49-9b2b-4761-952a-18970738e815"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "C200810.1", null, "C200810.1 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("d5f6f97a-8f23-433b-9d22-edf7e02776e8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "C200810.1", null, "C200810.1 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("039d91b2-6a9a-44cb-a4a0-66202e1cbeb8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "C200810.2", null, "C200810.2 (UHS) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("278db3bb-8fb4-403c-aeaf-78f0fca1b485"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "C200810.2", null, "C200810.2 (UHS) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("cfd838fa-a765-4e93-9107-14cd87af111d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Car Box #1 Ziploc bag", null, "Car Box #1 Ziploc bag", "" });
+                values: new object[] { new Guid("2b32fcf5-e69a-4232-85fd-a685d157b12e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Car Box #1 Ziploc bag", null, "Car Box #1 Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("145c5c33-f093-4356-b556-0c1d219bb5b9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Car Collectables Box #01", null, "Car Collectables Box #01 (UHM) [Attic]", "Attic" });
+                values: new object[] { new Guid("15d4fefa-2fad-40aa-aba0-e9b11cfa04ee"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHM", "Car Collectables Box #01", null, "Car Collectables Box #01 (UHM) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f2c1f70d-c973-4be1-af4a-9510f183bca5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "Car Models Box #1", null, "Car Models Box #1 (UHXL) [Attic]", "Attic" });
+                values: new object[] { new Guid("cefc6760-b74a-42e4-abd5-a85851e82d75"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHXL", "Car Models Box #1", null, "Car Models Box #1 (UHXL) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d961e2de-1b76-4852-88e3-6a2f2f9c18ac"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "C200809.1", null, "C200809.1 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("7f637a55-bd03-483b-acad-8962da85098f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "C200809.1", null, "C200809.1 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("0c450499-b5ce-416b-aaa2-03ec24c06ecc"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack", null, "CD Rack", "" });
+                values: new object[] { new Guid("c9e39ced-4733-422a-acb6-474fdb91eceb"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "CD Rack", null, "CD Rack", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("b6aa3e4d-6fa5-4165-8e37-599d8b8287e7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS-Old", "Box #144-1", null, "Box #144-1 (UHS-Old) [Attic]", "Attic" });
+                values: new object[] { new Guid("58446778-ca14-4d30-a535-5dd4e356b8b0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS-Old", "Box #144-1", null, "Box #144-1 (UHS-Old) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("40fe1ca5-6aa5-4beb-82be-4ad9eebaa370"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Borrowed", null, "Borrowed", "" });
+                values: new object[] { new Guid("2b728d90-3679-4727-a367-702e8c454d2d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Borrowed", null, "Borrowed", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5fcb34c8-0af3-4894-aa9c-57be05b01c98"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Delta\\Public\\Shared TV\\SciFi", null, "\\\\Delta\\Public\\Shared TV\\SciFi", "" });
+                values: new object[] { new Guid("e350d372-901f-4ee9-a141-3e5fba317b0f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Delta\\Public\\Shared TV\\SciFi", null, "\\\\Delta\\Public\\Shared TV\\SciFi", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("77c9ec28-e99a-4854-bda5-8e4828c78d67"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Delta\\Public\\Shared TV\\War", null, "\\\\Delta\\Public\\Shared TV\\War", "" });
+                values: new object[] { new Guid("95e78a3d-0905-4a1d-8518-9f33906ab97c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Delta\\Public\\Shared TV\\War", null, "\\\\Delta\\Public\\Shared TV\\War", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("adc31093-21d6-4b5c-ba3d-5c773952b4d1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Delta\\Public\\Shared TV\\Western", null, "\\\\Delta\\Public\\Shared TV\\Western", "" });
+                values: new object[] { new Guid("3f99695a-c9c1-4be6-9cee-3f80a5308848"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Delta\\Public\\Shared TV\\Western", null, "\\\\Delta\\Public\\Shared TV\\Western", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("290667cb-3362-4f33-9cf9-6185fa4fa65f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Echo\\Public\\Shared TV\\Animation", null, "\\\\Echo\\Public\\Shared TV\\Animation", "" });
+                values: new object[] { new Guid("d6075c6a-1a35-4f39-ae73-3d9e5c748e6f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Echo\\Public\\Shared TV\\Animation", null, "\\\\Echo\\Public\\Shared TV\\Animation", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("90b0bb56-0193-4813-8146-64ecaed02fe1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Echo\\Public\\Shared TV\\Comedy", null, "\\\\Echo\\Public\\Shared TV\\Comedy", "" });
+                values: new object[] { new Guid("4c0c65fd-cd7e-4b3a-b9c4-c49afc2eae2c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Echo\\Public\\Shared TV\\Comedy", null, "\\\\Echo\\Public\\Shared TV\\Comedy", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("7190ad1c-1e93-4ea4-8b05-5adf6cd6eedb"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Echo\\Public\\Shared TV\\Documentary", null, "\\\\Echo\\Public\\Shared TV\\Documentary", "" });
+                values: new object[] { new Guid("1adb51f3-bd7d-4268-947f-017df074b5f3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Echo\\Public\\Shared TV\\Documentary", null, "\\\\Echo\\Public\\Shared TV\\Documentary", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("13241927-7b5e-474f-9076-0118b7edc503"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Echo\\Public\\Shared TV\\Documentary\\NFL Films", null, "\\\\Echo\\Public\\Shared TV\\Documentary\\NFL Films", "" });
+                values: new object[] { new Guid("f532299f-d01d-4595-9b73-768e273d7190"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Echo\\Public\\Shared TV\\Documentary\\NFL Films", null, "\\\\Echo\\Public\\Shared TV\\Documentary\\NFL Films", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d0129493-bf28-418d-950d-d6596b775516"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Delta\\Public\\Shared TV\\Drama", null, "\\\\Delta\\Public\\Shared TV\\Drama", "" });
+                values: new object[] { new Guid("ae055892-c6aa-4c58-9da4-ee04bfe8efba"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Delta\\Public\\Shared TV\\Drama", null, "\\\\Delta\\Public\\Shared TV\\Drama", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("3b491358-d44a-4266-a8e9-7a58dff949e9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Echo\\Public\\Shared TV\\Drama", null, "\\\\Echo\\Public\\Shared TV\\Drama", "" });
+                values: new object[] { new Guid("684e6aff-cc7a-45e7-a72c-cdf0cc131463"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Echo\\Public\\Shared TV\\Drama", null, "\\\\Echo\\Public\\Shared TV\\Drama", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("777b4027-8f34-481d-8b70-1dca65520862"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Echo\\Public\\Shared TV\\War", null, "\\\\Echo\\Public\\Shared TV\\War", "" });
+                values: new object[] { new Guid("71ae75c8-204b-40f1-bd98-1265d60ff850"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Echo\\Public\\Shared TV\\War", null, "\\\\Echo\\Public\\Shared TV\\War", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("2150bfca-ccc3-420f-b58b-6a5bbb278965"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Foxtrot\\Public\\Shared TV\\Horror", null, "\\\\Foxtrot\\Public\\Shared TV\\Horror", "" });
+                values: new object[] { new Guid("0f0ac2a6-7adb-49a1-8f19-e8aaef9dfdb5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Foxtrot\\Public\\Shared TV\\Horror", null, "\\\\Foxtrot\\Public\\Shared TV\\Horror", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("68e3f8fe-4b87-4943-b48e-5ea3dd4459be"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Foxtrot\\Public\\Shared TV\\SciFi", null, "\\\\Foxtrot\\Public\\Shared TV\\SciFi", "" });
+                values: new object[] { new Guid("6dbf349a-d7f4-4bb0-ac5c-aa10164ad2a8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Foxtrot\\Public\\Shared TV\\SciFi", null, "\\\\Foxtrot\\Public\\Shared TV\\SciFi", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d57dbb5e-788e-4428-bee6-3e693a1304a0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Foxtrot\\Public\\Shared Videos\\Exercise", null, "\\\\Foxtrot\\Public\\Shared Videos\\Exercise", "" });
+                values: new object[] { new Guid("9d919039-1426-4420-95cd-0198b94a43fc"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Foxtrot\\Public\\Shared Videos\\Exercise", null, "\\\\Foxtrot\\Public\\Shared Videos\\Exercise", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("b339469a-3778-49d3-b5e0-bf71c8c9404f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Foxtrot\\Public\\Shared Videos\\Music Videos", null, "\\\\Foxtrot\\Public\\Shared Videos\\Music Videos", "" });
+                values: new object[] { new Guid("65b3e9ef-5068-4e83-bffc-b5f14bfb9cf0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Foxtrot\\Public\\Shared Videos\\Music Videos", null, "\\\\Foxtrot\\Public\\Shared Videos\\Music Videos", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d78c4a90-1d19-420e-b95a-4bb4c31f146b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Foxtrot\\Public\\Shared\\Videos\\Music Videos", null, "\\\\Foxtrot\\Public\\Shared\\Videos\\Music Videos", "" });
+                values: new object[] { new Guid("5763c936-5e17-47a7-90b8-cddf3be83c68"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Foxtrot\\Public\\Shared\\Videos\\Music Videos", null, "\\\\Foxtrot\\Public\\Shared\\Videos\\Music Videos", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("7f2b2f91-44e1-42a1-b5b8-b5438d475d46"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Apple Software Box", null, "Apple Software Box", "" });
+                values: new object[] { new Guid("fe46a771-f0f1-4abf-aea4-e1e304157a40"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Apple Software Box", null, "Apple Software Box", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("36c54fdb-490a-49f2-bf66-0ab6fa800b81"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Echo\\Public\\Shared TV\\SciFi", null, "\\\\Echo\\Public\\Shared TV\\SciFi", "" });
+                values: new object[] { new Guid("d7dc7fd1-3e27-4e07-bdf8-8081ea306891"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Echo\\Public\\Shared TV\\SciFi", null, "\\\\Echo\\Public\\Shared TV\\SciFi", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("285d6d1d-5adb-4ec5-8391-2528310b6c23"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Applied", null, "Applied", "" });
+                values: new object[] { new Guid("0bf78cb8-6ecf-4d92-8c9d-4b0e03fffd5e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Applied", null, "Applied", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("7f0d3997-d156-4448-8cc1-7734eb3b3274"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Delta\\Public\\Shared TV\\Comedy", null, "\\\\Delta\\Public\\Shared TV\\Comedy", "" });
+                values: new object[] { new Guid("4c4f047a-6923-431b-b163-d308c0ca6ff3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Delta\\Public\\Shared TV\\Comedy", null, "\\\\Delta\\Public\\Shared TV\\Comedy", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("9cc296a7-5174-40d0-8715-aa4ac11f1403"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Western", null, "\\\\Charlie\\Public\\Shared Movies\\Western", "" });
+                values: new object[] { new Guid("621ae32e-786e-43f4-bd7f-43267c117578"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Western", null, "\\\\Charlie\\Public\\Shared Movies\\Western", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("65e07f34-5cc7-4bf8-924a-de9fd60c7f90"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "?? Ziploc bag", null, "?? Ziploc bag", "" });
+                values: new object[] { new Guid("34050d8e-9192-4747-823c-3a1bafb07fb3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "?? Ziploc bag", null, "?? Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c8ebe1c1-ad1f-41fc-9da5-d0d01aec06cc"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "@ Large", null, "@ Large", "" });
+                values: new object[] { new Guid("2ca177c8-d6dd-40b9-9ed5-2f4502fd1819"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "@ Large", null, "@ Large", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("8cdeff85-ed7b-4a6a-92e6-e38c96fd388c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Action", null, "\\\\Charlie\\Public\\Shared Movies\\Action", "" });
+                values: new object[] { new Guid("2a8e5bec-9206-4290-985b-ab73b74c889d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Action", null, "\\\\Charlie\\Public\\Shared Movies\\Action", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("e756d044-0380-42b1-acf0-37a12fe4c4e5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Adventure", null, "\\\\Charlie\\Public\\Shared Movies\\Adventure", "" });
+                values: new object[] { new Guid("18f704f3-ca35-4883-a8e2-0f27137313af"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Adventure", null, "\\\\Charlie\\Public\\Shared Movies\\Adventure", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("7f4fe1a0-f60c-4f31-9641-939a77b4a759"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Cartoon-CG", null, "\\\\Charlie\\Public\\Shared Movies\\Cartoon-CG", "" });
+                values: new object[] { new Guid("3bc6e48b-566e-4b6f-a87b-25b0f0e8958b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Cartoon-CG", null, "\\\\Charlie\\Public\\Shared Movies\\Cartoon-CG", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("827a8293-8323-477c-ac8f-0f36792fa27f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Christmas", null, "\\\\Charlie\\Public\\Shared Movies\\Christmas", "" });
+                values: new object[] { new Guid("f334a0bf-a94e-4dc9-9930-d46c5e9467bd"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Christmas", null, "\\\\Charlie\\Public\\Shared Movies\\Christmas", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("048c1509-8c33-47b9-a30d-023e1226b987"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Comedy", null, "\\\\Charlie\\Public\\Shared Movies\\Comedy", "" });
+                values: new object[] { new Guid("06931010-7cf4-4400-80b7-11756fd8ef49"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Comedy", null, "\\\\Charlie\\Public\\Shared Movies\\Comedy", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c3d96ed9-4991-4fbf-a1eb-8f7ce683d71e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Delta\\Public\\Shared TV\\Animation", null, "\\\\Delta\\Public\\Shared TV\\Animation", "" });
+                values: new object[] { new Guid("4b575358-c929-4da6-a628-eedc63694ba0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Delta\\Public\\Shared TV\\Animation", null, "\\\\Delta\\Public\\Shared TV\\Animation", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("e53644ce-7388-46a4-ba99-11aecd161b55"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Documentary", null, "\\\\Charlie\\Public\\Shared Movies\\Documentary", "" });
+                values: new object[] { new Guid("bf90bdc3-09bd-49a4-92be-1c44ed959377"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Documentary", null, "\\\\Charlie\\Public\\Shared Movies\\Documentary", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("089725c0-c84e-4d37-b2b7-c29abe7c89b1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Fantasy", null, "\\\\Charlie\\Public\\Shared Movies\\Fantasy", "" });
+                values: new object[] { new Guid("1f1290ec-c65e-40df-97d5-b0c64a8f2135"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Fantasy", null, "\\\\Charlie\\Public\\Shared Movies\\Fantasy", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("beb09a65-f5a1-4f9c-9ac6-971044a2cdb2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Horror", null, "\\\\Charlie\\Public\\Shared Movies\\Horror", "" });
+                values: new object[] { new Guid("52e54e61-5b35-4689-b74e-66f67841c69c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Horror", null, "\\\\Charlie\\Public\\Shared Movies\\Horror", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("6b60d226-7a44-41ce-93ee-0ad1a2e20628"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Musical", null, "\\\\Charlie\\Public\\Shared Movies\\Musical", "" });
+                values: new object[] { new Guid("b94db799-3125-421f-b2c5-598831d556f6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Musical", null, "\\\\Charlie\\Public\\Shared Movies\\Musical", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("272d8111-fcfa-453d-8038-76f798d7950d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Mystery", null, "\\\\Charlie\\Public\\Shared Movies\\Mystery", "" });
+                values: new object[] { new Guid("538d0ef5-2240-448f-9524-1c1d79184b7f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Mystery", null, "\\\\Charlie\\Public\\Shared Movies\\Mystery", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("e8fc33b5-a282-4ee0-8020-6e517f88a28c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Science Fiction", null, "\\\\Charlie\\Public\\Shared Movies\\Science Fiction", "" });
+                values: new object[] { new Guid("b05f483d-2a15-47e4-b14b-a69160d63f4e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Science Fiction", null, "\\\\Charlie\\Public\\Shared Movies\\Science Fiction", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("b0d01d42-1686-4d76-b9d3-f174dfb047e6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Sports", null, "\\\\Charlie\\Public\\Shared Movies\\Sports", "" });
+                values: new object[] { new Guid("f359a9f3-5145-4b8d-82cb-5e728e8071e6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Sports", null, "\\\\Charlie\\Public\\Shared Movies\\Sports", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("fe96ae7e-5ea5-412c-aaca-5627d78f7d4b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\War", null, "\\\\Charlie\\Public\\Shared Movies\\War", "" });
+                values: new object[] { new Guid("34c75524-82d3-4386-8d96-294629d842a5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\War", null, "\\\\Charlie\\Public\\Shared Movies\\War", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("e7bfefde-fb20-407d-a28a-4849c8e7c152"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Drama", null, "\\\\Charlie\\Public\\Shared Movies\\Drama", "" });
+                values: new object[] { new Guid("ce3e0796-bb20-4005-af36-e30449b5e798"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "\\\\Charlie\\Public\\Shared Movies\\Drama", null, "\\\\Charlie\\Public\\Shared Movies\\Drama", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("7e620285-9524-402d-8e03-17cbb0c61281"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #? Ziploc bag", null, "Box #? Ziploc bag", "" });
+                values: new object[] { new Guid("1631d63d-a735-4c14-b109-ba714d22ef1d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #? Ziploc bag", null, "Box #? Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("cf4c5179-05a2-4760-b69d-fe1d08f9e6d3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Art Books Box #7", null, "Art Books Box #7 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("352d27db-dd07-4233-a857-9110e5c3b6d2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Art Books Box #7", null, "Art Books Box #7 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c7758e1b-7b9a-4b29-a972-f489b16c89a7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Aurora USS Enterprise Box", null, "Aurora USS Enterprise Box [Attic]", "Attic" });
+                values: new object[] { new Guid("fb5458d4-c664-4016-b781-9461fda0a0da"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Aurora USS Enterprise Box", null, "Aurora USS Enterprise Box [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f489ab76-7777-49bd-926d-5897ba6fbe0f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase A", null, "Bookcase A (Top Shelf) [Ken's Room - West Wall By Door]", "Ken's Room - West Wall By Door (Top Shelf)" });
+                values: new object[] { new Guid("e5c247b1-daa4-45bb-8431-7e7dea32bdbf"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase A", null, "Bookcase A (Top Shelf) [Ken's Room - West Wall By Door]", "Ken's Room - West Wall By Door (Top Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("822e2047-8937-4ba6-af4f-32ee4a14db99"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase B", null, "Bookcase B (Bottom Shelf) [Ken's Room - West Wall Back]", "Ken's Room - West Wall Back (Bottom Shelf)" });
+                values: new object[] { new Guid("0d052919-f139-4119-93a2-35d89b921b3c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase B", null, "Bookcase B (Bottom Shelf) [Ken's Room - West Wall Back]", "Ken's Room - West Wall Back (Bottom Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("86bc47cb-fc0e-4e68-b02d-8ac2ad6a3c10"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase B", null, "Bookcase B (Second Shelf) [Ken's Room - West Wall Back]", "Ken's Room - West Wall Back (Second Shelf)" });
+                values: new object[] { new Guid("aee8f41b-af57-4dcd-b12d-c2056a114e74"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase B", null, "Bookcase B (Second Shelf) [Ken's Room - West Wall Back]", "Ken's Room - West Wall Back (Second Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("646d9081-54e1-4e53-8af4-d5cb813bd238"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase B", null, "Bookcase B (Third Shelf) [Ken's Room - West Wall Back]", "Ken's Room - West Wall Back (Third Shelf)" });
+                values: new object[] { new Guid("24994b11-590d-4aea-888b-f1f3626b85e6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase B", null, "Bookcase B (Third Shelf) [Ken's Room - West Wall Back]", "Ken's Room - West Wall Back (Third Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("e72345e2-ecd6-46b4-8dfc-cabc7989d1a8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase B", null, "Bookcase B (Top Shelf) [Ken's Room - West Wall Back]", "Ken's Room - West Wall Back (Top Shelf)" });
+                values: new object[] { new Guid("d65f90e7-c683-4a0c-8929-e97a5156fd64"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase B", null, "Bookcase B (Top Shelf) [Ken's Room - West Wall Back]", "Ken's Room - West Wall Back (Top Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("7bc1b469-41bb-4b72-9085-88dd340a5a7e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase C", null, "Bookcase C (Bottom Shelf) [Ken's Room - West Wall By Closet]", "Ken's Room - West Wall By Closet (Bottom Shelf)" });
+                values: new object[] { new Guid("8c4e48a8-ec8b-440f-b9dc-35783220d28d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase C", null, "Bookcase C (Bottom Shelf) [Ken's Room - West Wall By Closet]", "Ken's Room - West Wall By Closet (Bottom Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("21e196dd-8e21-4b07-93ba-8de8d4cde1f4"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase C", null, "Bookcase C (Second Shelf) [Ken's Room - West Wall By Closet]", "Ken's Room - West Wall By Closet (Second Shelf)" });
+                values: new object[] { new Guid("877d3f14-39e2-48dd-bdbf-e7736cb44e04"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase C", null, "Bookcase C (Second Shelf) [Ken's Room - West Wall By Closet]", "Ken's Room - West Wall By Closet (Second Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d6bbff83-4544-4cb0-8d90-bf0453104346"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase A", null, "Bookcase A (Third Shelf) [Ken's Room - West Wall By Door]", "Ken's Room - West Wall By Door (Third Shelf)" });
+                values: new object[] { new Guid("385389a4-898f-40ea-a668-22ea7376de91"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase A", null, "Bookcase A (Third Shelf) [Ken's Room - West Wall By Door]", "Ken's Room - West Wall By Door (Third Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("408282c5-10b8-4d9c-82c0-0d07bcf70b07"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase C", null, "Bookcase C (Third Shelf) [Ken's Room - West Wall By Closet]", "Ken's Room - West Wall By Closet (Third Shelf)" });
+                values: new object[] { new Guid("73488154-dd13-4bbe-af82-f2c5aaaa2020"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase C", null, "Bookcase C (Third Shelf) [Ken's Room - West Wall By Closet]", "Ken's Room - West Wall By Closet (Third Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("55629cbf-d3eb-4c51-a95c-b07fad568e11"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase F", null, "Bookcase F (Second Shelf) [Ken's Room - Front Wall]", "Ken's Room - Front Wall (Second Shelf)" });
+                values: new object[] { new Guid("89053eab-5e78-41b8-8190-6338ac4ea862"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase F", null, "Bookcase F (Second Shelf) [Ken's Room - Front Wall]", "Ken's Room - Front Wall (Second Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("40ef9fdf-382a-4884-ba9b-4f22cbcd0050"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase F", null, "Bookcase F (Top Shelf) [Ken's Room - Front Wall]", "Ken's Room - Front Wall (Top Shelf)" });
+                values: new object[] { new Guid("2b8c5357-1374-4699-8ad1-e803a6c88400"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase F", null, "Bookcase F (Top Shelf) [Ken's Room - Front Wall]", "Ken's Room - Front Wall (Top Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("2f096314-2386-4cb3-9cb5-eb9d45155d73"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookshelf", null, "Bookshelf (Bottom Shelf) [Ken's Room - Back Wall]", "Ken's Room - Back Wall (Bottom Shelf)" });
+                values: new object[] { new Guid("1e174f0a-a969-4587-b713-9c5213e08723"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookshelf", null, "Bookshelf (Bottom Shelf) [Ken's Room - Back Wall]", "Ken's Room - Back Wall (Bottom Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f875e621-7e57-45c2-b2c2-45a0284eaa73"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookshelf", null, "Bookshelf (Bottom Shelf) [Ken's Room - East Wall]", "Ken's Room - East Wall (Bottom Shelf)" });
+                values: new object[] { new Guid("f5e079c6-0cf1-4ad2-9862-2a71a70cb188"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookshelf", null, "Bookshelf (Bottom Shelf) [Ken's Room - East Wall]", "Ken's Room - East Wall (Bottom Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("e9bbee9a-a8b3-4d14-92e0-b4ab3109222f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookshelf", null, "Bookshelf (Top Shelf) [Ken's Room - Back Wall]", "Ken's Room - Back Wall (Top Shelf)" });
+                values: new object[] { new Guid("e9197a76-5304-4b91-b022-aebb0014ab7b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookshelf", null, "Bookshelf (Top Shelf) [Ken's Room - Back Wall]", "Ken's Room - Back Wall (Top Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("8165bed1-e9cb-4c07-95dc-c400aca10193"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookshelf", null, "Bookshelf (Top Shelf) [Ken's Room - East Wall]", "Ken's Room - East Wall (Top Shelf)" });
+                values: new object[] { new Guid("84e08c7c-98d8-40f0-9ad9-c43808626f55"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookshelf", null, "Bookshelf (Top Shelf) [Ken's Room - East Wall]", "Ken's Room - East Wall (Top Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("27eb4c48-0111-4984-8cef-9af7f27ef911"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookshelf", null, "Bookshelf", "" });
+                values: new object[] { new Guid("9af2a869-0d10-4528-8000-05b29867f67c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookshelf", null, "Bookshelf", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d1869152-1777-4c1a-bea3-3128a5eb62ff"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase C", null, "Bookcase C (Top Shelf) [Ken's Room - West Wall By Closet]", "Ken's Room - West Wall By Closet (Top Shelf)" });
+                values: new object[] { new Guid("ec233619-4043-4642-895d-551e6f56ca6f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase C", null, "Bookcase C (Top Shelf) [Ken's Room - West Wall By Closet]", "Ken's Room - West Wall By Closet (Top Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("ba24c6c2-6c79-484b-833b-13a48d202e3f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Attic", null, "Attic", "" });
+                values: new object[] { new Guid("c047648a-a3d4-4e9e-9e62-0eaee152c2d6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Attic", null, "Attic", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("b47bb208-4689-4aed-a17c-8be62fb930eb"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase A", null, "Bookcase A (Second Shelf) [Ken's Room - West Wall By Door]", "Ken's Room - West Wall By Door (Second Shelf)" });
+                values: new object[] { new Guid("410b4aff-b47d-4214-857d-12f11f54f889"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase A", null, "Bookcase A (Second Shelf) [Ken's Room - West Wall By Door]", "Ken's Room - West Wall By Door (Second Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("abb3e112-e2eb-4df8-8b49-6a7484312fc3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase #1", null, "Bookcase #1 (Top Shelf) [Carol's Room - East Wall]", "Carol's Room - East Wall (Top Shelf)" });
+                values: new object[] { new Guid("15be25ca-482c-4497-b7fb-2b2d8856243a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase #1", null, "Bookcase #1 (Top Shelf) [Carol's Room - East Wall]", "Carol's Room - East Wall (Top Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("9bfa3478-8c86-45cc-80db-3b21f4d98d30"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Axis&Allies War at Sea - Allies Case", null, "Axis&Allies War at Sea - Allies Case", "Ken's Room" });
+                values: new object[] { new Guid("82373c25-8eb2-45f3-9928-d2cf6ad0720c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Axis&Allies War at Sea - Allies Case", null, "Axis&Allies War at Sea - Allies Case", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("79ae66c6-0444-461e-a718-33abe65e8c3f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Axis&Allies War at Sea - Axis Case", null, "Axis&Allies War at Sea - Axis Case", "Ken's Room" });
+                values: new object[] { new Guid("d3f80cfd-495a-4e0e-9b73-5fce6dc0eb8d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Axis&Allies War at Sea - Axis Case", null, "Axis&Allies War at Sea - Axis Case", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("244dc62b-4d36-4016-b856-5453980c1a8c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Axis&Allies War at Sea Condition Zebra Case", null, "Axis&Allies War at Sea Condition Zebra Case", "Ken's Room" });
+                values: new object[] { new Guid("1c1cecae-aeef-4fcf-b8e9-65679681fdcf"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Axis&Allies War at Sea Condition Zebra Case", null, "Axis&Allies War at Sea Condition Zebra Case", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("26e8b081-fd7b-485e-8dec-075343ab85f5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Axis&Allies War at Sea Flank Speed Case", null, "Axis&Allies War at Sea Flank Speed Case", "Ken's Room" });
+                values: new object[] { new Guid("56f47228-9650-4f80-b1e7-345b7912d958"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Axis&Allies War at Sea Flank Speed Case", null, "Axis&Allies War at Sea Flank Speed Case", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("62790b1e-2b8c-4a68-8112-8a13cb7b4dbf"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Axis&Allies War at Sea Fleet Command Case", null, "Axis&Allies War at Sea Fleet Command Case", "Ken's Room" });
+                values: new object[] { new Guid("7cd0665f-38f5-44df-a08d-269d0b1d968d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Axis&Allies War at Sea Fleet Command Case", null, "Axis&Allies War at Sea Fleet Command Case", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("df5a3168-a093-425d-9170-ad795481c22b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Axis&Allies War at Sea Surface Action Case", null, "Axis&Allies War at Sea Surface Action Case", "Ken's Room" });
+                values: new object[] { new Guid("b9a46e8a-0ae7-427c-883a-369defa26dfb"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Axis&Allies War at Sea Surface Action Case", null, "Axis&Allies War at Sea Surface Action Case", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("b6f448b3-6190-4da7-8a84-ab0bdacf65c3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Axis&Allies War at Sea Task Force - Allies Case", null, "Axis&Allies War at Sea Task Force - Allies Case", "Ken's Room" });
+                values: new object[] { new Guid("bd372e37-8567-4ef2-b4ae-a66f1a427f3c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Axis&Allies War at Sea Task Force - Allies Case", null, "Axis&Allies War at Sea Task Force - Allies Case", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("8da4cd16-549f-4bf7-8a49-4ae8671d8b30"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase A", null, "Bookcase A (Bottom Shelf) [Ken's Room - West Wall By Door]", "Ken's Room - West Wall By Door (Bottom Shelf)" });
+                values: new object[] { new Guid("f613d637-1dd9-45ef-bc13-9c4f5322c853"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase A", null, "Bookcase A (Bottom Shelf) [Ken's Room - West Wall By Door]", "Ken's Room - West Wall By Door (Bottom Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c67da726-8314-4eb2-b4f8-68e0909eaafe"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Axis&Allies War at Sea Task Force - Axis Case", null, "Axis&Allies War at Sea Task Force - Axis Case", "Ken's Room" });
+                values: new object[] { new Guid("78443ac3-3b1c-43a8-84ef-0d4324159fbd"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Axis&Allies War at Sea Task Force - Axis Case", null, "Axis&Allies War at Sea Task Force - Axis Case", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c79f9afa-a71b-406b-9ee7-cb792d5cc9e5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Basement Toolbox", null, "Basement Toolbox", "" });
+                values: new object[] { new Guid("f23aa1b3-57b4-4ef0-a57b-1d8a10dbda8e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Basement Toolbox", null, "Basement Toolbox", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("012024eb-2fa6-4447-947d-f6dfdbd503fd"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Basement Workbench", null, "Basement Workbench", "" });
+                values: new object[] { new Guid("86418488-3373-4285-b673-da301c29bbc5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Basement Workbench", null, "Basement Workbench", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("386bde6e-8482-4084-97a5-e3c597947195"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Basement", null, "Basement", "" });
+                values: new object[] { new Guid("bd835362-d8d9-454e-9988-7ac05edf0738"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Basement", null, "Basement", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("dc3cba45-916c-43e2-8ee5-4b5d76776de1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Battlestar Galactica Raptor Armament Set", null, "Battlestar Galactica Raptor Armament Set", "" });
+                values: new object[] { new Guid("a311b350-ee87-4124-b766-e058a1bd4264"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Battlestar Galactica Raptor Armament Set", null, "Battlestar Galactica Raptor Armament Set", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("8d1af83f-8592-4974-8ec6-3e7089811800"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase #1", null, "Bookcase #1 (Atop) [Carol's Room - East Wall]", "Carol's Room - East Wall (Atop)" });
+                values: new object[] { new Guid("9340873d-9a71-429f-9186-0625ed06aec9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase #1", null, "Bookcase #1 (Atop) [Carol's Room - East Wall]", "Carol's Room - East Wall (Atop)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("fd7ee7be-e840-491f-80a2-02f2a121dd83"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase #1", null, "Bookcase #1 (Second Shelf Shelf) [Carol's Room - East Wall]", "Carol's Room - East Wall (Second Shelf Shelf)" });
+                values: new object[] { new Guid("92ff220b-21c7-42b1-87ed-bf7a228e9a26"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase #1", null, "Bookcase #1 (Second Shelf Shelf) [Carol's Room - East Wall]", "Carol's Room - East Wall (Second Shelf Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("7437d49e-d09c-4f58-81cb-e21b13fb63c4"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase #1", null, "Bookcase #1 (Third Shelf Shelf) [Carol's Room - East Wall]", "Carol's Room - East Wall (Third Shelf Shelf)" });
+                values: new object[] { new Guid("e1c2787a-34b3-44e7-ab16-9080e3fc3f77"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Bookcase #1", null, "Bookcase #1 (Third Shelf Shelf) [Carol's Room - East Wall]", "Carol's Room - East Wall (Third Shelf Shelf)" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d3223346-c775-404d-997a-e57059efc2c6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESSS", "Baseball Cards Box #1", null, "Baseball Cards Box #1 (ESSS) [Closet]", "Closet" });
+                values: new object[] { new Guid("7fc48c4d-8eb0-440a-9ba6-7943f7235e5c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESSS", "Baseball Cards Box #1", null, "Baseball Cards Box #1 (ESSS) [Closet]", "Closet" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("4a360e2b-aa1b-492c-b090-21a28d407b78"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Christmas CDs", null, "Christmas CDs", "" });
+                values: new object[] { new Guid("01b5760e-48ec-4b8a-934e-455f30a919c7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Christmas CDs", null, "Christmas CDs", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("98fc29d0-c554-48aa-99f9-93bc55cf0e35"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #TB-3", null, "Box #TB-3", "" });
+                values: new object[] { new Guid("5e69f3b6-3725-4da7-a010-3ea43557ca8a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Box #TB-3", null, "Box #TB-3", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("6173d8aa-3dbb-41ac-b6e2-aa9a9cd172cf"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Closet", null, "Closet", "" });
+                values: new object[] { new Guid("3f60ab9c-2f09-4991-b2be-099791f70540"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Closet", null, "Closet", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("ba7d7966-f3dc-4c43-ba87-a35e711d63d6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amazon K3", "Hot Wheels Box #2014B", null, "Hot Wheels Box #2014B (Amazon K3) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("acd2d839-4ee9-478a-a463-e275896505f3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amazon K3", "Hot Wheels Box #2014B", null, "Hot Wheels Box #2014B (Amazon K3) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("fc3c3e6f-8d9c-480c-abce-c040e1e6ae9a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 16x12.5x6", "Hot Wheels Box #2014C", null, "Hot Wheels Box #2014C (Unmarked 16x12.5x6) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("72519c67-20e1-4fad-93ac-e61c314a5d10"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 16x12.5x6", "Hot Wheels Box #2014C", null, "Hot Wheels Box #2014C (Unmarked 16x12.5x6) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("6fa07aed-bb96-4159-a493-f975c9f3bbbd"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 11x8x6", "Hot Wheels Box #2014D", null, "Hot Wheels Box #2014D (Unmarked 11x8x6) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("bbea0c99-df02-4370-9805-7bfb553834a0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 11x8x6", "Hot Wheels Box #2014D", null, "Hot Wheels Box #2014D (Unmarked 11x8x6) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("9f4f17a2-a86a-4398-9ad8-19af5bcc2ad3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amazon 1AE", "Hot Wheels Box #2016A", null, "Hot Wheels Box #2016A (Amazon 1AE) [Attic]", "Attic" });
+                values: new object[] { new Guid("d0ac3adf-5720-4c46-8c8a-12e7baf65319"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amazon 1AE", "Hot Wheels Box #2016A", null, "Hot Wheels Box #2016A (Amazon 1AE) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("700c6918-d1ba-4e18-a400-5f1eb17014e7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amazon 1AE", "Hot Wheels Box #2016B", null, "Hot Wheels Box #2016B (Amazon 1AE) [Attic]", "Attic" });
+                values: new object[] { new Guid("67b24a62-2d18-4c9b-8e77-7f3e37dba89f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amazon 1AE", "Hot Wheels Box #2016B", null, "Hot Wheels Box #2016B (Amazon 1AE) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("efbb5a43-ffc0-470c-a636-9f60e39d1bae"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amazon 1AE", "Hot Wheels Box #2016C", null, "Hot Wheels Box #2016C (Amazon 1AE) [Attic]", "Attic" });
+                values: new object[] { new Guid("1d1dd78f-d83a-475c-a67c-78628c718643"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amazon 1AE", "Hot Wheels Box #2016C", null, "Hot Wheels Box #2016C (Amazon 1AE) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("26d5bc45-dcfb-4aec-926d-e8be20c78f29"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 14x14x9", "Hot Wheels Box #2017A", null, "Hot Wheels Box #2017A (Unmarked 14x14x9) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("202fe251-40cf-4dad-9554-041244150125"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 14x14x9", "Hot Wheels Box #2017A", null, "Hot Wheels Box #2017A (Unmarked 14x14x9) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("cb42aa04-a223-4149-9917-1efdf47a4ea9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "FantasyFlight", "Hot Wheels Box #2014A", null, "Hot Wheels Box #2014A (FantasyFlight) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("82acc42c-4a03-44cb-9209-418548942559"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "FantasyFlight", "Hot Wheels Box #2014A", null, "Hot Wheels Box #2014A (FantasyFlight) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("ef55fed4-6705-4902-a260-4505031b5694"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 17x13x6", "Hot Wheels Box #2017B", null, "Hot Wheels Box #2017B (Unmarked 17x13x6) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("60558c51-917b-4bef-b8f0-2e938609034d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 17x13x6", "Hot Wheels Box #2017B", null, "Hot Wheels Box #2017B (Unmarked 17x13x6) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f6cb349b-675f-4911-92ec-f6a3317b3b1c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Christmas DVDs", null, "Christmas DVDs", "" });
+                values: new object[] { new Guid("8d986d6b-8b4c-41b0-866d-bcd11db0cad9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Christmas DVDs", null, "Christmas DVDs", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("9c7efefa-0df1-4e2d-93a1-95e5ae918d99"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amazon 1A5", "Hot Wheels Box #2018B", null, "Hot Wheels Box #2018B (Amazon 1A5) [Basement]", "Basement" });
+                values: new object[] { new Guid("05a4a12d-6f7a-4bf5-b8db-a9cafd2c944f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amazon 1A5", "Hot Wheels Box #2018B", null, "Hot Wheels Box #2018B (Amazon 1A5) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a6112fd3-9a00-4304-8e69-c47b4f190b35"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 16x12x8", "Hot Wheels Box #2018C", null, "Hot Wheels Box #2018C (Unmarked 16x12x8) [Basement]", "Basement" });
+                values: new object[] { new Guid("d18cf4f9-0c38-487b-ad51-072126ec0f52"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 16x12x8", "Hot Wheels Box #2018C", null, "Hot Wheels Box #2018C (Unmarked 16x12x8) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("8fbfa14f-8b2b-4d39-8195-8c9933fe7332"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 16x8x6", "Hot Wheels Box #2018D", null, "Hot Wheels Box #2018D (Unmarked 16x8x6) [Basement]", "Basement" });
+                values: new object[] { new Guid("80f896c5-bf18-4363-956a-38d8b3ee24ec"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 16x8x6", "Hot Wheels Box #2018D", null, "Hot Wheels Box #2018D (Unmarked 16x8x6) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d67bb279-2553-48df-a48c-f2b2a171e95a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 13x9x5.25", "Hot Wheels Box #21", null, "Hot Wheels Box #21 (Unmarked 13x9x5.25) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("82f3da51-c44a-4448-af09-305c9e4bef50"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 13x9x5.25", "Hot Wheels Box #21", null, "Hot Wheels Box #21 (Unmarked 13x9x5.25) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("392ded00-ac07-49b9-9c07-77d129450867"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel L2593 Case", "Hot Wheels Box #22", null, "Hot Wheels Box #22 (Mattel L2593 Case) [Attic]", "Attic" });
+                values: new object[] { new Guid("67c71d99-8974-4758-af6b-69cab35bb9e5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel L2593 Case", "Hot Wheels Box #22", null, "Hot Wheels Box #22 (Mattel L2593 Case) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("896fc337-6ac6-4c2a-b9be-60f6f0b93b91"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 16x12x8", "Hot Wheels Box #23", null, "Hot Wheels Box #23 (Unmarked 16x12x8) [Attic]", "Attic" });
+                values: new object[] { new Guid("ebf01ea6-720e-48ec-bf8f-1134fe92773a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 16x12x8", "Hot Wheels Box #23", null, "Hot Wheels Box #23 (Unmarked 16x12x8) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f643f191-f6a4-440e-bff8-d6e68dc67977"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 16x8x7", "Hot Wheels Box #2017C", null, "Hot Wheels Box #2017C (Unmarked 16x8x7) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("5a395dee-29ce-43dc-846a-ed6fb93e2cb9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 16x8x7", "Hot Wheels Box #2017C", null, "Hot Wheels Box #2017C (Unmarked 16x8x7) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("fd8d8ce9-32ee-47f1-8dc8-eb01123744d3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "USPS Priority Mail Medium", "Hot Wheels Box #24", null, "Hot Wheels Box #24 (USPS Priority Mail Medium) [Attic]", "Attic" });
+                values: new object[] { new Guid("62b5d316-2e84-4214-89f3-2924a84de37a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "USPS Priority Mail Medium", "Hot Wheels Box #24", null, "Hot Wheels Box #24 (USPS Priority Mail Medium) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("61189a64-19a4-41af-a570-c9555d15cf9f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 18x10x4", "Hot Wheels Box #20", null, "Hot Wheels Box #20 (Unmarked 18x10x4) [Attic]", "Attic" });
+                values: new object[] { new Guid("ce800990-e604-473a-8611-2be8463638d3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 18x10x4", "Hot Wheels Box #20", null, "Hot Wheels Box #20 (Unmarked 18x10x4) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("cdb6e28d-87e0-40c3-84a8-bfaea3918627"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 14x12x6", "Hot Wheels Box #18", null, "Hot Wheels Box #18 (Unmarked 14x12x6) [Attic]", "Attic" });
+                values: new object[] { new Guid("1b7118ac-eed4-4eda-b730-b631ef4d0cef"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 14x12x6", "Hot Wheels Box #18", null, "Hot Wheels Box #18 (Unmarked 14x12x6) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("bf78b735-0363-45cf-ad0a-0c4217c17675"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amazon 12x9x6", "Hot Wheels Box #02", null, "Hot Wheels Box #02 (Amazon 12x9x6) [Attic]", "Attic" });
+                values: new object[] { new Guid("d362e5e0-93fd-4db1-af47-9fb54057ea08"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amazon 12x9x6", "Hot Wheels Box #02", null, "Hot Wheels Box #02 (Amazon 12x9x6) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c1533953-96d8-4a35-a731-e9519e438161"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESS", "Hot Wheels Box #03", null, "Hot Wheels Box #03 (ESSS) [Attic]", "Attic" });
+                values: new object[] { new Guid("5a57f6e5-0613-4fbb-ada8-6db259adc002"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESS", "Hot Wheels Box #03", null, "Hot Wheels Box #03 (ESSS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("297db47b-c57b-4f11-a94b-12c8957369ba"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESS", "Hot Wheels Box #04", null, "Hot Wheels Box #04 (ESSS) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("ea2ab4dc-964a-4d3c-8d37-0c409b4c184b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESS", "Hot Wheels Box #04", null, "Hot Wheels Box #04 (ESSS) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("ff2b885c-af03-4994-85a2-2c45340b67a5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Hot Wheels Box #05", null, "Hot Wheels Box #05 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("b627044c-691d-4fdc-b0bc-c4979d7e7635"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Hot Wheels Box #05", null, "Hot Wheels Box #05 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a5a62626-5401-43a9-8214-effa051dbba3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Hot Wheels Box #06", null, "Hot Wheels Box #06 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("41eef900-3dad-4e7a-bc71-ac498b85c16e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Hot Wheels Box #06", null, "Hot Wheels Box #06 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("e0024070-23f7-449d-92f0-9357f7191d96"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 14x12x6", "Hot Wheels Box #07", null, "Hot Wheels Box #07 (Unmarked 14x12x6) [Attic]", "Attic" });
+                values: new object[] { new Guid("1b75574c-f018-481e-9957-3aa3671a578a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 14x12x6", "Hot Wheels Box #07", null, "Hot Wheels Box #07 (Unmarked 14x12x6) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("2c089a2f-50c5-4415-b313-788e89f1316b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B&N 13x11x6", "Hot Wheels Box #08", null, "Hot Wheels Box #08 (B&N 13x11x6) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("98ba92a5-4038-42fc-942d-80f95cea26c2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B&N 13x11x6", "Hot Wheels Box #08", null, "Hot Wheels Box #08 (B&N 13x11x6) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("7f33a401-85e9-4e1f-b42a-d05a45901380"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel X8308 Case", "Hot Wheels Box #19", null, "Hot Wheels Box #19 (Mattel X8308 Case) [Attic]", "Attic" });
+                values: new object[] { new Guid("6f40be36-1c73-4030-8c63-a29c6e370075"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel X8308 Case", "Hot Wheels Box #19", null, "Hot Wheels Box #19 (Mattel X8308 Case) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("9803ee30-382b-4706-b3dd-edb84d6b09d9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 12x9x6", "Hot Wheels Box #09", null, "Hot Wheels Box #09 (Unmarked 12x9x6) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("c3e3e823-37d2-4100-a3bc-a9446e4e6b85"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 12x9x6", "Hot Wheels Box #09", null, "Hot Wheels Box #09 (Unmarked 12x9x6) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("12b91759-a8f1-499a-9e54-f44dc2c5d0bb"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 16x12.5x6", "Hot Wheels Box #11", null, "Hot Wheels Box #11 (Unmarked 16x12.5x6) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("f60959d5-87d8-4cf4-b463-e3d1cc0c5328"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 16x12.5x6", "Hot Wheels Box #11", null, "Hot Wheels Box #11 (Unmarked 16x12.5x6) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("da74f107-0828-4c7c-bde6-52ef1e8f2450"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 13x11x5", "Hot Wheels Box #12", null, "Hot Wheels Box #12 (Unmarked 13x11x5) [Attic]", "Attic" });
+                values: new object[] { new Guid("c0893e43-7ec4-47bb-9364-31ef8a6842b4"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 13x11x5", "Hot Wheels Box #12", null, "Hot Wheels Box #12 (Unmarked 13x11x5) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5c4c8b8d-5aab-4ef4-9466-b6018f046776"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel L2593 Case", "Hot Wheels Box #13", null, "Hot Wheels Box #13 (Mattel L2593 Case) [Attic]", "Attic" });
+                values: new object[] { new Guid("7772bd0d-c203-4973-8b80-5bc4feb70ef0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel L2593 Case", "Hot Wheels Box #13", null, "Hot Wheels Box #13 (Mattel L2593 Case) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("494300dd-edde-41d7-9749-833b9eb0c491"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 14x10x6", "Hot Wheels Box #14", null, "Hot Wheels Box #14 (Unmarked 14x10x6) [Attic]", "Attic" });
+                values: new object[] { new Guid("4a752602-096e-47a0-a060-1ccb447e45e5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 14x10x6", "Hot Wheels Box #14", null, "Hot Wheels Box #14 (Unmarked 14x10x6) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a9499a0a-a08d-424b-9420-a0268f4dc81e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 10x8x6", "Hot Wheels Box #15", null, "Hot Wheels Box #15 (Unmarked 10x8x6) [Attic]", "Attic" });
+                values: new object[] { new Guid("b397f37e-0771-4dbe-b643-930473133d29"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 10x8x6", "Hot Wheels Box #15", null, "Hot Wheels Box #15 (Unmarked 10x8x6) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("ba3b51f3-28b3-4d71-aba2-7c23da7e4583"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel BDT77 Case", "Hot Wheels Box #16", null, "Hot Wheels Box #16 (Mattel BDT77 Case) [Attic]", "Attic" });
+                values: new object[] { new Guid("ba3daf87-9bb3-4168-bbcb-5755ca3dfea8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel BDT77 Case", "Hot Wheels Box #16", null, "Hot Wheels Box #16 (Mattel BDT77 Case) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("dd382c39-e59b-43c6-9e7b-d9e66ec26216"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel X8893 Case", "Hot Wheels Box #17", null, "Hot Wheels Box #17 (Mattel X8893 Case) [Attic]", "Attic" });
+                values: new object[] { new Guid("f045d7a9-9349-480a-87c1-4f952be1dfd6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel X8893 Case", "Hot Wheels Box #17", null, "Hot Wheels Box #17 (Mattel X8893 Case) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("2a3945c3-4702-4291-ac03-cfe73b870419"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel L2593 Case", "Hot Wheels Box #10", null, "Hot Wheels Box #10 (Mattel L2593 Case) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("ba740135-93c0-4783-94f2-617a8c17e781"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel L2593 Case", "Hot Wheels Box #10", null, "Hot Wheels Box #10 (Mattel L2593 Case) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("23447374-b236-4a38-bef1-8711b8389d23"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Wheels Box #01", null, "Hot Wheels Box #01", "" });
+                values: new object[] { new Guid("ebb6dcf6-8431-480c-b4b2-2adc2239b894"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Wheels Box #01", null, "Hot Wheels Box #01", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f8a3372f-2ab3-45ca-9a8a-c56f67bfdb70"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 16x12x12", "Hot Wheels Box #25", null, "Hot Wheels Box #25 (Unmarked 16x12x12) [Attic]", "Attic" });
+                values: new object[] { new Guid("d5b32e36-5459-4bd0-bd3d-4e4a4ffebbd2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 16x12x12", "Hot Wheels Box #25", null, "Hot Wheels Box #25 (Unmarked 16x12x12) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c760386b-e4c1-4270-afdf-2c150aa01a4e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B&N.com 14x11x6", "Hot Wheels Box #27", null, "Hot Wheels Box #27 (B&N.com 14x11x6) [Attic]", "Attic" });
+                values: new object[] { new Guid("7bd46fc7-8cbf-4e6e-9041-adc4b141f884"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "B&N.com 14x11x6", "Hot Wheels Box #27", null, "Hot Wheels Box #27 (B&N.com 14x11x6) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("cbf6529e-9c43-49a5-9c62-8d7cf626113c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Inside E-2C Hawkeye Box (Revell 03945 Kit #2640)", null, "Inside E-2C Hawkeye Box (Revell 03945 Kit #2640)", "" });
+                values: new object[] { new Guid("5e44860e-7886-41b0-9012-ee1d41528d34"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Inside E-2C Hawkeye Box (Revell 03945 Kit #2640)", null, "Inside E-2C Hawkeye Box (Revell 03945 Kit #2640)", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("cea316d9-4327-4aab-9234-0143a43836a3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Inside Kit Box (Revell 03945 Kit #2640)", null, "Inside Kit Box (Revell 03945 Kit #2640)", "" });
+                values: new object[] { new Guid("179d299d-8518-489b-b18b-207c98f51b44"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Inside Kit Box (Revell 03945 Kit #2640)", null, "Inside Kit Box (Revell 03945 Kit #2640)", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("191677e6-3e14-4f56-b11b-d446c8691280"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Inside Kit Box (Revell 04882 Kit #2619)", null, "Inside Kit Box (Revell 04882 Kit #2619)", "" });
+                values: new object[] { new Guid("ce6b3201-e622-43a8-8e47-47cf692d3c22"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Inside Kit Box (Revell 04882 Kit #2619)", null, "Inside Kit Box (Revell 04882 Kit #2619)", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d790c912-84b5-481d-87ad-f9db381b09e7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Inside Kit Box (Trumpeter 05711 Kit #2731)", null, "Inside Kit Box (Trumpeter 05711 Kit #2731)", "" });
+                values: new object[] { new Guid("539768de-ed4f-4a62-892d-a644ffac4a75"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Inside Kit Box (Trumpeter 05711 Kit #2731)", null, "Inside Kit Box (Trumpeter 05711 Kit #2731)", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("484c6565-43b2-4952-9f3e-383a5b91da10"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Inside Kit Box (Trumpeter 05712 Kit #2732)", null, "Inside Kit Box (Trumpeter 05712 Kit #2732)", "" });
+                values: new object[] { new Guid("2726599a-9a04-41b3-9d3e-1b0f86419299"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Inside Kit Box (Trumpeter 05712 Kit #2732)", null, "Inside Kit Box (Trumpeter 05712 Kit #2732)", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("dfb87e5d-4563-433a-9152-3fb08649afe6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Inside Kit Box", null, "Inside Kit Box", "" });
+                values: new object[] { new Guid("02044972-c5e8-4047-9674-b1d55de4f923"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Inside Kit Box", null, "Inside Kit Box", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("cefddc2f-8d8f-4336-8fa5-7d374234671f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Installed", null, "Installed", "" });
+                values: new object[] { new Guid("19f9be03-eaab-4953-a1ef-ac30d11aa38f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Installed", null, "Installed", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("7d161d69-516f-40ef-af6f-a8803a8036ef"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Included in kit", null, "Included in kit", "" });
+                values: new object[] { new Guid("4ec2f978-b747-47c3-b374-e67953d474c7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Included in kit", null, "Included in kit", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("8bcbe21b-e182-4e75-a39f-e530d69c88e8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "JVC CH-200 Box Ziploc bag", null, "JVC CH-200 Box Ziploc bag", "" });
+                values: new object[] { new Guid("69f09d85-ee24-46a5-9f94-6cddfa30381f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "JVC CH-200 Box Ziploc bag", null, "JVC CH-200 Box Ziploc bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("fe339dc5-c056-4679-a548-1b580b511c84"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #01", null, "Ken's Books Box #01 [Basement]", "Basement" });
+                values: new object[] { new Guid("70f19f23-c40c-4d25-8b25-038af8fb87dc"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #01", null, "Ken's Books Box #01 [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("53e12108-b948-40be-8243-3448e6ececd0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #02", null, "Ken's Books Box #02 [Basement]", "Basement" });
+                values: new object[] { new Guid("d2bcc42f-f5b2-4cc5-a07b-6344397ab113"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #02", null, "Ken's Books Box #02 [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("72908aee-ee5e-4581-859c-252bd89d3909"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #03", null, "Ken's Books Box #03 [Basement]", "Basement" });
+                values: new object[] { new Guid("771bc5c8-041d-48a1-ad59-1cafe7ae0fbc"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #03", null, "Ken's Books Box #03 [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("dad8cce7-de8d-4c1e-821d-14854b016e1e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #04", null, "Ken's Books Box #04 [Basement]", "Basement" });
+                values: new object[] { new Guid("780eaa74-0e34-4f4e-bfb8-275f8dc33a10"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #04", null, "Ken's Books Box #04 [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("223be192-8783-4043-af65-b539f9150c8b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #05", null, "Ken's Books Box #05 [Basement]", "Basement" });
+                values: new object[] { new Guid("287869f7-8dd2-4dce-b90f-eab15b7e8451"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #05", null, "Ken's Books Box #05 [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("66d95c77-ab63-44eb-9b2a-4314440e8748"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #06", null, "Ken's Books Box #06 [Basement]", "Basement" });
+                values: new object[] { new Guid("8c65acda-6c47-4b48-89a6-701c79fc7d8e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #06", null, "Ken's Books Box #06 [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("1dd34364-e262-479a-8be9-063b3a74fd07"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #07", null, "Ken's Books Box #07 [Basement]", "Basement" });
+                values: new object[] { new Guid("e6be2a9f-c9cd-49ee-8dae-4cdbb4844268"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ken's Books Box #07", null, "Ken's Books Box #07 [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("099ebbc3-d1fb-4017-9acc-805e228ebd33"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "JVC CH-X200 Box", null, "JVC CH-X200 Box [Attic]", "Attic" });
+                values: new object[] { new Guid("b8d18ec5-2e36-4fa9-8eb8-ae8be05f2cef"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "JVC CH-X200 Box", null, "JVC CH-X200 Box [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5f8a9382-be69-46b6-89cc-6007d1044eaa"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amazon 1A7", "Hot Wheels Box #26", null, "Hot Wheels Box #26 (Amazon 1A7) [Attic]", "Attic" });
+                values: new object[] { new Guid("4b177bc3-6b27-43d2-8190-bf90d606c291"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amazon 1A7", "Hot Wheels Box #26", null, "Hot Wheels Box #26 (Amazon 1A7) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("8052bda2-1f6a-4b5e-b08e-68f25b7b63ae"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Husky Tools Organizer #1", null, "Husky Tools Organizer #1 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("8a33dc4b-2cd6-4c9a-b76a-00e5cb0dc50d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Husky Tools Organizer #1", null, "Husky Tools Organizer #1 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("6f914c38-9b53-4970-acef-4703383680af"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 20x20x6.5", "Hot Wheels Star Wars C-Cars Box #1", null, "Hot Wheels Star Wars C-Cars Box #1 (Unmarked 20x20x6.5) [Attic]", "Attic" });
+                values: new object[] { new Guid("7df1c8b5-e872-47db-a943-4e4be315107e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 20x20x6.5", "Hot Wheels Star Wars C-Cars Box #1", null, "Hot Wheels Star Wars C-Cars Box #1 (Unmarked 20x20x6.5) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a3cf5994-ee02-405f-a88d-fc6e221f4b20"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked Priority Mail 16x12x4", "Hot Wheels Box #28", null, "Hot Wheels Box #28 (Unmarked Priority Mail 16x12x4) [Attic]", "Attic" });
+                values: new object[] { new Guid("dad3d0ab-9c7e-44ee-bc83-126164281e8e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked Priority Mail 16x12x4", "Hot Wheels Box #28", null, "Hot Wheels Box #28 (Unmarked Priority Mail 16x12x4) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("52876700-611f-4c9b-adff-c6b18f14028d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 14x14x6.5", "Hot Wheels Box #29", null, "Hot Wheels Box #29 (Unmarked 14x14x6.5) [Attic]", "Attic" });
+                values: new object[] { new Guid("5d284ab7-9dd2-40d8-a64f-a55f9d9700a3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 14x14x6.5", "Hot Wheels Box #29", null, "Hot Wheels Box #29 (Unmarked 14x14x6.5) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f114c6e6-d560-4142-bde0-e13721248124"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 14.5x11x6.5", "Hot Wheels Box #30", null, "Hot Wheels Box #30 (Unmarked 14.5x11x6.5) [Attic]", "Attic" });
+                values: new object[] { new Guid("1d0b074e-d62a-4fab-a9c7-b669ac170650"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 14.5x11x6.5", "Hot Wheels Box #30", null, "Hot Wheels Box #30 (Unmarked 14.5x11x6.5) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c2e25a3e-2633-4148-8168-792c302a0728"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 14x10.5x7", "Hot Wheels Box #31", null, "Hot Wheels Box #31 (Unmarked 14x10.5x7) [Attic]", "Attic" });
+                values: new object[] { new Guid("981be036-6e69-4d91-be07-e835067e1473"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 14x10.5x7", "Hot Wheels Box #31", null, "Hot Wheels Box #31 (Unmarked 14x10.5x7) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("0e6bd7e4-8570-4d40-b0ff-a781d67d3fe9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked Priority Mail 14x10x6", "Hot Wheels Box #32", null, "Hot Wheels Box #32 (Unmarked Priority Mail 14x10x6) [Attic]", "Attic" });
+                values: new object[] { new Guid("18d685a9-62fd-46e7-9cb2-810b98fc94ac"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked Priority Mail 14x10x6", "Hot Wheels Box #32", null, "Hot Wheels Box #32 (Unmarked Priority Mail 14x10x6) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f4893801-6b98-41b8-a17d-1f02b0ae252d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amazon 1B4", "Hot Wheels Box #33", null, "Hot Wheels Box #33 (Amazon 1B4) [Attic]", "Attic" });
+                values: new object[] { new Guid("22640367-c618-4ab5-b8aa-6e0264042cdd"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amazon 1B4", "Hot Wheels Box #33", null, "Hot Wheels Box #33 (Amazon 1B4) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("ee6abedc-fb17-4c87-b467-f7b75bacfcf7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel MD28", "Hot Wheels Box #34", null, "Hot Wheels Box #34 (Mattel MD28) [Basement]", "Basement" });
+                values: new object[] { new Guid("d0e0af43-51dc-4c1f-b581-265fb9d1d5c1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel MD28", "Hot Wheels Box #34", null, "Hot Wheels Box #34 (Mattel MD28) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("d11540fa-77ee-4bc5-ac1b-22788c9c083f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Husky Supplies Organizer #1", null, "Husky Supplies Organizer #1 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("ee6f9f46-e0d6-4022-8b8a-b9199b78cd70"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Husky Supplies Organizer #1", null, "Husky Supplies Organizer #1 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("dcce2a95-43bb-4bdf-af8a-cdccaf56d1a6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel BDT77 Case", "Hot Wheels Box #Retro 13D", null, "Hot Wheels Box #Retro 13D (Mattel BDT77 Case) [Attic]", "Attic" });
+                values: new object[] { new Guid("b8c81fbd-a37f-4a6b-93bf-342c7a62ebe7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel BDT77 Case", "Hot Wheels Box #Retro 13D", null, "Hot Wheels Box #Retro 13D (Mattel BDT77 Case) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f77870db-19dc-4a1e-bbaa-9c6e0d87bdba"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel X8893", "Hot Wheels Box #Retro13B", null, "Hot Wheels Box #Retro13B (Mattel X8893) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("3db27fdf-f821-48a4-bee0-fa982d1523ad"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel X8893", "Hot Wheels Box #Retro13B", null, "Hot Wheels Box #Retro13B (Mattel X8893) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("487c96c3-d80e-431c-97fb-7a25609a62a9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel X8893", "Hot Wheels Box #Retro13C", null, "Hot Wheels Box #Retro13C (Mattel X8893) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("2d3372cc-a693-408d-b8d0-9d9fdaf0cc89"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel X8893", "Hot Wheels Box #Retro13C", null, "Hot Wheels Box #Retro13C (Mattel X8893) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("56a2a640-30fc-435c-acfe-dcb3484b64b5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "DLB45", "Hot Wheels Pop Culture - Peanuts Box", null, "Hot Wheels Pop Culture - Peanuts Box (DLB45) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("01a952c4-2ad7-47a8-8619-78d7eaef6ba6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "DLB45", "Hot Wheels Pop Culture - Peanuts Box", null, "Hot Wheels Pop Culture - Peanuts Box (DLB45) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("37ac937b-4b8d-4cf3-a45f-def8705664da"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "DLB45", "Hot Wheels Pop Culture - Star Wars McQuarrie Box", null, "Hot Wheels Pop Culture - Star Wars McQuarrie Box (DLB45) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("0df3a3e7-db9f-479e-a821-6d0d2017fafc"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "DLB45", "Hot Wheels Pop Culture - Star Wars McQuarrie Box", null, "Hot Wheels Pop Culture - Star Wars McQuarrie Box (DLB45) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("52a04857-b9c9-42b8-8b56-fd5605c33fc5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Wheels Sizzlers Box #01", null, "Hot Wheels Sizzlers Box #01 [Attic]", "Attic" });
+                values: new object[] { new Guid("799b2ef5-dc20-425c-ab1d-054adda587e5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Wheels Sizzlers Box #01", null, "Hot Wheels Sizzlers Box #01 [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("344c70bc-4908-4342-a3c2-38fe00063241"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 14x14x8.5", "Hot Wheels Star Wars Carships Box #1", null, "Hot Wheels Star Wars Carships Box #1 (Unmarked 14x14x8.5) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("95db5a10-b375-42aa-8e6c-703d15c179df"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 14x14x8.5", "Hot Wheels Star Wars Carships Box #1", null, "Hot Wheels Star Wars Carships Box #1 (Unmarked 14x14x8.5) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("cf0c93f3-bbc5-44d8-98bf-4cf96c287b3a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel FBB72 Case", "Hot Wheels Star Wars Carships Box #2", null, "Hot Wheels Star Wars Carships Box #2 (Mattel FBB72 Case) [Attic]", "Attic" });
+                values: new object[] { new Guid("2a89c74d-5e85-495c-948f-a0ef4d460058"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel FBB72 Case", "Hot Wheels Star Wars Carships Box #2", null, "Hot Wheels Star Wars Carships Box #2 (Mattel FBB72 Case) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("cc9e1fa5-5526-4e2d-b704-79ef8c137cdb"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Squadron 18x12x6", "Hot Wheels Box #Retro13", null, "Hot Wheels Box #Retro13 (Squadron 18x12x6) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("34f8f2e1-ae59-4028-9962-11c94eae4175"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Squadron 18x12x6", "Hot Wheels Box #Retro13", null, "Hot Wheels Box #Retro13 (Squadron 18x12x6) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("4f9538df-cd2d-469d-a192-8b76029d9f50"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Wheels 48 Car Case #02", null, "Hot Wheels 48 Car Case #02 [Car Collectables Box #01]", "Car Collectables Box #01" });
+                values: new object[] { new Guid("682c2c7a-83c9-4674-a378-a70f7bd67f40"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Wheels 48 Car Case #02", null, "Hot Wheels 48 Car Case #02 [Car Collectables Box #01]", "Car Collectables Box #01" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("bdef568f-776a-4341-a5a6-e2987e774127"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel L2593 Case", "Hot Wheels Box #2018A", null, "Hot Wheels Box #2018A (Mattel L2593 Case) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("e732f3b0-2cd6-48d8-9a19-dd28b21d13d7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mattel L2593 Case", "Hot Wheels Box #2018A", null, "Hot Wheels Box #2018A (Mattel L2593 Case) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a0fa202b-36da-494c-a34a-d34e9d0102f4"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Cases #09", null, "Hot Cases #09 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("a4ac08f1-8acb-4da2-be2e-65558c3b21f7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Cases #09", null, "Hot Cases #09 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("b4a445e6-8423-4774-ae6a-ace1ae66beed"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "DVD Box #03 - Waiting for WMV", null, "DVD Box #03 (UHS) [Attic] - Waiting for WMV", "Attic" });
+                values: new object[] { new Guid("d0761850-0225-4d29-8f47-8bb8db1f9513"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "DVD Box #03 - Waiting for WMV", null, "DVD Box #03 (UHS) [Attic] - Waiting for WMV", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a81e4ff3-88b3-49f1-bc81-f3495101c8e1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "DVD Box #03", null, "DVD Box #03 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("eb0fe790-b2dd-4293-b381-97ee18d32ba3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "DVD Box #03", null, "DVD Box #03 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("054a2320-7f42-423a-b861-77b6c1543b32"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "#03325", "DVD Box #05", null, "DVD Box #05 (#03325) [Basement]", "Basement" });
+                values: new object[] { new Guid("8dc77134-003e-4f37-acff-46a17d821bf9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "#03325", "DVD Box #05", null, "DVD Box #05 (#03325) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("18c43d5c-d5ca-4088-b89e-72c230aa9cad"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #06", null, "DVD Box #06 (33250) [Basement]", "Basement" });
+                values: new object[] { new Guid("86a9dce3-09ec-4c34-9047-980559396151"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #06", null, "DVD Box #06 (33250) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("90841891-2d8d-4bda-b561-80b6536ef422"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "DVD Box #07", null, "DVD Box #07 [UHS Basement]", "Basement" });
+                values: new object[] { new Guid("bc1cb1bd-786e-49ee-b839-6d1e89716a15"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "DVD Box #07", null, "DVD Box #07 [UHS Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("1b40e06b-cc6b-4852-9c5d-baa64ad143b7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "DVD Box #08", null, "DVD Box #08 [UHS Basement]", "Basement" });
+                values: new object[] { new Guid("d97b63bb-187d-4a25-ac50-a6e020a762f1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "DVD Box #08", null, "DVD Box #08 [UHS Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("eed47f96-86f1-4af7-aa9e-d5fa5d181ee4"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "DVD Box #09", null, "DVD Box #09 [UHS Basement]", "Basement" });
+                values: new object[] { new Guid("9f8cdbcd-397a-4916-9d41-49bac59aa0fa"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "DVD Box #09", null, "DVD Box #09 [UHS Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("05c9e98d-1e0e-42b8-97f9-0c41c7ded49f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "DVD Box #02", null, "DVD Box #02 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("13b5b078-51de-4d9b-8910-a3a80bb8090d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "DVD Box #02", null, "DVD Box #02 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c8f708ae-3a51-4020-ba5f-8dd9f7de32a8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #10", null, "DVD Box #10 (33250) [Basement]", "Basement" });
+                values: new object[] { new Guid("dec1874a-4f8a-411c-a149-6d7c645d6c8b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #10", null, "DVD Box #10 (33250) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("13561880-b257-4f9b-8952-d19add0bb2f1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #12", null, "DVD Box #12 (33250) [Basement]", "Basement" });
+                values: new object[] { new Guid("2f5eb469-e82c-41ca-b232-2a5aa03b5c3b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #12", null, "DVD Box #12 (33250) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("83523ab3-6bb4-4764-9bc0-f4c02c598b3d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #13", null, "DVD Box #13 (33250) [Basement]", "Basement" });
+                values: new object[] { new Guid("58e2eda1-9028-4a2d-8b6c-d2a2dbbec0da"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #13", null, "DVD Box #13 (33250) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("0224a9e6-aeb4-42f0-a702-418bf5d3bff6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #14", null, "DVD Box #14 (33250) [Basement]", "Basement" });
+                values: new object[] { new Guid("f11301e0-1c10-471f-a497-8b1b475c6ddf"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #14", null, "DVD Box #14 (33250) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("aeb44c58-ab3f-402e-ac75-4c4c945ed406"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #15", null, "DVD Box #15 (33250) [Basement]", "Basement" });
+                values: new object[] { new Guid("7d828a42-2627-494e-a5e4-ee6924a1bcf0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #15", null, "DVD Box #15 (33250) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("02266d51-520b-461a-b327-a3d3d9115e55"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #16", null, "DVD Box #16 (33250) [Attic]", "Attic" });
+                values: new object[] { new Guid("41899946-bc7f-4e27-a4c2-908f769ea4b2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #16", null, "DVD Box #16 (33250) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("17c6bcce-d5f7-49de-a383-bfa863764e18"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #17", null, "DVD Box #17 (33250) [Attic]", "Attic" });
+                values: new object[] { new Guid("357fdbe7-5fbf-4423-a3e0-29cd0e2fabef"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #17", null, "DVD Box #17 (33250) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5511fc27-93d0-4391-81c2-d08af6a67bb4"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #18", null, "DVD Box #18 (33250) [Attic]", "Attic" });
+                values: new object[] { new Guid("cfeaacf2-9e8d-49d9-8b2e-5bff3c24d080"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #18", null, "DVD Box #18 (33250) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("1452361d-780a-49ae-a19d-e0f089fe3e96"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #11", null, "DVD Box #11 (33250) [Basement]", "Basement" });
+                values: new object[] { new Guid("8098407c-f544-4202-ab2d-09cf2833bcce"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #11", null, "DVD Box #11 (33250) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("88a91729-6e67-4e6c-97de-eee9d0ae64d0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #19", null, "DVD Box #19 (33250) [Attic]", "Attic" });
+                values: new object[] { new Guid("95586718-32b9-482f-ad4a-d4c7cb137786"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #19", null, "DVD Box #19 (33250) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5a1e2a67-1467-4fad-89ca-cdb80e396c53"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "DVD Box #02 - Waiting for WMV", null, "DVD Box #02 (UHS) [Attic] - Waiting for WMV", "Attic" });
+                values: new object[] { new Guid("ff0837ca-0548-4a34-af70-d8264fe8b111"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "DVD Box #02 - Waiting for WMV", null, "DVD Box #02 (UHS) [Attic] - Waiting for WMV", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5003728b-79af-40ac-9f9c-7934da2757b4"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Donated", null, "Donated", "" });
+                values: new object[] { new Guid("d25d273a-c542-4a2a-b42e-32ebac534fcb"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Donated", null, "Donated", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a882c98f-54cb-4f9a-97e8-f723a1694589"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Combat Aircraft 2012-2014", null, "Combat Aircraft 2012-2014 [Top of Steps]", "Top of Steps" });
+                values: new object[] { new Guid("d03da636-1bb7-4477-907a-87e65f390f58"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Combat Aircraft 2012-2014", null, "Combat Aircraft 2012-2014 [Top of Steps]", "Top of Steps" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("fd19f993-f608-40d3-89f1-62f96aaecf12"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Combat Aircraft 2015-2018", null, "Combat Aircraft 2015-2018 [Top of Steps]", "Top of Steps" });
+                values: new object[] { new Guid("b4b9ac3a-0418-455b-8bb3-511a14fb1587"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Combat Aircraft 2015-2018", null, "Combat Aircraft 2015-2018 [Top of Steps]", "Top of Steps" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a3c8d652-efd5-4e34-a85d-a70815f49e25"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Computer Books Box #01", null, "Computer Books Box #01 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("8e45eab8-436a-4619-9a13-82b1d491ea79"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Computer Books Box #01", null, "Computer Books Box #01 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c0befdf1-e0ec-4e16-ab37-8a9c61d2d7ef"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Computer Books Box #02", null, "Computer Books Box #02 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("9ab13b55-b02c-4747-a3b7-d58a382c64dd"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Computer Books Box #02", null, "Computer Books Box #02 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("2f685f36-8fa3-44f8-afc3-076ed9ac5cc1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Computer Books Box #03", null, "Computer Books Box #03 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("cf36f141-adf5-448c-95bc-06883f9e70be"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Computer Books Box #03", null, "Computer Books Box #03 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("e06b3252-54f6-4bb0-86b0-19f7dcde2524"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "CS20101219.1", null, "CS20101219.1 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("ea977781-f196-4699-b51c-ee1cdfd3a34a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "CS20101219.1", null, "CS20101219.1 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("91f3c178-52d1-4f57-911b-4abefee49888"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "CS20101219.2", null, "CS20101219.2 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("2e93aecb-d46c-4fbc-a167-bea479be8576"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "CS20101219.2", null, "CS20101219.2 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("6f5007fd-77e2-45e4-a9bc-d0adc6444799"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Doorway PB Stack", null, "Doorway PB Stack [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("61e16b77-b60c-4e0b-a334-49e6705684de"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Doorway PB Stack", null, "Doorway PB Stack [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("2265e6e3-4dd8-45e0-bb79-a332e4afb69e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Wheels 48 Car Case #01", null, "Hot Wheels 48 Car Case #01 [Car Collectables Box #01]", "Car Collectables Box #01" });
+                values: new object[] { new Guid("c4f8d054-6a66-45aa-8ab0-1fdca7ba4e84"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Wheels 48 Car Case #01", null, "Hot Wheels 48 Car Case #01 [Car Collectables Box #01]", "Car Collectables Box #01" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("545a61d1-7b85-4735-bd34-1f77dc82a400"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Decals salvaged", null, "Decals salvaged", "" });
+                values: new object[] { new Guid("9dbd7be9-e3f9-4b10-9cbd-6c3bdbee6c6c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Decals salvaged", null, "Decals salvaged", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("19a1e23b-8871-4e00-bd4d-aba175c79f1d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Desk", null, "Desk", "" });
+                values: new object[] { new Guid("57a926d9-31fb-44c2-84a0-1620c49d987d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Desk", null, "Desk", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("156622b5-b8e0-4bf1-a95a-c8b681fa02a7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Destroyed", null, "Destroyed", "" });
+                values: new object[] { new Guid("bee19aef-1c79-4a8e-9a1b-7791c7818615"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Destroyed", null, "Destroyed", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("9caca452-e91f-4177-ad26-6289f1c63aba"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "18x13x11", "Detail Sets Box", null, "Detail Sets Box (18x13x11) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("fca998dc-41c8-45d7-a26d-d207e9be3664"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "18x13x11", "Detail Sets Box", null, "Detail Sets Box (18x13x11) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("9f038a5d-27fb-4fb9-bc9e-4bec953e57bd"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Die Cast Collectables Box #1", null, "Die Cast Collectables Box #1 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("5e234d82-137e-40fb-9a35-fbf6cb6283da"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Die Cast Collectables Box #1", null, "Die Cast Collectables Box #1 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("8fc15b73-475a-44b1-880e-00b2a34ac462"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Digital Download", null, "Digital Download", "" });
+                values: new object[] { new Guid("80b630a9-2a1f-4943-bff2-2f1f1ba82081"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Digital Download", null, "Digital Download", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("ca130f51-dc68-44eb-af5e-7ce766da13ef"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Dining Room", null, "Dining Room", "" });
+                values: new object[] { new Guid("3bc3d608-07bf-4f8c-ad10-0fc5a61762ce"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Dining Room", null, "Dining Room", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("7caff686-ad65-4f5a-a9a0-3ea01e129ad6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Decals left with detail set included in kit", null, "Decals left with detail set included in kit", "" });
+                values: new object[] { new Guid("82642be6-c1f9-42fe-8b8b-abf68c349360"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Decals left with detail set included in kit", null, "Decals left with detail set included in kit", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("e726158c-7e3f-4eb3-9f36-22a707ecc4db"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #20 - Waiting for WMV", null, "DVD Box #20 (33250) [Ken's Room] - Waiting for WMV", "Ken's Room" });
+                values: new object[] { new Guid("5afec9a6-9f11-4e98-972f-777e0421f719"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #20 - Waiting for WMV", null, "DVD Box #20 (33250) [Ken's Room] - Waiting for WMV", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("8ba1ea8a-a9a6-4aa7-8710-dccb1cd5daf6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Decals left in bag", null, "Decals left in bag", "" });
+                values: new object[] { new Guid("3e59b35d-e4ae-4646-96f5-5157ef702f03"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Decals left in bag", null, "Decals left in bag", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("637a3051-e777-4d98-8c5e-ba34d06af68e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #21", null, "DVD Box #21 (33250) [Attic]", "Attic" });
+                values: new object[] { new Guid("ca88d6b3-f654-4fed-a6eb-5f95c557d2e0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #21", null, "DVD Box #21 (33250) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("922e8718-3a6d-4bc2-a600-3d50207df5eb"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "FreeTime Box #3", null, "FreeTime Box #3 (Ken's Room)", "Ken's Room" });
+                values: new object[] { new Guid("3bd1fd9c-ca12-4758-beae-f12eaf19d472"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "FreeTime Box #3", null, "FreeTime Box #3 (Ken's Room)", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5f799e6c-588c-4277-9424-a8e58b07b2d1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "FreeTime Box #3", null, "FreeTime Box #3 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("31272b8a-e4bd-4582-a94c-c55d100420d1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "FreeTime Box #3", null, "FreeTime Box #3 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a75fd275-f423-47ee-a09e-ea32d84724a9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "FreeTime Box #4", null, "FreeTime Box #4 (Ken's Room)", "Ken's Room" });
+                values: new object[] { new Guid("6cc54d09-2451-468c-ba74-4cac702f67a4"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "FreeTime Box #4", null, "FreeTime Box #4 (Ken's Room)", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("9c108bf1-cf95-4d57-b65d-2720a517f701"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "FreeTime Box #5", null, "FreeTime Box #5 (Ken's Room)", "Ken's Room" });
+                values: new object[] { new Guid("c4e6b3b6-145e-49fc-8dc4-a957493537e3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "FreeTime Box #5", null, "FreeTime Box #5 (Ken's Room)", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("3391c4b9-7eed-43c8-b021-a6b22fec93f6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "FreeTime Box #5", null, "FreeTime Box #5 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("f30bfa8e-8c95-4adb-8add-7e0bb0e97693"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "FreeTime Box #5", null, "FreeTime Box #5 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c3cff0bd-bb9f-45fd-bdec-5cfda516eeb7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "HALO Box #1", null, "HALO Box #1 (UHS) [Attic]", "Attic" });
+                values: new object[] { new Guid("090a9ca0-de57-413d-b3f5-ab854b876d80"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "HALO Box #1", null, "HALO Box #1 (UHS) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("7ab2e68d-afea-45b2-a58f-68981d8f752f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "History Books Box #10", null, "History Books Box #10 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("092f638c-cb19-4b0f-949d-74f34e3b5d2f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "History Books Box #10", null, "History Books Box #10 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("1be6796a-7340-42bb-8e83-80466f3d0d5e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "FreeTime Box #2", null, "FreeTime Box #2 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("b1cf2a69-e4d2-4554-9ed7-d3e7001b4f7c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "FreeTime Box #2", null, "FreeTime Box #2 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("db888073-db60-4af4-90d1-7c01be0db85b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "History Books From Ken's Desk", null, "History Books From Ken's Desk (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("6b1f860b-6d17-460c-a2c2-b1dda4734e88"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "History Books From Ken's Desk", null, "History Books From Ken's Desk (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("10197af8-9a80-4c24-a0e6-7d53697ee5c7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Cases #02", null, "Hot Cases #02 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("f684b070-e19b-4758-8a90-f5106d813173"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Cases #02", null, "Hot Cases #02 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("41311e91-96e9-4929-abe6-24dd683a44a2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Cases #03", null, "Hot Cases #03 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("782654e2-0df0-4ec5-bad0-ee38bd8e59d8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Cases #03", null, "Hot Cases #03 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a9445812-df7c-4634-a1bb-616068127cb5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Cases #05", null, "Hot Cases #05 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("81da8618-d318-49c4-917f-f58345d27f0c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Cases #05", null, "Hot Cases #05 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("2e99c844-c06d-4607-bc0d-8791d1f7ce4c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Cases #06", null, "Hot Cases #06 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("164a95dc-0055-4baf-b08a-36827d620929"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Cases #06", null, "Hot Cases #06 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5913c130-a126-4efc-bc14-06faddae74e6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Cases #07", null, "Hot Cases #07 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("870246c4-ff03-4b90-af2b-e2b3271c78d2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Cases #07", null, "Hot Cases #07 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a04ac5e4-01ce-4c42-9a71-312f4c22e820"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Cases #08", null, "Hot Cases #08 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("bf762ed2-6643-4770-a46d-52d808079998"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Cases #08", null, "Hot Cases #08 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("2d422b85-32d3-4fe8-8716-00a560d74361"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #20", null, "DVD Box #20 (33250) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("958b34da-454f-4ab1-b668-c27562709e29"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #20", null, "DVD Box #20 (33250) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("07b3755a-77fe-45c0-8df7-ead87c417bf3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Cases #01", null, "Hot Cases #01 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("c47ee284-89cc-468a-8a31-89ccf9d28edc"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Cases #01", null, "Hot Cases #01 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("25355729-4379-4e44-8fbe-4677286f2b0e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "FreeTime Box #2", null, "FreeTime Box #2 (Ken's Room)", "Ken's Room" });
+                values: new object[] { new Guid("1a00dfb8-9c49-430a-a5d9-cf352b3c74b6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "FreeTime Box #2", null, "FreeTime Box #2 (Ken's Room)", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("96a50efa-d6d7-4e5e-9a41-35a583ce773c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Cases #04", null, "Hot Cases #04 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("2334cb14-1b8c-4510-9e87-40765544c6c7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Hot Cases #04", null, "Hot Cases #04 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("a55ecc41-6cae-4961-91db-61e4f696abee"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 20x14x7", "Forbidden Planet Box", null, "Forbidden Planet Box (Unmarked 20x14x7) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("53448fdb-8efc-4c7d-8cac-2af904b065d4"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unmarked 20x14x7", "Forbidden Planet Box", null, "Forbidden Planet Box (Unmarked 20x14x7) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("241eef5f-c4ce-4648-87ef-7babceac94a2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "FreeTime Box #1", null, "FreeTime Box #1 (Ken's Room)", "Ken's Room" });
+                values: new object[] { new Guid("8a6c1195-3953-4422-8095-bd7e140d7478"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "FreeTime Box #1", null, "FreeTime Box #1 (Ken's Room)", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("ffc2b491-1ad8-4d5a-a6e7-08e2e47ca8b9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #23", null, "DVD Box #23 (33250) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("3cefb039-3f4f-461c-8948-f14521f68f49"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #23", null, "DVD Box #23 (33250) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("b9d38726-127f-494b-a0ea-6ec5a03a041e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #24", null, "DVD Box #24 (33250) [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("89c84d1d-a615-42e5-a30b-da5f8e32c5f2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #24", null, "DVD Box #24 (33250) [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("bca72425-69e8-488d-9082-019bbf4d9cdd"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #22", null, "DVD Box #22 (33250) [Attic]", "Attic" });
+                values: new object[] { new Guid("2057f146-04d2-4c2a-8bf2-b104de7b6319"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "33250", "DVD Box #22", null, "DVD Box #22 (33250) [Attic]", "Attic" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("17f593fa-e0a5-4e78-a556-67ff3e96ac33"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "DVDs - General Box #1", null, "DVDs - General Box #1 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("2fc7f37a-3653-4f38-b3ec-3a287473db56"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "DVDs - General Box #1", null, "DVDs - General Box #1 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("e4ac88c7-052a-40d0-bd40-a110b6062209"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "DVDs - General Box #2", null, "DVDs - General Box #2 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("b17ec06c-dc45-44c2-912d-e28caf761bd0"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "DVDs - General Box #2", null, "DVDs - General Box #2 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("ff3a985d-0c55-4cb8-96a1-e1e6e65ff71f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "DVDs - General Box #2", null, "DVDs - General Box #2 [UHS Basement]", "Basement" });
+                values: new object[] { new Guid("44a2129a-e293-4aca-9253-e477ccd795f5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "DVDs - General Box #2", null, "DVDs - General Box #2 [UHS Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("bd6d813d-2a9a-4881-9db8-fef6908f9e9c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Entertainment Center Shelf", null, "Entertainment Center Shelf", "" });
+                values: new object[] { new Guid("2704b2fd-a0a9-48d1-8980-a91bb66af64d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Entertainment Center Shelf", null, "Entertainment Center Shelf", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("216184d0-cf1b-4266-b32d-3f220b9f9943"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "DVDs - General", null, "DVDs - General [UHS Basement]", "Basement" });
+                values: new object[] { new Guid("ea010cca-ed2a-40b7-a110-d7ebf32d42ed"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "DVDs - General", null, "DVDs - General [UHS Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("c524436f-782b-4b94-a84a-a753a7062f68"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Federation Box #1", null, "Federation Box #1 [Ken's Room]", "Ken's Room" });
+                values: new object[] { new Guid("1597b097-04fb-4980-8ef9-ad08f0f135b2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Federation Box #1", null, "Federation Box #1 [Ken's Room]", "Ken's Room" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("59570c8b-3749-404d-91bd-17b4aec95916"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Fiction Books Box #2", null, "Fiction Books Box #2 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("15c2663e-f8c5-457e-998d-a62602314a7b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Fiction Books Box #2", null, "Fiction Books Box #2 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("5db6706a-6cac-4916-896b-54bcae40d08d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Fiction Books Box #3", null, "Fiction Books Box #3 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("3deb3ea0-23e0-4960-b971-be05383625a9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Fiction Books Box #3", null, "Fiction Books Box #3 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("ff65aacc-d850-45d7-b102-3b2e1a7da29e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Fiction Books Box #6", null, "Fiction Books Box #6 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("1acf4c90-103a-490a-a080-75b0046d367e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Fiction Books Box #6", null, "Fiction Books Box #6 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("f0cfb626-d592-44ca-b66b-8f2c4d5fb64f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Fiction Books Box #8", null, "Fiction Books Box #8 (UHS) [Basement]", "Basement" });
+                values: new object[] { new Guid("845a3439-564c-4568-9b5a-fdc162a32028"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "UHS", "Fiction Books Box #8", null, "Fiction Books Box #8 (UHS) [Basement]", "Basement" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("707205ec-1d65-433c-b348-4ea9e2f4c48e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "File Entry", null, "File Entry", "" });
+                values: new object[] { new Guid("089af86b-ecf7-4225-81f9-9ea7dc1f8b0a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "File Entry", null, "File Entry", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("4c1ffcea-7770-4504-84de-ddb98bef1607"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ether", null, "Ether", "" });
+                values: new object[] { new Guid("f3b24200-efc7-49d3-a77b-039d09726af9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", "Ether", null, "Ether", "" });
 
             migrationBuilder.InsertData(
                 table: "Locations",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "Name", "OID", "OName", "PhysicalLocation" },
-                values: new object[] { new Guid("719f0e3e-e6b7-4656-b854-3768b934dcf5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESSS", "Football Cards Box #1", null, "Football Cards Box #1 (ESSS) [Closet]", "Closet" });
+                values: new object[] { new Guid("a1081049-60f5-4462-b1e4-8ea988d94166"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "ESSS", "Football Cards Box #1", null, "Football Cards Box #1 (ESSS) [Closet]", "Closet" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("701600f0-367a-4047-8c9a-c3652b31c72d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Guided Missile Frigates", null, "FFG" });
+                values: new object[] { new Guid("f46aea9d-2000-48d2-8980-64fd5de4e920"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Guided Missile Frigates", null, "FFG" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("f0236a08-68ad-4891-9b39-a3e19d980250"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mine Countermeasures Support Ships", null, "MCS" });
+                values: new object[] { new Guid("d4d7063d-9e66-40a1-a607-70be380c0fdc"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mine Countermeasures Support Ships", null, "MCS" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("f14a5426-5946-4fa0-84c1-a98954bd39f4"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mine Countermeasures Ships", null, "MCM" });
+                values: new object[] { new Guid("0ba1fadd-af90-4796-b04f-77ec85d97bd9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Mine Countermeasures Ships", null, "MCM" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("dc4b25c6-7929-4df2-8d5a-3b30f8e57c34"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Tank Landing Ships", null, "LST" });
+                values: new object[] { new Guid("178b0f8b-17e1-49c9-b961-02032473df16"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Tank Landing Ships", null, "LST" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("65ef2141-a6eb-424a-a95d-fdd5eb9fee0c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Dock Landing Ships", null, "LSD" });
+                values: new object[] { new Guid("bbe9b0e7-a44f-4089-be60-511210c61c0e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Dock Landing Ships", null, "LSD" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("8c24eaeb-1e00-44ac-be78-91b85bdd6714"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amphibious Assault Ships (Helicopter)", null, "LPH" });
+                values: new object[] { new Guid("d513d3d6-1974-44f0-8446-4c4e4951eb04"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amphibious Assault Ships (Helicopter)", null, "LPH" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("f4eb547c-fd36-4962-854a-c75f191875c1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amphibious Assault Ships (general purpose)", null, "LHA" });
+                values: new object[] { new Guid("bde74b05-c597-4ed7-9dd3-5e6e613f2730"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amphibious Assault Ships (general purpose)", null, "LHA" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("69e3c91e-a2de-484e-867a-66b0b28a1960"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amphibious Cargo Ships", null, "LKA" });
+                values: new object[] { new Guid("652f014f-1aa1-43c5-b86b-4fb9243a6390"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amphibious Cargo Ships", null, "LKA" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("243cfe4c-f261-422a-857a-2eee77b657ba"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amphibious Assault Ships (multi-purpose)", null, "LHD" });
+                values: new object[] { new Guid("e25fc1a9-b9d4-418c-9e21-72d7db047aad"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amphibious Assault Ships (multi-purpose)", null, "LHD" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("bd383ea2-924b-4fce-a0eb-217e6d2bd1e7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Littoral Combat Ship", null, "LCS" });
+                values: new object[] { new Guid("52b185dc-85f4-4464-a8ed-26849fa3ba69"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Littoral Combat Ship", null, "LCS" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("64822b20-89dc-4dc8-bf8a-03ad55b1ac1d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amphibious Command Ships", null, "LCC" });
+                values: new object[] { new Guid("24f78246-e4b7-4520-b7ee-4f9918fa377d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amphibious Command Ships", null, "LCC" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("ac518938-b74c-484e-a496-19aeb121757e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unclassified Miscellaneous Units", null, "IX" });
+                values: new object[] { new Guid("bd51fa5b-0724-43eb-83b0-89129325eba7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unclassified Miscellaneous Units", null, "IX" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("0db24e33-e790-47a3-b92d-fc971fdb3c1c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amphibious Transport docks", null, "LPD" });
+                values: new object[] { new Guid("6178a577-3203-41b1-a1c1-a7eb79078f8c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amphibious Transport docks", null, "LPD" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("51e19cfe-b23c-4288-9288-969e93358cf8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Minehunters, Coastal", null, "MHC" });
+                values: new object[] { new Guid("42f57b5d-d900-42c1-afc3-d1ad77c6fe27"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Minehunters, Coastal", null, "MHC" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("c046f339-8ebe-4124-b706-314407d5074d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Training Submarines", null, "SST" });
+                values: new object[] { new Guid("a4895508-4914-4177-9690-b4627ab4f264"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Training Submarines", null, "SST" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("e9a6b06d-3d32-4cf1-8f21-e7edd27f582d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Patrol Craft", null, "PC" });
+                values: new object[] { new Guid("64e9c779-53d0-49e4-bf89-987abd2aba52"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Patrol Craft", null, "PC" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("0d1e16a1-c605-41ae-a7fa-c86fb3103128"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Patrol Gunboats", null, "PG" });
+                values: new object[] { new Guid("c836cf48-1faa-4556-92d2-376591e691cc"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Patrol Gunboats", null, "PG" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("f84367a2-1822-450f-bf8d-99efe7b5568a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Patrol Combatants - Missile (Hydrofoil)", null, "PHM" });
+                values: new object[] { new Guid("0e306844-d5e7-4ed0-8100-77599ac98baa"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Patrol Combatants - Missile (Hydrofoil)", null, "PHM" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("3b85f6a0-07b0-4453-8d5a-1baba696e9bd"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Submarines", null, "SS" });
+                values: new object[] { new Guid("4c6b1b94-6ca9-4fc6-8889-0a625542a58c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Submarines", null, "SS" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("03ec3bf8-a596-4180-a29e-e9c0cfd02e94"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Ballistic Missile Submarines (Nuclear)", null, "SSBN" });
+                values: new object[] { new Guid("566ccd99-cb24-4452-b192-cdfa0fe61d42"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Ballistic Missile Submarines (Nuclear)", null, "SSBN" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("9f0a2cae-a333-4f87-9e53-b5db3ac642a9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Submarines (Nuclear)", null, "SSN" });
+                values: new object[] { new Guid("904a2b4b-7c59-4984-8e98-57b936e112e5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Submarines (Nuclear)", null, "SSN" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("bc3bd562-1ddc-4911-9510-02a185f05d3c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Ammunition Ships (assigned to Military Sealift Command)", null, "T-AE" });
+                values: new object[] { new Guid("be9e360d-cea1-4bba-8b65-d4f7966ae41c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Ammunition Ships (assigned to Military Sealift Command)", null, "T-AE" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("6611c640-9f18-40b0-af46-de4c45681ddb"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Combat Store Ships (assigned to Military Sealift Command)", null, "T-AFS" });
+                values: new object[] { new Guid("46552773-570c-4552-a7cd-6f22e89db179"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Combat Store Ships (assigned to Military Sealift Command)", null, "T-AFS" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("a1b77762-b705-4605-a6cc-9f73ce2e9266"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Oceanographic Research Ships", null, "T-AG" });
+                values: new object[] { new Guid("bfe963f7-7794-44d3-a7ff-e2d53676cc6c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Oceanographic Research Ships", null, "T-AG" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("3738fa9f-9a7a-4ce7-bf2c-e4bfe9fb81f3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Oilers (assigned to Military Sealift Command)", null, "T-AO" });
+                values: new object[] { new Guid("300cc6e8-42d8-488c-8d9b-3072ad8c84d9"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Oilers (assigned to Military Sealift Command)", null, "T-AO" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("47087be3-658f-46ab-82e3-cb786370f639"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Fast Combat Support Ships (assigned to Military Sealift Command)", null, "T-AOE" });
+                values: new object[] { new Guid("a5336557-a6eb-47e9-8631-1b5d37e7bb4a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Fast Combat Support Ships (assigned to Military Sealift Command)", null, "T-AOE" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("2b7fcf37-767d-4dbe-9b0b-0424732b2390"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Frigates", null, "FF" });
+                values: new object[] { new Guid("218aeb24-606e-4f9c-b97e-5fe2ec57cb85"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Frigates", null, "FF" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("c10cb992-99ab-4d11-b532-aa761d0a17d8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Salvage Ships (assigned to Military Sealift Command)", null, "T-ARS" });
+                values: new object[] { new Guid("027e12f7-1c3b-49a6-b7a3-fccdd0153643"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Salvage Ships (assigned to Military Sealift Command)", null, "T-ARS" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("f1458df6-750b-454c-b8eb-e98a82d7a056"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Ocean Minesweepers", null, "MSO" });
+                values: new object[] { new Guid("49b3bc1f-79f9-46f4-8399-c32080a690f2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Ocean Minesweepers", null, "MSO" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("9640289c-4fef-4ac1-8c9a-69eecd89e7d7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Guided Missile Frigate (post WWII)", null, "DLG" });
+                values: new object[] { new Guid("ce8bd60c-02f5-4d78-b3e8-74dad1db25a1"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Guided Missile Frigate (post WWII)", null, "DLG" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("7edd19f5-231a-4713-b9ec-a1d95581c980"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Submarine Tenders", null, "AS" });
+                values: new object[] { new Guid("d0e57c25-ac96-4064-ba5e-6f13fd95ef51"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Submarine Tenders", null, "AS" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("d9fa3990-c85f-4b82-93f1-4628e24f43df"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Destroyer Escorts", null, "DE" });
+                values: new object[] { new Guid("5195c68c-42a4-49cd-9bf7-f5d052856942"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Destroyer Escorts", null, "DE" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("8bd0af19-08a5-4ba7-bf19-57a4d90817e7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Submarine Tenders (assigned to Military Sealift Command)", null, "T-AS" });
+                values: new object[] { new Guid("b280e506-7f8a-4ebb-acaf-6c663a3618ec"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Submarine Tenders (assigned to Military Sealift Command)", null, "T-AS" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("59837210-92d5-4573-8d15-f39a541dacb2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unassigned", null, "XXX" });
+                values: new object[] { new Guid("60c8eebd-716c-4501-acd1-8c5ac1b43527"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Unassigned", null, "XXX" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("8e4e50d4-184f-4cde-8159-3e20119f0e04"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Heavy Armored Cruiser - Battleship prototype", null, "ACR" });
+                values: new object[] { new Guid("83afc0e9-e249-4427-a0a3-2d40713016d2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Heavy Armored Cruiser - Battleship prototype", null, "ACR" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("6c3b15f5-6b54-4d9b-9d82-419beab04c86"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Destroyer Tenders", null, "AD" });
+                values: new object[] { new Guid("bf0cc35c-7dae-43e9-8e88-7b31d23d4f4d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Destroyer Tenders", null, "AD" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("f36312f7-1b15-41ee-8bc4-6ad26a47622b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Ammunition Ships", null, "AE" });
+                values: new object[] { new Guid("303ccee9-180d-443e-866a-b7d3f896d936"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Ammunition Ships", null, "AE" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("9e8d8f09-7c7b-4042-b901-28cb453ab3b2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Oceanographic Research Ships", null, "AG" });
+                values: new object[] { new Guid("6f1ae519-ea07-4ea0-9081-54b640ef111d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Oceanographic Research Ships", null, "AG" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("a9cabb18-0b89-4a5a-b345-b36c23f84f78"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Miscellaneous Command Ships", null, "AGF" });
+                values: new object[] { new Guid("6111243c-7dc0-43c6-b470-31319de28675"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Miscellaneous Command Ships", null, "AGF" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("603fdbd9-b459-45d3-9555-a5fe6dc17a54"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Auxiliary Research Submarines", null, "AGSS" });
+                values: new object[] { new Guid("a8eca8e5-f87c-4923-8140-4e2eb3f4cb8f"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Auxiliary Research Submarines", null, "AGSS" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("bd38f905-7e1d-42ad-b050-1eb60ac90c2a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Oilers", null, "AO" });
+                values: new object[] { new Guid("0114e8f4-b1a7-4a7f-b8a5-6e04884d8fa2"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Oilers", null, "AO" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("634767ee-cae5-4519-bf5f-eee6935a9a62"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Fast Combat Support Ships", null, "AOE" });
+                values: new object[] { new Guid("df08533f-c392-461d-9162-e0f4e6d13503"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Fast Combat Support Ships", null, "AOE" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("9c57c926-fe33-4424-b47e-213ab327f9fa"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Replenishment Oilers", null, "AOR" });
+                values: new object[] { new Guid("a5652d63-338a-4077-83ce-231f4ae73a39"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Replenishment Oilers", null, "AOR" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("88ff000e-553a-45c6-b11b-2984078a8c31"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "High Speed Transports", null, "APD" });
+                values: new object[] { new Guid("32440d61-bfdd-48cb-a8e7-f107d83e563b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "High Speed Transports", null, "APD" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("b63333ef-2188-4498-a790-a4188dbfe64e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Salvage Ships", null, "ARS" });
+                values: new object[] { new Guid("a4cccd58-5f66-40eb-a4d3-e8fb3454cff6"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Salvage Ships", null, "ARS" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("b049c717-70d8-4249-bff9-6d6b20391660"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Salvage and Rescue Ships", null, "ATS" });
+                values: new object[] { new Guid("d2614b5e-3161-468c-bfd2-7e50545d4dac"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Salvage and Rescue Ships", null, "ATS" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("7b27e466-6a73-406a-bade-7c36c54c8fc3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Battleships", null, "BB" });
+                values: new object[] { new Guid("e59a3b74-ee03-427e-bbce-7a9141cfe558"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Battleships", null, "BB" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("6d7bafc7-af26-4768-98ed-26a0198602f8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Heavy (Gun) Cruisers", null, "CA" });
+                values: new object[] { new Guid("3f103ff1-89e8-4b00-badd-36d3804dc9da"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Heavy (Gun) Cruisers", null, "CA" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("17594b36-58c9-4034-abe6-667c1290943b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Guided Missile Heavy Cruisers", null, "CAG" });
+                values: new object[] { new Guid("1ff7afeb-4a34-471c-9553-3241874c53bf"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Guided Missile Heavy Cruisers", null, "CAG" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("28d6f15e-518f-456d-8634-5a369eee595e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Large Cruisers", null, "CB" });
+                values: new object[] { new Guid("5d02cb36-02b6-47cf-a35e-7bdfcb485c1d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Large Cruisers", null, "CB" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("9e67f4d3-888e-457d-bd1f-a77845d3fe88"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Guided Missile Cruisers", null, "CG" });
+                values: new object[] { new Guid("7f580920-2f24-4aa1-8c3d-f8286422effa"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Guided Missile Cruisers", null, "CG" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("3af19e39-7dee-478e-a558-4cf7c71e6d4c"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Guided Missile Cruisers (Nuclear)", null, "CGN" });
+                values: new object[] { new Guid("7b0be334-4d94-4051-90ae-51abf64d51f3"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Guided Missile Cruisers (Nuclear)", null, "CGN" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("a6f194f6-ec6b-4477-9441-3c00e05936a8"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Light (Gun) Cruisers", null, "CL" });
+                values: new object[] { new Guid("abdeafec-0d2d-47de-820a-8915ad194289"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Light (Gun) Cruisers", null, "CL" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("416b1857-e03b-4d78-b3ee-38ea1ff17f5e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Command Cruisers", null, "CLC" });
+                values: new object[] { new Guid("f865600a-2d76-4f8a-91d9-0b57d9f18eaf"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Command Cruisers", null, "CLC" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("7115f45b-acc4-4482-a52b-487a81e7cb56"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Light Guided Missile Cruisers", null, "CLG" });
+                values: new object[] { new Guid("2fdb851e-0e9d-4fcd-b0de-d6e0597f289b"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Light Guided Missile Cruisers", null, "CLG" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("156ac082-e0cc-4707-8f2e-50f2f4542919"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Multi-Purpose (Fleet) Aircraft Carriers", null, "CV" });
+                values: new object[] { new Guid("5b25ad33-0153-4cc6-9270-a69c92265150"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Multi-Purpose (Fleet) Aircraft Carriers", null, "CV" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("6ee60c0a-b704-46a4-92ef-d04f39178d38"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Escort Carriers", null, "CVE" });
+                values: new object[] { new Guid("c4bb6b6e-3c7a-48c9-81a3-e843a2295f07"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Escort Carriers", null, "CVE" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("0431226a-dbea-4f4a-b070-7068976afb8a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Light Carriers", null, "CVL" });
+                values: new object[] { new Guid("6df64ae7-9a63-4b5c-b94b-576e8b956168"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Light Carriers", null, "CVL" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("70a97a16-4be8-41dd-be6d-d9fae9c69a53"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Multi-Purpose Aircraft Carriers (Nuclear)", null, "CVN" });
+                values: new object[] { new Guid("acc6ef57-0d47-4859-a72a-e913328df084"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Multi-Purpose Aircraft Carriers (Nuclear)", null, "CVN" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("8f5f340d-4cea-4e98-ba54-5eb339b1c29d"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Destroyers", null, "DD" });
+                values: new object[] { new Guid("95d45d40-42d7-4e65-8572-54a70940e5f5"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Destroyers", null, "DD" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("3f72c543-90ca-44dd-bb42-b9fbb9c1f10e"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Guided Missile Destroyers", null, "DDG" });
+                values: new object[] { new Guid("c5d2a991-8cd2-4013-9339-19d7a6c72e3a"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Guided Missile Destroyers", null, "DDG" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("79cfb009-a962-4d20-b6ae-7c7c588c49ed"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Post World War II Frigates", null, "DL" });
+                values: new object[] { new Guid("c7f1a94d-cd86-4edc-a276-7af6de1288f7"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Post World War II Frigates", null, "DL" });
 
             migrationBuilder.InsertData(
                 table: "ShipClassTypes",
                 columns: new[] { "ID", "DateCreated", "DateModified", "Description", "OID", "TypeCode" },
-                values: new object[] { new Guid("6e0a89dc-26f7-466e-a09a-86ef4033c904"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amphibious Cargo Ships (assigned to Military Sealift Command)", null, "T-LKA" });
-
+                values: new object[] { new Guid("4b066234-9495-4693-a340-1b051e073e00"), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Amphibious Cargo Ships (assigned to Military Sealift Command)", null, "T-LKA" });
+#endregion
+            #region Indexes
             migrationBuilder.CreateIndex(
                 name: "IX_AircraftDesignationsByDesignation",
                 table: "AircraftDesignations",
@@ -4683,6 +4686,7 @@ namespace TC3Core.Data.Migrations
                 columns: new[] { "Title", "MediaFormat", "ID" },
                 unique: true,
                 filter: "[Title] IS NOT NULL AND [MediaFormat] IS NOT NULL");
+            #endregion
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

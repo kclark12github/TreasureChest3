@@ -72,10 +72,16 @@ namespace TC3Core.Data
         #endregion
         public TCContext(DbContextOptions<TCContext> options) : base(options)
         {
+            //Debugger.Launch();
+            Console.WriteLine("TCContext(DbContextOptions<TCContext> options)");
             //Database.SetInitializer<TCContext>(null); //EF6
             //UserName = this.Database.ExecuteSqlCommand("SELECT SUSER_NAME()", );
         }
-        public TCContext() { }
+        public TCContext()
+        {
+            //Debugger.Launch();
+            Console.WriteLine("TCContext()");
+        }
 
         IQueryable<T> IDbContext.Query<T>()
         {
@@ -367,6 +373,7 @@ namespace TC3Core.Data
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"\\Foxtrot\Public\Shared Videos\Exercise", Description = @"", PhysicalLocation = @"", OName = @"\\Foxtrot\Public\Shared Videos\Exercise" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"\\Foxtrot\Public\Shared Videos\Music Videos", Description = @"", PhysicalLocation = @"", OName = @"\\Foxtrot\Public\Shared Videos\Music Videos" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"\\Foxtrot\Public\Shared\Videos\Music Videos", Description = @"", PhysicalLocation = @"", OName = @"\\Foxtrot\Public\Shared\Videos\Music Videos" });
+            modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Amazon Prime Video", Description = @"", PhysicalLocation = @"", OName = @"Amazon Prime Video" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Apple Software Box", Description = @"", PhysicalLocation = @"", OName = @"Apple Software Box" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Applied", Description = @"", PhysicalLocation = @"", OName = @"Applied" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Art Books Box #7", Description = @"UHS", PhysicalLocation = @"Basement", OName = @"Art Books Box #7 (UHS) [Basement]" });
@@ -448,7 +455,9 @@ namespace TC3Core.Data
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Box #72-13", Description = @"UHM-Old", PhysicalLocation = @"Attic", OName = @"Box #72-13 (UHM-Old) [Attic]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Box #72-13 Ziploc bag", Description = @"", PhysicalLocation = @"", OName = @"Box #72-13 Ziploc bag" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Box #72-14", Description = @"UHM", PhysicalLocation = @"Attic", OName = @"Box #72-14 (UHM) [Attic]" });
+            modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Box #72-15", Description = @"UHM", PhysicalLocation = @"Basement", OName = @"Box #72-15 (UHM) [Basement]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Box #72-14 Ziploc bag", Description = @"", PhysicalLocation = @"", OName = @"Box #72-14 Ziploc bag" });
+            modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Box #72-15 Ziploc bag", Description = @"", PhysicalLocation = @"", OName = @"Box #72-15 Ziploc bag" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Box #72-2 Ziploc bag", Description = @"", PhysicalLocation = @"", OName = @"Box #72-2 Ziploc bag" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Box #72-4 Ziploc bag", Description = @"", PhysicalLocation = @"", OName = @"Box #72-4 Ziploc bag" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Box #72-5 Ziploc bag (2nd set, with wheels, left in box)", Description = @"", PhysicalLocation = @"", OName = @"Box #72-5 Ziploc bag (2nd set, with wheels, left in box)" });
@@ -533,8 +542,8 @@ namespace TC3Core.Data
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"DVD Box #20", Description = @"33250", PhysicalLocation = @"Ken's Room", OName = @"DVD Box #20 (33250) [Ken's Room]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"DVD Box #21", Description = @"33250", PhysicalLocation = @"Attic", OName = @"DVD Box #21 (33250) [Attic]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"DVD Box #22", Description = @"33250", PhysicalLocation = @"Attic", OName = @"DVD Box #22 (33250) [Attic]" });
-            modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"DVD Box #23", Description = @"33250", PhysicalLocation = @"Ken's Room", OName = @"DVD Box #23 (33250) [Ken's Room]" });
-            modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"DVD Box #24", Description = @"33250", PhysicalLocation = @"Ken's Room", OName = @"DVD Box #24 (33250) [Ken's Room]" });
+            modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"DVD Box #23", Description = @"33250", PhysicalLocation = @"Basement", OName = @"DVD Box #23 (33250) [Basement]" });
+            modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"DVD Box #24", Description = @"33250", PhysicalLocation = @"Basement", OName = @"DVD Box #24 (33250) [Basement]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"DVDs - General", Description = @"UHS", PhysicalLocation = @"Basement", OName = @"DVDs - General [UHS Basement]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"DVDs - General Box #1", Description = @"", PhysicalLocation = @"Ken's Room", OName = @"DVDs - General Box #1 [Ken's Room]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"DVDs - General Box #2", Description = @"", PhysicalLocation = @"Ken's Room", OName = @"DVDs - General Box #2 [Ken's Room]" });
@@ -662,6 +671,9 @@ namespace TC3Core.Data
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Ken's DVDs Box #4", Description = @"", PhysicalLocation = @"Attic", OName = @"Ken's DVDs Box #4 [Attic]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Ken's Hallmark Ornaments Box", Description = @"UHS", PhysicalLocation = @"Ken's Room", OName = @"Ken's Hallmark Ornaments Box (UHS) [Ken's Room]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Ken's Room", Description = @"", PhysicalLocation = @"", OName = @"Ken's Room" });
+            modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Ken's Room (East Wall)", Description = @"", PhysicalLocation = @"East Wall", OName = @"Ken's Room (East Wall)" });
+            modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Ken's Room (Front of Closet)", Description = @"", PhysicalLocation = @"Front of Closet", OName = @"Ken's Room (Front of Closet)" });
+            modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Ken's Room (Near Front Wall)", Description = @"", PhysicalLocation = @"Near Front Wall", OName = @"Ken's Room (Near Front Wall)" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Key Publishing Specials Box", Description = @"", PhysicalLocation = @"Top of Steps", OName = @"Key Publishing Specials Box [Top of Steps]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Kindle", Description = @"", PhysicalLocation = @"", OName = @"Kindle" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Left in bag", Description = @"", PhysicalLocation = @"", OName = @"Left in bag" });
@@ -692,7 +704,7 @@ namespace TC3Core.Data
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Misc Collectables Box #1", Description = @"UHS", PhysicalLocation = @"Attic", OName = @"Misc Collectables Box #1 (UHS) [Attic]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Models #1", Description = @"UHM", PhysicalLocation = @"Attic", OName = @"Models #1 (UHM) [Attic]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Models #2", Description = @"UHM", PhysicalLocation = @"Attic", OName = @"Models #2 (UHM) [Attic]" });
-            modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Music DVDs Box #1", Description = @"33250", PhysicalLocation = @"Ken's Room", OName = @"Music DVDs Box #1 (33250) [Ken's Room]" });
+            modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Music DVDs Box #1", Description = @"33250", PhysicalLocation = @"Basement", OName = @"Music DVDs Box #1 (33250) [Basement]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Nappa Valley Crate #1", Description = @"", PhysicalLocation = @"Ken's Room", OName = @"Nappa Valley Crate #1 [Ken's Room]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Nappa Valley Crate #2", Description = @"", PhysicalLocation = @"Ken's Room", OName = @"Nappa Valley Crate #2 [Ken's Room]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Nappa Valley Crate #3", Description = @"", PhysicalLocation = @"Ken's Room", OName = @"Nappa Valley Crate #3 [Ken's Room]" });
@@ -741,6 +753,8 @@ namespace TC3Core.Data
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"SciFi Box #6 Ziploc bag", Description = @"", PhysicalLocation = @"", OName = @"SciFi Box #6 Ziploc bag" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"SciFi Box #7", Description = @"UHXL", PhysicalLocation = @"Attic", OName = @"SciFi Box #7 (UHXL) [Attic]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"SciFi Box #7 Ziploc bag", Description = @"", PhysicalLocation = @"", OName = @"SciFi Box #7 Ziploc bag" });
+            modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"SciFi Box #8", Description = @"WML", PhysicalLocation = @"Basement", OName = @"SciFi Box #8 (WML) [Basement]" });
+            modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"SciFi Box #8 Ziploc bag", Description = @"", PhysicalLocation = @"", OName = @"SciFi Box #8 Ziploc bag" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Sealed in package", Description = @"", PhysicalLocation = @"", OName = @"Sealed in package" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Sealed with detail set included in kit", Description = @"", PhysicalLocation = @"", OName = @"Sealed with detail set included in kit" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Spares", Description = @"", PhysicalLocation = @"", OName = @"Spares" });
@@ -762,6 +776,7 @@ namespace TC3Core.Data
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Star Wars Vehicles Box #2", Description = @"UHXL", PhysicalLocation = @"Attic", OName = @"Star Wars Vehicles Box #2 (UHXL) [Attic]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Star Wars Vehicles Box #3", Description = @"UHXL", PhysicalLocation = @"Attic", OName = @"Star Wars Vehicles Box #3 (UHXL) [Attic]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Star Wars X-Wing Box", Description = @"", PhysicalLocation = @"Ken's Room", OName = @"Star Wars X-Wing Box [Ken's Room]" });
+            modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Star Wars X-Wing Box #2", Description = @"Unmarked 12x16x4.25", PhysicalLocation = @"Ken's Room", OName = @"Star Wars X-Wing Box #2 (Unmarked 12x16x4.25) [Ken's Room]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Starfighter Shipyards Box #1", Description = @"", PhysicalLocation = @"", OName = @"Starfighter Shipyards Box #1" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Sterilite Flip-Top Box #1", Description = @"", PhysicalLocation = @"Ken's Room", OName = @"Sterilite Flip-Top Box #1 [Ken's Room]" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Sterilite Flip-Top Box #2", Description = @"", PhysicalLocation = @"Ken's Room", OName = @"Sterilite Flip-Top Box #2 [Ken's Room]" });
@@ -800,7 +815,7 @@ namespace TC3Core.Data
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Canceled", Description = @"", PhysicalLocation = @"", OName = @"Canceled" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"EB Games.com", Description = @"", PhysicalLocation = @"", OName = @"EB Games.com" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Self-Compiled", Description = @"", PhysicalLocation = @"", OName = @"Self-Compiled" });
-            modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Topps 2006 Football #1", Description = @"", PhysicalLocation = @"", OName = @"Topps 2006 Football #1" });
+            //modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Topps 2006 Football #1", Description = @"", PhysicalLocation = @"", OName = @"Topps 2006 Football #1" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"Undetermined", Description = @"", PhysicalLocation = @"", OName = @"Undetermined" });
             modelBuilder.Entity<Location>().HasData(new Location { ID = Guid.NewGuid(), Name = @"WishList", Description = @"", PhysicalLocation = @"", OName = @"WishList" });
         }
@@ -871,27 +886,59 @@ namespace TC3Core.Data
             modelBuilder.Entity<ShipClassType>().HasData(new ShipClassType { ID = Guid.NewGuid(), TypeCode = "T-LKA", Description = "Amphibious Cargo Ships (assigned to Military Sealift Command)" });
         }
         #endregion
+        private void ConfigureTables(ModelBuilder modelBuilder)
+        {
+            #region Reference
+            modelBuilder.Entity<AircraftDesignation>().HasAnnotation("TableDescription", "Aircraft Designations");
+            modelBuilder.Entity<BlueAngelsHistory>().HasAnnotation("TableDescription", "Blue Angels History");
+            modelBuilder.Entity<Company>().HasAnnotation("TableDescription", "Hobby supply company address book.");
+            modelBuilder.Entity<Ship>().HasAnnotation("TableDescription", "United States Navy Ships.");
+            modelBuilder.Entity<ShipClass>().HasAnnotation("TableDescription", "United States Navy Ship Classes.");
+            modelBuilder.Entity<ShipClassType>().HasAnnotation("TableDescription", "United States Navy Ship Classification Types.");
+            #endregion
+            #region Stash
+            modelBuilder.Entity<Book>().HasAnnotation("TableDescription", "Library of Books, Magazines, and electronic media.");
+            modelBuilder.Entity<Collectable>().HasAnnotation("TableDescription", "Collection of Collectables, ranging from baseball cards, to Hot Wheels to Keepsake Ornaments.");
+            modelBuilder.Entity<Decal>().HasAnnotation("TableDescription", "Collection of Decals.");
+            modelBuilder.Entity<DetailSet>().HasAnnotation("TableDescription", "Collection of Detail Sets.");
+            modelBuilder.Entity<Episode>().HasAnnotation("TableDescription", "TV Episode Library");
+            modelBuilder.Entity<FinishingProduct>().HasAnnotation("TableDescription", "Inventory of Finishing Products (i.e. Paint, Brushes, etc.).");
+            modelBuilder.Entity<Kit>().HasAnnotation("TableDescription", "Collection of Model Kits.");
+            modelBuilder.Entity<Music>().HasAnnotation("TableDescription", "Library of Music, including physical and electronic media.");
+            modelBuilder.Entity<Rocket>().HasAnnotation("TableDescription", "Collection of Rockets.");
+            modelBuilder.Entity<Software>().HasAnnotation("TableDescription", "Library of Software, ranging from floppy discs, to CD/DVD to electronic media.");
+            modelBuilder.Entity<Tool>().HasAnnotation("TableDescription", "Collection of Tools.");
+            modelBuilder.Entity<Train>().HasAnnotation("TableDescription", "Collection of Trains/Locomotives/Rolling Stock.");
+            modelBuilder.Entity<Video>().HasAnnotation("TableDescription", "Video Library");
+            #endregion
+            #region Miscellaneous
+            modelBuilder.Entity<History>().HasAnnotation("TableDescription", "History of changes applied by the application.");
+            modelBuilder.Entity<Image>().HasAnnotation("TableDescription", "Collection of Images both independent and those representing items tracked in the database.");
+            modelBuilder.Entity<Location>().HasAnnotation("TableDescription", "Location of cataloged items.");
+            modelBuilder.Entity<Query>().HasAnnotation("TableDescription", "Canned queries which can be run within the application.");
+            #endregion
+        }
         private void ConfigureAlternateIndexes(ModelBuilder modelBuilder)
         {
-            #region "Reference"
-            #region "AircraftDesignations"
+            #region Reference
+            #region AircraftDesignations
             modelBuilder.Entity<AircraftDesignation>().HasIndex(i => new { i.Designation, i.ID }).IsUnique().HasName("IX_AircraftDesignationsByDesignation");
             #endregion
 
-            #region "Ships"
+            #region Ships
             modelBuilder.Entity<Ship>().HasIndex(i => new { i.HullNumber, i.ID }).IsUnique().HasName("IX_ShipsByHullNumber");
             modelBuilder.Entity<Ship>().HasIndex(i => new { i.Name, i.ID }).IsUnique().HasName("IX_ShipsByName");
             #endregion
-            #region "ShipClasses"
+            #region ShipClasses
             //modelBuilder.Entity<ShipClass>().HasIndex(i => new { i.ShipClassType, i.ID }).IsUnique().HasName("IX_ShipClassesByType");
             modelBuilder.Entity<ShipClass>().HasIndex(i => new { i.Name, i.ID }).IsUnique().HasName("IX_ShipClassesByName");
             #endregion
-            #region "ShipClassTypes"
+            #region ShipClassTypes
             modelBuilder.Entity<ShipClassType>().HasIndex(i => new { i.TypeCode, i.ID }).IsUnique().HasName("IX_ShipClassTypesByType");
             #endregion
             #endregion
-            #region "Stash"
-            #region "Books"
+            #region Stash
+            #region Books
             modelBuilder.Entity<Book>().HasIndex(i => new { i.AlphaSort, i.ID }).IsUnique().HasName("IX_BooksByAlphaSort");
             modelBuilder.Entity<Book>().HasIndex(i => new { i.Author, i.ID }).IsUnique().HasName("IX_BooksByAuthor");
             modelBuilder.Entity<Book>().HasIndex(i => new { i.MediaFormat, i.AlphaSort, i.ID }).IsUnique().HasName("IX_BooksByFormat");
@@ -899,13 +946,13 @@ namespace TC3Core.Data
             modelBuilder.Entity<Book>().HasIndex(i => new { i.Subject, i.ID }).IsUnique().HasName("IX_BooksBySubject");
             modelBuilder.Entity<Book>().HasIndex(i => new { i.Title, i.ID }).IsUnique().HasName("IX_BooksByTitle");
             #endregion
-            #region "Collectables"
+            #region Collectables
             modelBuilder.Entity<Collectable>().HasIndex(i => new { i.Name, i.Series, i.Type, i.Reference, i.ID }).IsUnique().HasName("IX_CollectablesByName");
             modelBuilder.Entity<Collectable>().HasIndex(i => new { i.Series, i.Type, i.Reference, i.ID }).IsUnique().HasName("IX_CollectablesBySeries");
             modelBuilder.Entity<Collectable>().HasIndex(i => new { i.Type, i.Series, i.Reference, i.ID }).IsUnique().HasName("IX_CollectablesByType");
             #endregion
-            #region "Hobby"
-            #region "Kits"
+            #region Hobby
+            #region Kits
             modelBuilder.Entity<Kit>().HasIndex(i => new { i.Type, i.Designation, i.Scale, i.ID }).IsUnique().HasName("IX_KitsByDesignation");
             modelBuilder.Entity<Kit>().HasIndex(i => new { i.Manufacturer, i.ID }).IsUnique().HasName("IX_KitsByManufacturer");
             modelBuilder.Entity<Kit>().HasIndex(i => new { i.Name, i.Scale, i.ID }).IsUnique().HasName("IX_KitsByName");
@@ -913,14 +960,14 @@ namespace TC3Core.Data
             modelBuilder.Entity<Kit>().HasIndex(i => new { i.Scale, i.Type, i.Manufacturer, i.ID }).IsUnique().HasName("IX_KitsByScale");
             modelBuilder.Entity<Kit>().HasIndex(i => new { i.Type, i.Scale, i.ID }).IsUnique().HasName("IX_KitsByType");
             #endregion
-            #region "Decals"
+            #region Decals
             modelBuilder.Entity<Decal>().HasIndex(i => new { i.Type, i.Designation, i.Scale, i.ID }).IsUnique().HasName("IX_DecalsByDesignation");
             modelBuilder.Entity<Decal>().HasIndex(i => new { i.Manufacturer, i.ID }).IsUnique().HasName("IX_DecalsByManufacturer");
             modelBuilder.Entity<Decal>().HasIndex(i => new { i.Name, i.Scale, i.ID }).IsUnique().HasName("IX_DecalsByName");
             modelBuilder.Entity<Decal>().HasIndex(i => new { i.Scale, i.Type, i.Manufacturer, i.ID }).IsUnique().HasName("IX_DecalsByScale");
             modelBuilder.Entity<Decal>().HasIndex(i => new { i.Type, i.Scale, i.ID }).IsUnique().HasName("IX_DecalsByType");
             #endregion
-            #region "DetailSets"
+            #region DetailSets
             modelBuilder.Entity<DetailSet>().HasIndex(i => new { i.Type, i.Designation, i.Scale, i.ID }).IsUnique().HasName("IX_DetailSetsByDesignation");
             modelBuilder.Entity<DetailSet>().HasIndex(i => new { i.Manufacturer, i.ID }).IsUnique().HasName("IX_DetailSetsByManufacturer");
             modelBuilder.Entity<DetailSet>().HasIndex(i => new { i.Name, i.Scale, i.ID }).IsUnique().HasName("IX_DetailSetsByName");
@@ -928,24 +975,24 @@ namespace TC3Core.Data
             modelBuilder.Entity<DetailSet>().HasIndex(i => new { i.Type, i.Scale, i.ID }).IsUnique().HasName("IX_DetailSetsByType");
             #endregion
             #endregion
-            #region "Music"
+            #region Music
             modelBuilder.Entity<Music>().HasIndex(i => new { i.AlphaSort, i.MediaFormat, i.ID }).IsUnique().HasName("IX_MusicByAlphaSort");
             modelBuilder.Entity<Music>().HasIndex(i => new { i.Artist, i.Year, i.MediaFormat, i.ID }).IsUnique().HasName("IX_MusicByArtist");
             modelBuilder.Entity<Music>().HasIndex(i => new { i.MediaFormat, i.Artist, i.Year, i.ID }).IsUnique().HasName("IX_MusicByFormat");
             modelBuilder.Entity<Music>().HasIndex(i => new { i.Type, i.Artist, i.Year, i.MediaFormat, i.ID }).IsUnique().HasName("IX_MusicByType");
             #endregion
-            #region "Software"
+            #region Software
             modelBuilder.Entity<Software>().HasIndex(i => new { i.AlphaSort, i.ID }).IsUnique().HasName("IX_SoftwareByAlphaSort");
             modelBuilder.Entity<Software>().HasIndex(i => new { i.Platform, i.AlphaSort, i.ID }).IsUnique().HasName("IX_SoftwareByPlatform");
             modelBuilder.Entity<Software>().HasIndex(i => new { i.Type, i.AlphaSort, i.ID }).IsUnique().HasName("IX_SoftwareByType");
             #endregion
-            #region "Video Library"
-            #region "Episodes"
+            #region Video Library
+            #region Episodes
             modelBuilder.Entity<Episode>().HasIndex(i => new { i.MediaFormat, i.Series, i.Number, i.ID }).IsUnique().HasName("IX_EpisodesByFormat");
             modelBuilder.Entity<Episode>().HasIndex(i => new { i.Series, i.Number, i.ID }).IsUnique().HasName("IX_EpisodesBySeries");
             modelBuilder.Entity<Episode>().HasIndex(i => new { i.Subject, i.ID }).IsUnique().HasName("IX_EpisodesBySubject");
             #endregion
-            #region "Movies"
+            #region Movies
             modelBuilder.Entity<Video>().HasIndex(i => new { i.MediaFormat, i.AlphaSort, i.ID }).IsUnique().HasName("IX_VideosByFormat");
             modelBuilder.Entity<Video>().HasIndex(i => new { i.AlphaSort, i.MediaFormat, i.ID }).IsUnique().HasName("IX_VideosBySort");
             modelBuilder.Entity<Video>().HasIndex(i => new { i.Subject, i.Title, i.ID }).IsUnique().HasName("IX_VideosBySubject");
@@ -953,11 +1000,11 @@ namespace TC3Core.Data
             #endregion
             #endregion
             #endregion
-            #region "Miscellaneous"
-            #region "FileLists"
+            #region Miscellaneous
+            #region FileLists
             //modelBuilder.Entity<FileList>().HasIndex(i => new { i.Path }).IsUnique().HasName("IX_FileListByPath");
             #endregion
-            #region "MenuEntries"
+            #region MenuEntries
             //modelBuilder.Entity<MenuEntries>().HasIndex(i => new { i.ButtonLabel, i.ParentID, i.Label, i.ID }).IsUnique().HasName("IX_MenuEntriesByButton");
             //modelBuilder.Entity<MenuEntries>().HasIndex(i => new { i.ParentID, i.ButtonLabel, i.Label, i.ID }).IsUnique().HasName("IX_MenuEntriesByParentID");
             #endregion
@@ -965,13 +1012,18 @@ namespace TC3Core.Data
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            string connectionString = ConfigurationManager.ConnectionStrings["TC3CoreContext"].ConnectionString;
+            Console.WriteLine($"TCContext.OnConfiguring: ConnectionString:=\"{connectionString}\";");
+
             optionsBuilder.UseLoggerFactory(tcLoggerFactory);
-            //optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["TC3CoreContext"].ConnectionString)
-            //    .ReplaceService<SqlServerMigrationsAnnotationProvider, ExtendedSqlServerMigrationsAnnotationProvider>()
-            //    .ReplaceService<SqlServerMigrationsSqlGenerator, ExtendedSqlServerMigrationsSqlGenerator>();
+            //Debugger.Launch();
+            optionsBuilder.UseSqlServer(connectionString)
+                .ReplaceService<IMigrationsAnnotationProvider, ExtendedSqlServerMigrationsAnnotationProvider>()
+                .ReplaceService<IMigrationsSqlGenerator, ExtendedSqlServerMigrationsSqlGenerator>();
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            ConfigureTables(modelBuilder);
             ConfigureAlternateIndexes(modelBuilder);
             //Define <ImageDetail>'s primary key to be the TableName/RecordID composite...
 

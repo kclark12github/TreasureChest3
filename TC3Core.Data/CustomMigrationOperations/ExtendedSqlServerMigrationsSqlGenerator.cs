@@ -1,20 +1,29 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Migrations.Operations;
+using System;
+using System.Diagnostics;
 
 namespace TC3Core.Data.CustomMigrationOperations
 {
     public class ExtendedSqlServerMigrationsSqlGenerator : SqlServerMigrationsSqlGenerator
     {
-        public ExtendedSqlServerMigrationsSqlGenerator(MigrationsSqlGeneratorDependencies dependencies, IMigrationsAnnotationProvider migrationsAnnotations) : base(dependencies, migrationsAnnotations) { }
+        protected virtual string StatementTerminator => ";";
+        public ExtendedSqlServerMigrationsSqlGenerator(MigrationsSqlGeneratorDependencies dependencies, IMigrationsAnnotationProvider migrationsAnnotations) : base(dependencies, migrationsAnnotations)
+        {
+            Console.WriteLine("ExtendedSqlServerMigrationsSqlGenerator()");
+            Debugger.Launch();
+        }
         protected override void Generate(AddColumnOperation operation, IModel model, MigrationCommandListBuilder builder)
         {
+            Console.WriteLine("\tHandling Generate(AddColumnOperation)");
             SetDefaultValue(operation);
             base.Generate(operation, model, builder);
             SetColumnDescription(operation, builder);
         }
         protected override void Generate(CreateTableOperation operation, IModel model, MigrationCommandListBuilder builder)
         {
+            Console.WriteLine("\tHandling Generate(CreateTableOperation)");
             foreach (var addColumnOperation in operation.Columns)
                 SetDefaultValue(addColumnOperation);
             base.Generate(operation, model, builder);
@@ -24,8 +33,22 @@ namespace TC3Core.Data.CustomMigrationOperations
                 AddConstraint(addColumnOperation, builder);
             }
         }
+        protected override void Generate(CreateIndexOperation operation, IModel model, MigrationCommandListBuilder builder, bool terminate)
+        {
+            Console.WriteLine("\tHandling Generate(CreateIndexOperation)");
+            base.Generate(operation, model, builder, false);
+            var includeIndexAnnotation = operation.FindAnnotation("SqlServer:IncludeIndex");
+            if (includeIndexAnnotation != null)
+                builder.Append($" INCLUDE({includeIndexAnnotation.Value})");
+            if (terminate)
+            {
+                builder.AppendLine(StatementTerminator);
+                EndStatement(builder);
+            }
+        }
         private void AddConstraint(AddColumnOperation operation, MigrationCommandListBuilder builder)
         {
+            Console.WriteLine("\tHandling [MinLength]");
             var annotation = operation.FindAnnotation("MinLength");
             if (annotation != null)
             {
@@ -41,6 +64,7 @@ namespace TC3Core.Data.CustomMigrationOperations
         }
         private void SetDefaultValue(AddColumnOperation operation)
         {
+            Console.WriteLine("\tHandling [SqlDefaultValue]");
             var annotation = operation.FindAnnotation("SqlDefaultValue");
             if (annotation != null)
             {
@@ -49,6 +73,7 @@ namespace TC3Core.Data.CustomMigrationOperations
         }
         private void SetColumnDescription(AddColumnOperation operation, MigrationCommandListBuilder builder)
         {
+            Console.WriteLine("\tHandling [ColumnDescription]");
             var annotation = operation.FindAnnotation("ColumnDescription");
             if (annotation != null)
             {
@@ -66,6 +91,7 @@ namespace TC3Core.Data.CustomMigrationOperations
         }
         private void SetTableDescription(CreateTableOperation operation, MigrationCommandListBuilder builder)
         {
+            Console.WriteLine("\tHandling [TableDescription]");
             var annotation = operation.FindAnnotation("TableDescription");
             if (annotation != null)
             {

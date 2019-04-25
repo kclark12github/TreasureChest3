@@ -50,8 +50,8 @@ namespace TC3Core
             services.AddDbContext<TCContext>(
                 options => options
                     .UseSqlServer(Configuration.GetConnectionString("TC3CoreContext"))
-                        .ReplaceService<SqlServerMigrationsAnnotationProvider, ExtendedSqlServerMigrationsAnnotationProvider>()
-                        .ReplaceService<SqlServerMigrationsSqlGenerator, ExtendedSqlServerMigrationsSqlGenerator>()
+                        .ReplaceService<IMigrationsAnnotationProvider, ExtendedSqlServerMigrationsAnnotationProvider>()
+                        .ReplaceService<IMigrationsSqlGenerator, ExtendedSqlServerMigrationsSqlGenerator>()
                 );
             services.AddScoped<IBookData, SqlBookData>();
             services.AddScoped<IDecalData, SqlDecalData>();
